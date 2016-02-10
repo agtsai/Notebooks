@@ -1,0 +1,1187 @@
+6
+1
+0
+2
+
+ 
+
+b
+e
+F
+6
+
+ 
+
+ 
+ 
+]
+
+.
+
+R
+S
+h
+p
+-
+o
+r
+t
+s
+a
+[
+ 
+ 
+
+1
+v
+7
+1
+2
+2
+0
+
+.
+
+2
+0
+6
+1
+:
+v
+i
+X
+r
+a
+
+The Varying Light Curve and Timings of the Ultra-short Period Contact
+
+Binary KIC 9532219
+
+Jae Woo Lee1,2, Kyeongsoo Hong1, Jae-Rim Koo1, and Jang-Ho Park1,3
+
+1Korea Astronomy and Space Science Institute, Daejeon 34055, Korea
+
+2Astronomy and Space Science Major, Korea University of Science and Technology, Daejeon
+
+34113, Korea
+
+3Department of Astronomy and Space Science, Chungbuk National University, Cheongju 28644,
+
+Korea
+
+jwlee@kasi.re.kr, kshong@kasi.re.kr, koojr@kasi.re.kr, pooh107162@kasi.re.kr
+
+ABSTRACT
+
+KIC 9532219 is a W UMa-type eclipsing binary with an orbital period of 0.1981549
+d that is below the short-period limit (∼0.22 d) of the period distribution for contact
+binaries. The Kepler light curve of the system exhibits striking light changes in both
+eclipse depths and light maxima. Applying third-body and spot eﬀects, the light-curve
+synthesis indicates that the eclipsing pair is currently in a marginal contact stage with a
+mass ratio of q=1.20, an orbital inclination of i=66.0 deg, a temperature diﬀerence of ∆
+(T1–T2)=172 K, and a third light of l3=75.9 %. To understand the light variations with
+time, we divided up the light curve into 312 segments and separately analyzed them. The
+results reveal that variation of eclipse depth is primarily caused by changing amounts of
+contamination due to the nearby star KIC9532228 between the Kepler Quarters and that
+the variable O’Connell eﬀect originates from the starspot activity on the less massive
+primary component. Based on our light-curve timings, a period study of KIC 9532219
+indicates that the orbital period has varied as a combination of a downward parabola
+and a light-travel-time (LTT) eﬀect due to a third body, with a period of 1196 d and
+a minimum mass of 0.0892 M⊙ in an eccentric orbit of 0.150. The parabolic variation
+could be a small part of a second LTT orbit due to a fourth component in a wider orbit,
+instead of either mass transfer or angular momentum loss.
+
+Subject headings: binaries: close — binaries: eclipsing — stars:
+9532219) — stars: fundamental parameters — stars: spots
+
+individual (KIC
+
+1.
+
+INTRODUCTION
+
+W UMa-type contact binaries consist of two dwarf stars surrounded by a common convective
+envelope and are recognized by continuous brightness variations over time and nearly equal minima
+
+– 2 –
+
+in the light curve. They are thought to have evolved from initially detached binaries by the combined
+action of magnetic braking and tidal friction, and to end with coalescence of both components into
+single stars (Bradstreet & Guinan 1994; Eggleton & Kiseleva-Eggleton 2002). This process could
+only happen if they were very close binaries to start with and the orbital angular momentum
+was tidally coupled to the spin angular momentum. In this scenario, a circumbinary component
+may have played an important role in the formation of the initial tidal-locked close binaries with
+an orbital period of several days, through energy and angular momentum exchanges (Eggleton &
+Kisseleva-Eggleton 2006; Fabrycky & Tremaine 2007). Tokovinin et al. (2006) found that 96 % of
+the close binaries with periods shorter than 3 d exist in multiple systems. The statistical study by
+Pribulla & Rucinski (2006) indicated that a large proportion of W UMa binaries have circumbinary
+companions. The results suggest that circumbinary objects are necessary for the formation and
+evolution of short-period close binaries.
+
+It is known that contact binaries have a very short period cut-oﬀ at about 0.215−0.22 d but
+there is no full explanation for this limit (Rucinski 1992, 2007). Binary stars with orbital periods
+shorter than 0.22 d are extremely rare (e.g. Dimitrov & Kjurkchieva 2015) and most of them appear
+to be triple star systems (Jiang et al. 2015; Qian et al. 2015). Such short-period binaries provide
+signiﬁcant information about the origin and evolutionary processes of the systems. The presence
+of a third body around an eclipsing binary could be detected by detailed analyses of both light
+curves and eclipse timings. To advance this subject, we have been studying W UMa-type eclipsing
+binaries below the period limit.
+
+KIC 9532219 (RA2000=19h36m52.s018; DEC2000=+46◦10′48.′′80; Kp=+16.118; g=+16.861; g −
+i=+1.061) with a period of 0.198155 d is one of the shortest period W UMa-type binaries currently
+known. From an analysis of initial Kepler observations, Kjurkchieva & Dimmitrov (2015) reported
+that the variable star is not a δ Sct pulsator but a contact binary with a mass ratio of q=0.9320, an
+orbital inclination of i=68.42 deg, a temperature diﬀerence of ∆T =83 K between the components,
+and a third light of l3=78 %. The orbital period of the system was examined by Conroy et al.
+(2014) using the Kepler times of minimum lights between Quarters 3 and 16. They suggested that
+the cause of the period change is a light-travel-time (LTT) eﬀect due to a third body with a period
+of P3=1062.1±76.3 d and an eccentricity of e3=0.372±0.002. In this paper, we present and discuss
+the variations in the light curves and eclipse timings of KIC 9532219 below the short-period limit
+using the Kepler data.
+
+2. KEPLER PHOTOMETRY AND LIGHT VARIATIONS
+
+The Kepler observations of KIC 9532219 were obtained during Quarters 3−17 in long cadence
+(LC) mode with a sampling rate of 29.4 min. We downloaded and analyzed the original data from
+the Kepler archive, but the results are not much diﬀerent from the detrended light curves in the
+
+– 3 –
+
+Kepler EB catalogue (Prˇsa et al. 2011; Slawson et al. 2011)1. Further, because the PDC detrending
+is optimized for planet transits, its eﬀects on binary stars are known to be adverse in a signiﬁcant
+fraction of all cases (Prˇsa et al. 2011). Thus, we used the data in the EB Catalogue detrended from
+the raw SAP time series. The light curve is plotted in Figure 1 as magnitude versus BJD. As shown
+in the ﬁgure, the binary star appears to display signiﬁcant changes in the depths of the eclipses.
+Because the sample rate of the Kepler data corresponds to about 10% of the binary orbital period,
+it is impossible to measure a reliable magnitude at a given phase for each light curve. Thus, to
+look for any light variations of KIC 9532219, we combined the Kepler data at intervals of 20 orbital
+periods (20×P =3.9631 d) and made a total of 312 light curves. Then, we measured the light levels
+at four characteristic phases (Min I at phase 0.0, Max I at phase 0.25, Min II at phase 0.5, and Max
+II at phase 0.75) for the separate datasets. These are listed in Table 1, where the mean time in
+the ﬁrst column was computed by averaging starting and ending BJDs of the observations. Their
+errors are the standard deviations relative to the mean value of each dataset.
+
+In Figure 2, the magnitude diﬀerences among the measurements are displayed as Max I − Min
+I, Max I − Min II, Max II − Min I, Max II − Min II, Max I − Max II, and Min I − Min II. As seen in
+this ﬁgure, the eclipse depths, given in the ﬁrst through fourth panels, varied signiﬁcantly with time
+in almost identical patterns. The values of Max I − Max II indicate that the light curves around
+approximately BJD 2455200 present equal light levels at the quadratures, while before that, Max I
+is brighter than Max II, and after that, the brightness diﬀerences show the inverse O’Connell eﬀect
+with Max I fainter than Max II. These phenomena could be produced by dynamical interactions
+due to circumbinary companions gravitationally bound to the eclipsing pair (Torres & Stefanik
+2000; Zasche & Paschke 2012) and/or stellar activity such as starspots (Kang et al. 2002; Lee et al.
+2010). Further, the light variations are aﬀected by the presence of a neighboring star KIC 9532228
+(RA2000=19h36m52.s418; DEC2000=+46◦10′48.′′82; Kp=+16.928; g=+17.746; g − i=+1.169) with
+a separation of about 4 arcsec, because the plate scale of the Kepler CCD camera is 3.98 arcsec
+pixel−1 (Koch et al. 2010).
+
+3. LIGHT-CURVE SYNTHESIS AND THE CHANGE OF ECLIPSE DEPTH
+
+Figure 3 shows the Kepler light curve of KIC 9532219 distributed in orbital phase instead of
+BJD as in Figure 1. Its shape is typical of a short period W UMa-type binary and the curved
+bottoms of both minima indicate partial eclipses. To determine the physical parameters of the
+system, the Kepler data was analyzed using the 2007 version of the Wilson-Devinney binary code
+(Wilson & Devinney 1971, van Hamme & Wilson 2007; hereafter W-D). For this purpose, the mean
+light level at phase 0.75 was set to unity. The light-curve synthesis was performed in a manner
+identical to that for the eclipsing systems V404 Lyr (Lee et al. 2014) and KIC 5621294 (Lee et al.
+2015) exhibiting LTT eﬀects. The eﬀective temperature of the more massive star was set to be 5,031
+
+1http://keplerebs.villanova.edu/
+
+– 4 –
+
+K from the Kepler Input Catalogue (KIC; Kepler Mission Team 2009). In Table 2, parentheses
+signify adjusted parameters. To avoid possible confusion, we refer to the primary and secondary
+stars as those being eclipsed at Min I and Min II, respectively.
+
+A photometric solution of KIC 9532219 has been reported only by Kjurkchieva & Dimmitrov
+(2015) and no spectroscopic observations have been made for the system. Thus, we used the so-
+called q-search method for various modes of the W-D code to obtain photometric solutions. The
+behavior of the weighted sum of the squared residuals, ΣW (O − C)2, was used to estimate the
+potential reality of each model. For this procedure, 1,000 normal points were formed from the
+individual Kepler data, and weights were assigned to the number of observations per normal point.
+The q-search results indicated that both components are in marginal contact with respect to the
+inner Roche lobe. As displayed in Figure 4, the optimal solution is around q=1.20, which indicates
+that KIC 9532219 is a W-subtype (deﬁned observationally by Binnendijk 1970) contact binary. In
+subsequent calculations, we treated the mass ratio (q) and third-body parameters (a′, e′, ω′, P ′,
+and T ′
+
+c) as adjustable variables and ﬁtted all Kepler data simultaneously.
+
+The unspotted solution is listed in columns (2)–(3) of Table 2 and appears as a dashed curve
+in the top panel of Figure 3. The light residuals from the model are plotted in the second panel of
+Figure 3, wherein it can be seen that the model light curves do not ﬁt the observed ones around
+phase 0.25. Light asymmetry has been reported commonly for light curves of short-period binaries
+and may be due to the spot activity on stellar photospheres. Because there is currently no way to
+know which spot model is more appropriate to explain the light variation, we applied a magnetic cool
+spot on either of the component stars. In the W-D code, each spot is described by four parameters:
+latitude (θ) and longitude (λ) of a spot center, and angular radius (rs) and temperature factor
+(Ts=T spot/T local) of a spot. Although it is not easy to distinguish between the two spot models
+from only the light-curve synthesis, the cool spot on the primary star gives a slightly smaller value
+of ΣW (O − C)2 than that on the secondary component. The spot solution is given in columns
+(4)–(5) of Table 2 together with the spot parameters. The synthetic light curve is plotted as the
+solid curve in the top panel of Figure 3 and the residuals from the spot model are plotted in the
+third panel of the ﬁgure.
+
+To explore in detail the light variations of KIC 9532219, including the change in the eclipse
+depths, we separately analyzed the 312 light curves combined at intervals of 20 orbital periods. For
+the computations, we used the spot solution as initial values and adjusted all the other parameters
+except for the orbital period (P ) and the spot latitude (θ). The results are listed in Table 3, and
+the variations in the binary and spot parameters are displayed in Figures 5 and 6, respectively. The
+light residuals from the analyses are displayed in the bottom panel of Figure 3. We can see that
+the unmodeled light variations around both eclipses have almost disappeared. As shown in Figure
+5, the luminosity parameters have quasi-periodically changed, wherein the change of l1 is nearly
+180◦ out of phase with that of l3 and displays a pattern and sense almost identical to the observed
+changes of the eclipse depths seen in Figure 2. On the contrary, the variations of the other binary
+parameters are relatively small and do not contribute the depth change signiﬁcantly. In Figure 6,
+
+– 5 –
+
+it can be seen that the brightness diﬀerences between the light maxima in the ﬁfth panel of Figure
+2 are dominated by the changes in the spot parameters with time, especially in the longitude and
+temperature factor of that spot. Even the spot variability cannot describe the change in the eclipse
+depth.
+
+The observed depth of the eclipse may be aﬀected by changing amounts of contamination due
+to the nearby star KIC 9532228 because diﬀerent photometric apertures may be used for diﬀerent
+Kepler Quarters. On this account, the l1 and l3 parameters appear to have varied in complex
+ways rather than in monotonic fashions, unlike real values. To examine any periodicity for the
+luminosities in Table 3, we separately ﬁtted the two parameters to a sine curve, as follows:
+
+ls = l0s + Kls sin(
+
+2π
+Pls
+
+t + ω0s), s = 1 or 3,
+
+(1)
+
+where t is the mean time of each luminosity. The results are plotted with the solid curves in the
+ﬁfth to sixth panels of Figure 5, where a possible modulation seems to exist. The zero point,
+semi-amplitude, period, and phase of the sinusoids are calculated to be l01 = 0.1195 ± 0.0004
+and l03 = 0.7589 ± 0.0008, Kl1 = 0.0050 ± 0.0006 and Kl3 = 0.010 ± 0.001, Pl1 = 372 ± 7 d
+and Pl3 = 368 ± 7 d, and ω01 = 229 ± 101 deg and ω03 = 360 ± 102 deg, respectively. The
+modulation periods of l1 and l3 are approximately equal to the Kepler orbit of 372.5 d. These
+imply that the observed eclipse depth and, thus, the calculated luminosities may be modulated at
+the Kepler orbital period due to the unique features of the Kepler Earth-trailing heliocentric orbit.
+Meanwhile, the third light (l3=76%) can come from both the close neighbor separated by 4 arcsec
+and the circumbinary companions inferred from our eclipse timing analysis which will be discussed
+in the following section. Because KIC 9532228 is about 0.81 mag fainter than KIC 9532219 in the
+Kepler passband, the nearby star may not be a dominant source of the light contribution. Then,
+it is possible that a large percentage of the third light originates from the circumbinary objects
+orbiting the eclipsing binary.
+
+Absolute dimensions for KIC 9532219 can be estimated from our photometric solutions with
+the cool-spot model in Table 2 and the empirical relations between spectral type (temperature) and
+stellar mass. Assuming that the more massive secondary star is a normal main-sequence one with a
+spectral type of about K1 and, hence, a mass of M2=0.86 M⊙ from its temperature, we computed
+the absolute parameters of each component listed in Table 4. The luminosity (L) and bolometric
+magnitudes (Mbol) were computed by adopting Teﬀ ⊙=5,780 K and Mbol⊙=+4.73 for solar values.
+In the mass-radius, mass-luminosity, and HR diagrams, the locations of both components of KIC
+9532219 lie near the zero-age main sequence.
+
+4. ECLIPSE TIMING VARIATION AND ITS IMPLICATIONS
+
+Times of minimum lights could be shifted from the real conjunctions due to asymmetrical
+eclipse minima originating from starspot activity (cf. Lee et al. 2015). The light-curve synthesis
+
+– 6 –
+
+method developed by W-D can gives more and better information with respect to other methods
+(Maceroni & van’t Veer 1994). As an example, the method of Kwee & van Woerden (1956; hereafter
+KW), which has been widely used for the determination of minimum epochs, does not consider spot
+activity and measures an eclipse time based on the observations during minimum alone. When
+the minimum is asymmetric, the uncertainty of the KW time is systematically increased. In the
+previous section, we modeled the 312 segments formed from the Kepler light curve by applying the
+time-varying cool spot on the primary component of KIC 9532219. As the result, we measured
+the minimum epochs for each dataset given in the ﬁrst column of Table 3 and they were usde for
+ephemeris computations of the system.
+
+First of all, we examined whether the period change of KIC 9532219 could be represented
+by a single LTT ephemeris suggested by Conroy et al. (2014). Fitting our light-curve timings to
+that ephemeris form failed to give a satisfactory result. Instead, we found that the eclipse timing
+variation is best ﬁtted by the combination of a downward-opening parabola and an LTT eﬀect
+caused by the presence of a third body in the system as follows:
+
+C = T0 + P E + AE2 + τ3,
+
+(2)
+
+where τ3 is the LTT due to a circumbinary companion (Irwin 1952) and includes ﬁve parameters (
+ab sin i3, eb, ωb, nb, and Tb). Here, ab sin i3, eb and ωb are the orbital parameters of the eclipsing
+pair around the mass center of the triple system. The parameters nb and Tb denote the Keple-
+rian mean motion of the mass center of the binary system and its epoch of periastron passage,
+respectively. In this analysis, the Levenberg-Marquart technique (Press et al. 1992) was applied to
+solve for the eight unknown parameters of the ephemeris. The results are listed in Table 5 together
+with other related quantities. In this table, Pb and Kb indicate the period and semi-amplitude of
+the LTT orbit, respectively. Within errors, most parameters from the eclipse timings are in good
+agreement with those obtained from the light curve using the W-D code.
+
+The eclipse timing diagram of KIC 9532219 constructed with the linear terms in Table 5 is
+plotted in the top panel of Figure 7, together with the measures of Conroy et al.
+(2014) for
+comparison. Here, the solid curve and the dashed parabola represent the full contribution and
+the quadratic term, respectively. The middle and bottom panels display the LTT orbit (τ3) and
+the residuals from the full ephemeris, respectively. As displayed in this ﬁgure, the quadratic plus
+LTT ephemeris currently provides a good representation of all eclipse times. The mass function
+of the third body becomes f (M3)=0.000255 M⊙, and its mass is M3 sin i3=0.0892 M⊙.
+If it
+is a main-sequence star, the minimum radius and temperature of this object are calculated to
+be R3=0.0976 R⊙ and T3=3058 K, respectively, using the correlations from eclipsing binary stars
+(Southworth 2009). These correspond to the bolometric luminosity of L3 & 0.0007 L⊙, which would
+contribute only L3/(L1 + L2 + L3) & 0.0015 to the total light of this system. Thus, the tertiary
+companion inferred from the timing study may not be the third light source (l3∼76%) detected in
+our light-curve synthesis. On the other hand, the eclipse timing variation may be partly caused by
+the perturbative eﬀect of the circumbinary companion added to the pure geometrical LTT eﬀect
+(Borkovits et al. 2003; ¨Ozdemir et al 2003). We computed the semi-amplitude of the third-body
+
+– 7 –
+
+dynamic perturbation on the binary orbit to be about 0.03 s, and found that its contribution to
+the timing variation is not signiﬁcant.
+
+The quadratic term (A) of the ephemeris represents a continuous period decrease with a rate of
+−5.27×10−7 d yr−1. This corresponds to a fractional period change of −1.44×10−9, which agrees
+well with the value of −1.4×10−9 calculated with the W-D code. Such a variation can be explained
+by either mass transfer from the more massive secondary to the primary star or angular momentum
+loss (AML) due to a magnetic stellar wind. If the parabolic variation is produced by conservative
+mass transfer, the transfer rate is 3.92×10−6 M⊙ yr−1, among the largest rates for W UMa systems
+(cf. Lee et al. 2009). Assuming that the secondary star transfers its present mass to the less
+massive primary component on a thermal time scale τth (Paczy´nski 1971), τth = 1.40×108 yr and
+mass is transferred to the companion at a rate of M2/τth = 6.15×10−9 M⊙ yr−1. This value is
+three orders of magnitude too small to be the single cause of the observed period change.
+
+Another possible mechanism for the parabolic variation is AML caused by magnetic braking.
+Guinan & Bradstreet (1988) derived an approximate formula for the period decrease rate due to
+spin-orbit-coupled AML of binary systems, as follows:
+
+dP
+dt
+
+≈ −1.1 × 10−8q−1(1 + q)2(M1 + M2)−5/3k2(M1R4
+
+1 + M2R4
+
+2)P −7/3,
+
+(3)
+
+where k2 is the gyration constant. With k2=0.1 (see Webbink 1976) and with the absolute dimen-
+sions in Table 4, we computed the AML rate to be dP /dt = −2.32 ×10−8 d yr−1. This computed
+value is more than 22 times smaller than the observed one, so the AML hypothesis is not conﬁrmed.
+These mean that both mass transfer and AML cannot describe the parabolic variation. The down-
+ward parabola may only be the observed part of a second LTT orbit ascribed to the presence of a
+fourth object.
+
+5. SUMMARY AND DISCUSSION
+
+In this paper, we analyzed in detail the light curves and eclipse timings of the W UMa system
+KIC 9532219, based on the high quality Kepler data from Quarter 3 through Quarter 17. The
+results from these analyses can be summarized as follows:
+
+1. KIC 9532219 exhibits signiﬁcant changes in the eclipse depths and timings. The Kepler light
+curves are satisfactorily ﬁtted by using third-body parameters and by adopting a magnetic
+cool spot on the less massive primary star. The result indicates that the eclipsing pair of
+the system is a marginal contact binary in which both components ﬁll 99.9 % of their inner
+Roche lobes.
+
+2. Our syntheses for the 312 light curves, combined at intervals of about 4 d, indicate that the
+change of l1 is nearly 180◦ out of phase with that of l3 and the two parameters have varied
+
+– 8 –
+
+in patterns very similar to the depth changes of the eclipses. The variable asymmetries of
+light maxima, the so-called variable O’Connell eﬀect, result from the changes in the longitude
+and temperature factor of the cool spot with time, which do not signiﬁcantly contribute to
+the variations in eclipse depth. The observed eclipse depths may be severely aﬀected by the
+presence of the nearby star KIC 9532228 and the calculated luminosities seem to be modulated
+at the Kepler orbital period of 372.5 d. These indicate that eclipse depth variation could be
+produced by changing amounts of contamination due to the nearby star associated with the
+orbital motion of the Kepler spacecraft.
+
+3. The eclipse timings of KIC 9532219 have varied due to a combination of a downward parabola
+and a sinusoid with a period of 1196 d and a semi-amplitude of 69.6 s, rather than a pe-
+riod modulation suggested by Conroy et al. (2014). The periodic component is interpreted
+as the LTT eﬀect due to a circumbinary companion. The mass function of this object is
+f (M3)=0.000255 M⊙, and the mass is calculated to be M3 sin i3=0.0892 M⊙. This value is
+close to the theoretical limit of ∼0.072 M⊙ for a brown dwarf star. The third body contributes
+very little to the total light of this system.
+
+4. Although the estimated masses and radii of the system contain large uncertainties, it might
+be diﬃcult that the parabolic variation with a period decrease rate of −5.27×10−7 d yr−1
+is explained by either the secondary to primary mass transfer or AML due to a magnetic
+stellar wind braking. We suggest that it may only be the observed part of a second LTT orbit
+caused by the presence of another companion in a wider orbit. Then, the hypothetical fourth
+component could be the main source of the third light (l3∼76%) detected in our light-curve
+synthesis, together with the fainter star KIC9532228 with a separation of 4 arcsec.
+
+Assuming that our interpretation of the light and timing variations of KIC 9532219 is cor-
+rect, KIC 9532219 would be a quadruple system, which consists of an eclipsing binary and two
+circumbinary companions. The third and fourth components might provide a signiﬁcant clue to
+the formation and evolution of the ultrashort period binary and could be the main source of the
+third light detected in our syntheses. The presence of the circumbinary objects and the consequent
+contribution of the third light to the system luminosity would make KIC 9532219 an interesting
+target for dynamical evolutionary studies of multiple systems. A large number of future accurate
+mid-eclipse times are needed to identify the presence of the supposed fourth component. Because
+this system includes a faint binary with a very short orbital period of about 4.8 h, 10-m class
+telescopes, such as Keck and GTC, will help to measure its radial velocities.
+
+We appreciate the careful reading and valuable comments of the anonymous referee. This
+paper includes data collected by the Kepler mission. Kepler was selected as the 10th mission of
+the Discovery Program. Funding for the Kepler mission is provided by the NASA Science Mission
+directorate. We have used the Simbad database maintained at CDS, Strasbourg, France. This work
+was supported by the KASI (Korea Astronomy and Space Science Institute) grant 2016-1-832-01.
+
+– 9 –
+
+REFERENCES
+
+Binnendijk, L. 1970, Vistas in Astronomy, 12, 217
+
+Borkovits, T., ´Erdi, B., Forg´acs-Dajka, E., & Kov´acs, T. 2003, A&A, 398, 1091
+
+Bradstreet, D. H., & Guinan, E. F. 1994, in ASP Conf. Ser. 56, Interacting Binary Stars, ed. A.
+
+W. Shafter (San Francisco: ASP), 228
+
+Conroy, K. E., Prˇsa, A., Stassun, K. G., Orosz, J. A., Fabrycky, D. C., & Welsh, W. F. 2014, AJ,
+
+147, 45
+
+Dimitrov, D., & Kjurkchieva, D. 2015, MNRAS, 448, 2890
+
+Eggleton, P. P., & Kisseleva-Eggleton, L. 2002, ApJ, 575, 461
+
+Eggleton, P. P., & Kisseleva-Eggleton, L. 2006, Ap&SS, 304, 75
+
+Fabrycky, D., & Tremaine, S. 2007, ApJ, 669, 1298
+
+Guinan, E. F., & Bradstreet, D. H. 1988, in Formation and Evolution of Low Mass Stars, eds. A.
+
+K. Dupree and M. T. V. T. Lago (Dordrecht: Kluwer), 345
+
+Irwin, J. B. 1952, ApJ, 116, 211
+
+Jiang, L.-Q., Qian, S.-B., Zhang, J., & Zhou, X. 2015, AJ, 149, 169
+
+Kang, Y. W., Oh, K.-D., Kim, C.-H., Hwang, C., Kim, H., & Lee, W.-B. 2002, MNRAS, 331, 707
+
+Kepler Mission Team 2009, VizieR Online Data Catalog, 5133, 0
+
+Kjurkchieva, D., & Dimitrov, D. 2015, AN, 336, 153
+
+Koch, D. G., Borucki, W. J., Basri, G., et al. 2010, ApJ, 713, L79
+
+Kwee, K. K., & van Woerden, H. 1956, Bull. Astron. Inst. Netherlands, 12, 327
+
+Lee, J. W., Hong, K., & Hinse, T. C. 2015, AJ, 149, 93
+
+Lee, J. W., Kim, S.-L., Hong, K., Lee, C.-U., & Koo, J.-R. 2014, AJ, 148, 37
+
+Lee, J. W., Youn, J.-H., Han, W., et al. 2010, AJ, 139, 898
+
+Lee, J. W., Youn, J.-H., Lee, C.-U., Kim, S.-L., & Koch, R. H. 2009, AJ, 138, 478
+
+Maceroni, C., & van’t Veer, F. 1994, A&A, 289, 871
+
+¨Ozdemir, S., Mayer, P., Drechsel, H., Demircan, O., & Ak, H. 2003, A&A, 403, 675
+
+Paczy´nski, B. 1971, ARA&A, 9, 183
+
+Press, W. H., Teukolsky, S. A., Vetterling, W. T., & Flannery, B. P. 1992, Numerical Recipes
+
+– 10 –
+
+(Cambridge: Cambridge Univ. Press), Chapter 15
+
+Pribulla, T., & Rucinski, S. M. 2006, AJ, 131, 2986
+
+Prˇsa, A., Batalha, N., Slawson, R. W., et al. 2011, AJ, 141, 83
+
+Qian, S.-B., Jiang, L.-Q., Fernandez Lajus, E., et al. 2015, ApJL, 798, L42
+
+Rucinski, S. M. 1992, AJ, 103, 960
+
+Rucinski, S. M. 2007, MNRAS, 382, 393
+
+Slawson, R. W., Prˇsa, A., Welsh, W. F., et al. 2011, AJ, 142, 160
+
+Southworth, J. 2009, MNRAS, 394, 272
+
+Tokovinin, A., Thomas, S., Sterzik, M., & Udry, S. 2006, A&A, 450, 681
+
+Torres, G., & Stefanik, R. P. 2000, AJ, 119, 1914
+
+Van Hamme, W., & Wilson, R. E. 2007, ApJ, 661, 1129
+
+Webbink, R. F. 1976, ApJ, 209, 829
+
+Wilson, R. E., & Devinney, E. J. 1971, ApJ, 166, 605
+
+Zasche, P., & Paschke, A. 2012, A&A, 542, L23
+
+This preprint was prepared with the AAS LATEX macros v5.2.
+
+– 11 –
+
+Fig. 1.— Observed Kepler light curve of KIC 9532219. It can be seen that the depth of the eclipse
+has changed with time during ∼ 3.6 yr. The vertical dashed lines represent the ending times of
+each Quarter.
+
+– 12 –
+
+Fig. 2.— Variations of the magnitude diﬀerences among four characteristic phases: Min I, Max I,
+Min II, and Max II.
+
+– 13 –
+
+Fig. 3.— Phased light curve of KIC 9532219 with the ﬁtted models. The circles are individual
+measures from the Kepler satellite and the dashed and solid curves are computed without and with
+a cool spot on the primary star, respectively, in the simultaneous analyses of all observations. The
+light residuals corresponding to the unspotted and cool-spot models are plotted in the second and
+third panels, respectively. The bottom panel represents the residuals from each spot solution for
+the 312 datasets.
+
+– 14 –
+
+(cid:4)(cid:3)(cid:4)(cid:4)(cid:10)(cid:4)
+
+(cid:4)(cid:3)(cid:4)(cid:4)(cid:9)(cid:5)
+
+(cid:4)(cid:3)(cid:4)(cid:4)(cid:9)(cid:4)
+
+(cid:3)
+
+(cid:4)
+
+(cid:4)(cid:3)(cid:4)(cid:4)(cid:5)(cid:5)
+
+(cid:4)(cid:3)(cid:4)(cid:4)(cid:5)(cid:4)
+
+(cid:4)(cid:3)(cid:4)(cid:4)(cid:8)(cid:5)
+
+(cid:4)(cid:3)(cid:4)(cid:4)(cid:8)(cid:4)
+
+(cid:4)(cid:3)(cid:4)
+
+(cid:4)(cid:3)(cid:5)
+
+(cid:6)(cid:3)(cid:4)
+
+(cid:6)(cid:3)(cid:5)
+
+(cid:4)(cid:3)
+
+(cid:7)(cid:3)(cid:4)
+
+(cid:7)(cid:3)(cid:5)
+
+Fig. 4.— Behavior of Σ (the weighted sum of the residuals squared) of KIC 9532219 as a function
+of mass ratio q, showing a minimum value at q=1.20.
+
+– 15 –
+
+Fig. 5.— Variations in the binary parameters of KIC 9532219 calculated from the 312 light curves.
+The solid curves in the ﬁfth to sixth panels represent the results obtained by ﬁtting a sine wave to
+the l1 and l3 values, respectively.
+
+– 16 –
+
+)
+g
+e
+d
+(
+ 
+(cid:79)
+
+)
+g
+e
+d
+(
+ 
+
+s
+
+r
+
+360
+
+270
+
+180
+
+90
+
+0
+
+16
+
+13
+
+10
+
+1.00
+
+0.95
+
+s
+
+T
+
+0.90
+
+0.85
+
+0.80
+
+5100
+
+5300
+
+5500
+
+5700
+
+5900
+
+6100
+
+6300
+
+6500
+
+BJD - 2450000
+
+Fig. 6.— Variations in the spot parameters of KIC 9532219 calculated from the 312 light curves.
+
+– 17 –
+
+Fig. 7.— O–C diagram of KIC 9532219 with respect to the linear terms in Table 5. The plus
+symbols and open circles are the measures of Conroy et al. (2014) and ours, respectively. In the
+top panel, the solid and dashed curves represent the full contribution and just the quadratic term
+(A), respectively. The middle panel displays the LTT orbit (τ3) and the bottom panel the residuals
+from the complete ephemeris.
+
+– 18 –
+
+Table 1. Light levels of KIC 9532219 at four characteristic phases.
+
+Mean Time
+
+(BJD)
+
+Min I
+(mag)
+
+Max I
+(mag)
+
+Min II
+(mag)
+
+Max II
+(mag)
+
+2,455,095.21711
+2,455,099.18112
+2,455,103.14512
+2,455,107.10912
+2,455,111.07310
+2,455,115.03709
+2,455,119.00106
+2,455,122.96503
+2,455,126.92900
+2,455,130.89296
+
+16.190±0.001
+16.191±0.002
+16.191±0.002
+16.191±0.002
+16.191±0.002
+16.190±0.002
+16.188±0.002
+16.190±0.004
+16.189±0.003
+16.188±0.002
+
+16.104±0.001
+16.104±0.002
+16.104±0.002
+16.105±0.002
+16.103±0.002
+16.104±0.002
+16.104±0.002
+16.105±0.003
+16.104±0.003
+16.104±0.003
+
+16.184±0.001
+16.183±0.002
+16.183±0.002
+16.184±0.002
+16.184±0.003
+16.183±0.002
+16.183±0.002
+16.184±0.003
+16.183±0.003
+16.181±0.003
+
+16.106±0.001
+16.104±0.001
+16.105±0.001
+16.106±0.002
+16.105±0.002
+16.105±0.002
+16.104±0.002
+16.106±0.002
+16.105±0.003
+16.105±0.004
+
+Note. — This table is available in its entirety in machine-readable and Virtual
+Observatory (VO) forms in the online journal. A portion is shown here for guidance
+regarding its form and content.
+
+– 19 –
+
+Table 2. Binary parameters of KIC 9532219 obtained by ﬁtting simultaneously all Kepler data
+
+Parameter
+
+Unspotted Model
+
+Cool-Spot Model
+
+Primary
+
+Secondary
+
+Primary
+
+Secondary
+
+2,455,750.57728(4)
+
+2,455,750.57728(3)
+
+0.19815494(5)
+−1.4(1)×10−9
+
+1.201(2)
+66.0(3)
+
+0.19815494(5)
+−1.4(1)×10−9
+
+1.201(1)
+66.0(3)
+
+5,203(23)
+4.0743(6)
+
+5,031
+4.0743
+
+5,203(20)
+4.0742(5)
+
+5,031
+4.0743
+
+0.644, 0.175
+0.704, 0.198
+
+0.642, 0.166
+0.712, 0.176
+
+0.644, 0.175
+0.704, 0.198
+
+0.642, 0.166
+0.712, 0.176
+
+0.1181(2)
+
+0.1203
+
+0.1195(2)
+
+0.1216
+
+0.7616(5)
+
+0.7589(4)
+
+0.3404(1)
+0.3567(1)
+0.3880(1)
+
+0.3631
+
+0.3710(1)
+0.3905(1)
+0.4205(1)
+
+0.3954
+
+0.3405(1)
+0.3568(1)
+0.3881(1)
+
+0.3632
+
+0.3711(1)
+0.3906(1)
+0.4207(1)
+
+0.3956
+
+560(25)
+
+66.0
+
+0.13(5)
+138(22)
+1190(79)
+
+560(25)
+
+66.0
+
+0.13(4)
+134(21)
+1190(76)
+
+2,454,870(85)
+
+2,454,866(82)
+
+. . .
+. . .
+. . .
+. . .
+
+. . .
+. . .
+. . .
+. . .
+
+86.0(7)
+268.2(3)
+13.5(2)
+0.917(2)
+
+. . .
+. . .
+. . .
+. . .
+
+0.00233
+
+0.00221
+
+T0 (BJD)
+P (d)
+dP /dt
+q
+i (deg)
+T (K)
+Ω
+X, Y
+x, y
+l/(l1+l2+l3)
+l3
+r (pole)
+r (side)
+r (back)
+r (volume)b
+
+a
+
+Third-body parameters:
+a′(R⊙)
+i′ (deg)
+e′
+ω′ (deg)
+P ′ (d)
+T ′
+
+c (BJD)
+
+Spot parameters:
+Colatitude θ (deg)
+Longitude λ (deg)
+Radius rs (deg)
+Temperature Factor Ts
+ΣW (O − C)2
+
+aValue at 0.75 phase.
+
+bMean volume radius.
+
+– 20 –
+
+Table 3. Light-curve solutions for the 312 datasets combined at intervals of 20 orbital periods.
+
+Epoch
+(BJD)
+
+λ
+
+rs
+
+Ts
+
+(deg)
+
+(deg)
+
+i
+
+(deg)
+
+T1
+(K)
+
+Ω1
+
+q
+
+l1
+
+l3
+
+2,455,095.277651
+2,455,099.240760
+2,455,103.203780
+2,455,107.166866
+2,455,111.129957
+2,455,115.092961
+2,455,119.056151
+2,455,123.019220
+2,455,126.982340
+2,455,130.945450
+
+85.71
+60.67
+76.34
+80.99
+69.29
+88.67
+75.05
+82.01
+75.05
+75.05
+
+13.77
+14.50
+12.83
+13.01
+13.53
+12.18
+12.90
+13.50
+12.40
+13.08
+
+0.966
+0.963
+0.958
+0.943
+0.961
+0.975
+0.989
+0.980
+0.981
+0.969
+
+66.15
+65.81
+66.15
+66.02
+65.87
+66.52
+66.04
+66.38
+65.88
+66.45
+
+5205
+5203
+5206
+5204
+5207
+5203
+5203
+5204
+5203
+5203
+
+4.0742
+4.0716
+4.0742
+4.0742
+4.0742
+4.0742
+4.0742
+4.0742
+4.0742
+4.0742
+
+1.2012
+1.2014
+1.2014
+1.2015
+1.2014
+1.2019
+1.2014
+1.2014
+1.2016
+1.2011
+
+0.1363
+0.1375
+0.1379
+0.1372
+0.1366
+0.1326
+0.1363
+0.1323
+0.1348
+0.1302
+
+0.7251
+0.7226
+0.7247
+0.7233
+0.7228
+0.7323
+0.7284
+0.7313
+0.7280
+0.7372
+
+Note. — This table is available in its entirety in machine-readable and Virtual Observatory
+(VO) forms in the online journal. A portion is shown here for guidance regarding its form and
+content.
+
+Table 4. Absolute dimensions for KIC 9532219.
+
+Parameter
+
+Primary
+
+Secondary
+
+M (M⊙)
+R(R⊙)
+log g (cgs)
+L(L⊙)
+Mbol (mag)
+BC (mag)
+MV (mag)
+
+0.72
+0.60
+4.73
+0.24
+6.28
+−0.23
+6.51
+
+0.86
+0.66
+4.74
+0.25
+6.24
+−0.29
+6.53
+
+– 21 –
+
+Table 5. Parameters for the quadratic plus LTT ephemeris of KIC 9532219
+
+Parameter
+
+Value
+
+Unit
+
+T0
+P
+A
+ab sin i3
+eb
+ωb
+nb
+Tb
+Pb
+Kb
+f (M3)
+M3 sin i3
+a3 sin i3
+e3
+ω3
+P3
+dP /dt
+rms scatter
+χ2
+
+red
+
+2,455,750.5771475(42)
+
+BJD
+
+0.1981549231(22)
+−1.4286(85) × 10−9
+
+0.1398(11)
+0.1504(85)
+247.83(41)
+0.30110(73)
+
+2,455,361.1(1.3)
+
+1195.6(2.9)
+69.64(54)
+
+0.0002548(21)
+0.08921(35)
+2.4755(49)
+0.1504(85)
+67.83(41)
+1195.6(2.9)
+
+d
+d
+au
+
+deg
+
+deg d−1
+
+BJD
+
+d
+s
+
+M⊙
+M⊙
+au
+
+deg
+d
+
++5.267(31) × 10−7
+
+d yr−1
+
+6.56
+1.013
+
+s
+
+

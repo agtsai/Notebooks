@@ -1,0 +1,3109 @@
+MNRAS 000, 1–18 (2016)
+
+Preprint 9 February 2016
+
+Compiled using MNRAS LATEX style ﬁle v3.0
+
+Accurate halo-model matter power spectra with dark energy,
+massive neutrinos and modiﬁed gravitational forces
+
+A. J. Mead1,2,3(cid:63), C. Heymans3, L. Lombriser3, J. A. Peacock3, O. I. Steele3
+and H. A. Winther4
+1Department of Physics and Astronomy, University of British Columbia, 6224 Agricultural Road, Vancouver, B.C., V6T 1Z1, Canada
+2Canadian Institute for Theoretical Astrophysics, University of Toronto, M5S 3H8, On., Canada
+3Institute for Astronomy, University of Edinburgh, Royal Observatory, Blackford Hill, Edinburgh EH9 3HJ, UK
+4Department of Astrophysics, University of Oxford, Denys Wilkinson Building, Keble Road, Oxford, OX1 3RH, UK
+
+9 February 2016
+
+ABSTRACT
+We present an accurate non-linear matter power spectrum prediction scheme for a variety
+of extensions to the standard cosmological paradigm, which uses the tuned halo model pre-
+viously developed in Mead et al. (2015b). We consider dark energy models that are both
+minimally and non-minimally coupled, massive neutrinos and modiﬁed gravitational forces
+with chameleon and Vainshtein screening mechanisms. In all cases we compare halo-model
+power spectra to measurements from high-resolution simulations. We show that the tuned halo
+model method can predict the non-linear matter power spectrum measured from simulations
+of parameterised w(a) dark energy models at the few per cent level for k < 10hMpc−1, and
+we present theoretically motivated extensions to cover non-minimally coupled scalar ﬁelds,
+massive neutrinos and Vainshtein screened modiﬁed gravity models that result in few per cent
+accurate power spectra for k < 10hMpc−1. For chameleon screened models we achieve only
+10 per cent accuracy for the same range of scales. Finally, we use our halo model to investigate
+degeneracies between different extensions to the standard cosmological model, ﬁnding that
+the impact of baryonic feedback on the non-linear matter power spectrum can be considered
+independently of modiﬁed gravity or massive neutrino extensions. In contrast, considering the
+impact of modiﬁed gravity and massive neutrinos independently results in biased estimates of
+power at the level of 5 per cent at scales k > 0.5hMpc−1. An updated version of our publicly
+available HMCODE can be found at https://github.com/alexander-mead/hmcode.
+Key words: cosmology: theory – large scale structure of Universe – dark energy – gravita-
+tional lensing: weak
+
+1
+
+INTRODUCTION
+
+The mechanism behind the current phase of accelerated expansion
+of the Universe is not understood. If acceleration is caused by a
+cosmological constant (or vacuum energy) then the magnitude is
+tiny compared to expectations from fundamental physics. The al-
+ternatives are either that space is ﬁlled with dark energy (DE), an
+accelerant with strange properties that has never been detected in
+laboratories; or that the gravitational equations of Einstein are in-
+sufﬁcient and that acceleration arises naturally within the correct
+theory, so-called modiﬁed gravity (MG) theories. There are now
+many models that purport to explain accelerated expansion, and
+often these models make different predictions for how matter is
+clustered in the Universe. This clustering can be probed via ‘weak’
+
+(cid:63) E-mail:am@roe.ac.uk
+
+c(cid:13) 2016 The Authors
+
+lensing: measuring a small, correlated distortion of galaxy shapes
+that is imparted by the light-bending effect of matter along photon
+trajectories between the galaxy and a telescope on Earth. It follows
+that the lensing signal can be used to infer the matter clustering and
+thus discriminate between models.
+
+Unfortunately, weak lensing has its disadvantages: foremost
+among these is that it measures a projected version of the den-
+sity ﬁeld, where difﬁcult-to-model, non-linear, small-scale pertur-
+bations close to the observer contribute to the shear signal at the
+same angular scale as larger scale perturbations further away. This
+angular scale mixing means that the clean, linear signal is difﬁcult
+to isolate (although isolation can be partially achieved using tomo-
+graphic or full 3D lensing Heavens 2003; Heymans et al. 2013;
+Kitching et al. 2014). However, there is signiﬁcant information in
+non-linear scales that are automatically measured by lensing, and
+this information can be exploited with accurate enough modelling.
+
+6
+1
+0
+2
+
+ 
+
+b
+e
+F
+5
+
+ 
+
+ 
+ 
+]
+
+.
+
+O
+C
+h
+p
+-
+o
+r
+t
+s
+a
+[
+ 
+ 
+
+1
+v
+4
+5
+1
+2
+0
+
+.
+
+2
+0
+6
+1
+:
+v
+i
+X
+r
+a
+
+2
+
+A. J. Mead et al.
+
+In principle, this accuracy is attainable using cosmological N-body
+simulations to determine the small-scale clustering, but simulations
+are too slow to be run for every combination of model parameters
+under consideration, and this problem is only ampliﬁed when one
+considers the vast number of different models that may be con-
+strained via lensing.
+
+DE models provide an alternative to the standard cosmological
+constant to bring about the accelerated expansion of the Cosmos.
+Typically this is achieved by adding a new component with exotic
+properties to the matter–energy budget of the Universe. These mod-
+els are dynamical, with a ﬁeld whose value changes with time. In
+minimally coupled models DE only clusters at the horizon scale,
+but structure formation on smaller scales is indirectly affected by
+the modiﬁed background expansion rate. In non-minimally coupled
+models there can be direct interactions between DE and (dark) mat-
+ter. Comprehensive reviews of DE models are given by Copeland
+et al. (2006) and Amendola & Tsujikawa (2010).
+
+The neutrino mass may conceivably be constrained by weak
+lensing, due to the effect of massive neutrinos on structure forma-
+tion. Flavour oscillations (Super-Kamiokande Collaboration 1998;
+SNO Collaboration 2002) point deﬁnitively to non-zero masses for
+at least two of the three neutrino mass eigenstates, but oscillation
+experiments measure mass–square differences, rather than absolute
+masses. This puts a lower bound on the sum of neutrino masses
+of (cid:39) 0.06eV (normal hierarchy) or (cid:39) 0.1eV (inverted hierarchy).
+Forthcoming cosmological surveys will be powerful enough to dis-
+tinguish between these two possibilities (e.g., Hall & Challinor
+2012). Neutrinos with masses that are allowed by current cosmo-
+logical data are relativistic when they decouple, and at recombi-
+nation, but become non-relativistic later (znr (cid:39) 2000mν /eV). They
+initially behave like radiation, with no sub-horizon clustering ( ¯ρν ∝
+a−4), but later transition to behaving like matter ( ¯ρν ∝ a−3) and are
+able to cluster. Thus, neutrinos alter both the background expan-
+sion of the Universe (and the angular-diameter distance relation)
+and also the growth of cold-matter perturbations directly, because
+neutrinos are smoothly distributed below their free-streaming scale
+and so do not contribute to structure development small scales. Re-
+views of neutrinos in cosmology are given by Lesgourgues & Pas-
+tor (2006) and Abazajian et al. (2013).
+
+A MG force law is one way to explain the accelerated expan-
+sion of the Universe. In contrast to DE models, MG models attempt
+to give rise to accelerated expansion via a direct modiﬁcation of the
+gravitational force law. In order to comply with accurate tests of
+gravity on Earth, or at the scale of the Solar system, these models
+require a ‘screening’ mechanism, so that gravity is restored to the
+standard in environments where it is well tested, while still being
+allowed to behave differently on large scales and perhaps to give
+rise to accelerated expansion. In chameleon theories (e.g., Khoury
+& Weltman 2004) the screening is primarily a function of halo mass
+and environment, while in Vainshtein (1972) models the screening
+depends primarily on the local density. Recent reviews of some of
+the menagerie of possible MG theories are given by Joyce et al.
+(2015) and Koyama (2015).
+
+In this paper we provide a halo model based ﬁtting function
+for the power spectrum of matter ﬂuctuations for a subset of ex-
+tensions to the standard cosmological paradigm. We build on the
+work presented in Mead et al. (2015b) in which we developed a
+version of the standard halo model (Seljak 2000; Peacock & Smith
+2000; Cooray & Sheth 2002) that produces matter power spectra
+that are accurate at the (cid:39) 5 per cent level for a range of standard
+cosmological parameters (Ωm, Ωb, σ8, w, h, ns). This accuracy was
+achieved by treating several parameters in the usual halo model
+
+as free, and ﬁtting these to data from the high resolution simu-
+lations of the COSMIC EMU collaboration (Heitmann et al. 2009,
+2010; Lawrence et al. 2010; Heitmann et al. 2014). COSMIC EMU
+was chosen because the simulations were high precision and thor-
+oughly tested for resolution issues, as well as being designed to
+cover a large cosmological parameter space. In Mead et al. (2015b)
+we also investigated the effects of baryonic feedback on the mat-
+ter spectrum, and showed that the calibrated halo model could be
+extended to provide a single parameter ﬁtting recipe for a range of
+baryonic feedback models. Our halo model has recently been used
+by Joudaki et al. (2016) to analyse data from the CFHTLenS sur-
+vey to provide cosmological constraints while marginalising over
+possible feedback models. In this paper we focus on DE models,
+massive neutrinos and MG force laws, which are not part of the
+COSMIC EMU parameter space. Our results are therefore presented
+at the level of the power spectrum response (ratio of power in the
+new model to some ﬁducial model, which we consider to be well
+described by our previous work) predicted by the halo model, com-
+pared to the same response seen in simulations. The ﬁtting formula
+we produce in this paper can be used in forthcoming weak lensing
+data analyses to constrain the additional model parameters, or for
+any application that requires a matter power spectrum.
+
+This paper is arranged as follows: In Section 2 we brieﬂy sum-
+marise the basics of the halo model from Mead et al. (2015b) that
+we use to calculate accurate power spectra. We then present our re-
+sults in Section 3: for the power spectrum of DE (Sections 3.1, 3.2),
+massive neutrinos (Section 3.3) and MG models (Sections 3.4, 3.5).
+In Section 4 we brieﬂy investigate degeneracies between some of
+the extensions to the standard cosmological paradigm that we have
+considered, and comment on the viability of treating these exten-
+sions separately. Finally we summarise in Section 5.
+
+2 HALO MODEL POWER SPECTRA
+
+Weak lensing measures a projected version of the 3D density dis-
+tribution. Therefore we are primarily interested in the power spec-
+trum of the 3D matter over-density δ , deﬁned relative to the back-
+ground density via 1 + δ = ρ/ ¯ρ. The power spectrum of statisti-
+cally isotropic density ﬂuctuations depends only on k = |k| and is
+given by
+P(k) = (cid:104)|δk|2(cid:105) ,
+where the average is taken over modes with the same modulus but
+different orientations. We ﬁnd it more convenient to use the dimen-
+sionless quantity ∆2:
+
+(1)
+
+∆2(k) = 4πL3
+
+P(k) ,
+
+(2)
+
+(cid:18) k
+
+(cid:19)3
+
+2π
+
+which gives the fractional contribution to the variance per logarith-
+mic interval in k in a cube of volume L3. If the over-density ﬁeld is
+ﬁltered on a comoving scale R, the variance is
+
+σ 2(R,z) =
+
+∆2(k,z)T 2(kR) dlnk .
+
+(3)
+
+If instead the 1D linear displacement ﬁeld is ﬁltered then the vari-
+ance is
+
+(cid:90) ∞
+
+0
+
+(cid:90) ∞
+
+σ 2
+d (R,z) =
+
+1
+3
+
+∆2(k,z)
+
+0
+
+k2
+
+T 2(kR) dlnk .
+
+In both cases we use the window function
+
+T (x) =
+
+3
+
+x3 (sinx− xcosx) ,
+
+(4)
+
+(5)
+
+MNRAS 000, 1–18 (2016)
+
+corresponding to smoothing with a spherical top-hat. Note that
+σ (R) is dimensionless, whereas σd(R) has dimensions of length,
+σ (R → ∞) diverges for standard cosmological spectra, but σd(R →
+0) is well deﬁned and we denote this asymptotic value as σd with
+no argument.
+
+In this paper we use the model previously developed in Mead
+et al. (2015b) and associated code1 (Mead 2015): a variant of the
+standard halo model with parameters tuned to match the power
+spectra data from the COSMIC EMU simulations. In that paper we
+showed that it was possible to ﬁt a range of cosmological models at
+the 5 per cent level for z ≤ 1 and 10 per cent level for 1 < z ≤ 2 for
+k ≤ 10hMpc−1. We refer the reader to that paper for full details of
+our halo model, but we provide a short summary here.
+
+In the simple case of Poisson distributed spherical haloes the
+power spectrum has the form of shot noise, moderated by the den-
+sity proﬁle of the haloes. We augment this to provide accurate spec-
+tra in the following way:
+1H(k) =[1− e−(k/k∗)2
+∆2
+
+(cid:19)3 1
+
+(cid:18) k
+
+]4π
+
+2π
+
+¯ρ
+
+(6)
+
+M(ν)W 2(νη k,M) f (ν) dν .
+
+(cid:90) ∞
+
+0
+
+×
+
+The one-halo term is calculated as an integral over all halo masses,
+M, whose mass relates to the peak threshold ν via
+
+(7)
+
+ν = δc(z)/σ (M,z) ,
+where f (ν) is the halo mass function, which can be expressed as a
+near-universal function (e.g., Press & Schechter 1974; Sheth & Tor-
+men 1999; Jenkins et al. 2001) in ν. Usually δc is ﬁxed at a constant
+(cid:39) 1.686, in accordance with Ωm = 1 spherical-collapse model pre-
+dictions, but in Mead et al. (2015b) we ﬁtted δc and endowed it with
+some redshift dependence. Since publishing Mead et al. (2015b) we
+found that slightly improved results for halo-model power spectra
+were obtained if we used the predicted variation of δc from the
+spherical collapse model for ΛCDM. Therefore our δc is now aug-
+mented by the ﬁtting formula of Nakamura & Suto (1997):
+δc = [1.59 + 0.0314lnσ8(z)]× [1 + 0.0123log10 Ωm(z)] .
+Even though this change to δc is very small, the effects are felt
+because δc is exponentiated in the mass function. In equation (6),
+W (k,M) is the normalised Fourier Transform of the halo-density
+proﬁle:
+
+(8)
+
+W (k,M) =
+
+1
+M
+
+sin(kr)
+
+0
+
+kr
+
+4πr2ρ(r,M) dr ,
+
+(9)
+
+where rv is the halo virial radius. We damp the one-halo term at
+small k to prevent it from becoming larger than linear on very large
+scales (which is unphysical), which is governed by the ﬁtted pa-
+rameter k∗ = 0.584σ−1
+d (z). In addition we use the ﬁtted parameter
+η = 0.603− 0.3σ8(z) in equation (6) to bloat or constrict haloes as
+a function of their mass at ﬁxed virial radius. Haloes are considered
+to be objects that are ∆v times denser than the background, which
+implies
+4
+3
+
+v∆v ¯ρ .
+
+M =
+
+πr3
+
+(10)
+
+In Mead et al. (2015b) we ﬁtted for ∆v and obtained ∆v =
+418Ω−0.352
+
+(z).
+
+m
+
+(cid:90) rv
+
+Extended accurate halo models
+
+3
+
+(cid:20)
+
+(cid:21)
+
+For the mass function we use the formula of Sheth & Tormen
+
+(1999), which is an empirical ﬁt to simulations:
+
+f (ν) = A
+
+1 +
+
+1
+
+(aν2)p
+
+e−aν2/2 ,
+
+(11)
+
+where the parameters of the model are a = 0.707, p = 0.3 and A is
+constrained by the property that the integral of f (ν) over all ν must
+equal one: A (cid:39) 0.2162. We use halo proﬁles of Navarro, Frenk &
+White (NFW; 1997):
+
+ρ(r) =
+
+ρN
+
+(r/rs)(1 + r/rs)2 ,
+
+(12)
+
+where rs is a scale radius that roughly separates the core of the halo
+from the outer portion and ρN is a normalisation. The scale radius
+is typically expressed via the halo concentration, c = rv/rs. We use
+the concentration–mass relations of Bullock et al. (2001):
+
+c(M,z) = A
+
+1 + zf(M)
+
+1 + z
+
+(cid:21)1.5
+
+(cid:20) g(z → ∞)
+
+gΛ(z → ∞)
+
+,
+
+(13)
+
+where the ratio of linear growth functions2 is a correction advised
+by Dolag et al. (2004) for dark-energy models. In Mead et al.
+(2015b) we did not have the 1.5 exponent in this correction, but we
+subsequently discovered that this produced more accurate power
+spectra for the more extreme DE models. The calculation of the
+halo formation redshift, zf, as a function of mass, is described in
+Bullock et al. (2001), and crucially depends on the formation his-
+tory of the halo, so there is some hysteresis whereby haloes retain
+a memory of their formation time.
+
+On large scales haloes are not Poisson distributed, and dis-
+placements of haloes with respect to one another requires us to add
+a ‘two-halo’ term to the power. For the matter distribution this is ap-
+proximately the linear-theory power spectrum, however, perturba-
+tion theory (e.g., Crocce & Scoccimarro 2006) suggests this should
+be damped at quasi-linear scales, and so we work with a perturba-
+tion theory inspired two-halo term with damping that asymptotes
+to a constant at small scales
+∆(cid:48)2
+2H(k) =
+
+(cid:104)
+(cid:105)
+1− f tanh2 (kσd/(cid:112) f )
+
+∆2
+lin(k) ,
+
+(14)
+
+where f is a ﬁtted parameter (see Table 1).
+
+Usually the expression for the full halo-model power spec-
+trum is given by a simple sum of the one- and two-halo terms, but
+in Mead et al. (2015b) we found that it was necessary to smooth
+this transition to account for the well known deﬁcit in power in the
+transition region. We instead use
+∆2(k) = [(∆(cid:48)2
+1H)α ]1/α ,
+where α is a ﬁtted parameter (see Table 1), which depends on the
+effective spectral index at the non-linear scale, deﬁned as
+3 + neff(z) ≡ − dlnσ 2(R,z)
+
+2H)α + (∆(cid:48)2
+
+(15)
+
+(16)
+
+.
+
+(cid:12)(cid:12)(cid:12)(cid:12)σ =1
+
+dlnR
+
+In this work, we consider extensions to the wCDM paradigm, and
+to accommodate these we ﬁnd it necessary to modify some of our
+ﬁtted parameters. This reﬁtting actually slightly improves the re-
+sults presented in Mead et al. (2015b). Our updated values given in
+Table 1 and described in the text at the appropriate points.
+
+1 https://github.com/alexander-mead/hmcode
+
+2 g(z) is normalised such that g(z = 0) = 1
+
+MNRAS 000, 1–18 (2016)
+
+4
+
+A. J. Mead et al.
+
+Table 1. Halo-model parameter descriptions and values before and after ﬁtting. We show standard values, those from Mead et al. (2015b), and updated values.
+A dash in ‘updated value’ column indicates no change from the Mead et al. (2015b) value. σd,100(z) = σd(R = 100h−1Mpc,z) with σd deﬁned in equation (4).
+
+Parameter
+
+Description
+
+Standard value Mead et al. (2015b) value
+
+Updated value
+
+Equations in text
+
+∆v
+δc
+η
+f
+k∗
+A
+α
+
+Virialised halo overdensity
+Linear collapse threshold
+Halo bloating parameter
+
+Linear spectrum damping factor
+One-halo damping wavenumber
+Minimum halo concentration
+
+Quasi-linear one- to two-halo softening
+
+200
+1.686
+
+0
+0
+0
+4
+1
+
+3 RESULTS
+
+In this section we present our results for different beyond standard-
+model paradigms. In each case we compare simulated power spec-
+tra to spectra predicted by our augmented halo model at the level
+of the ratio of each prediction to a reference case, which is always
+a vanilla ΛCDM model. This ‘response’ does not measure the ab-
+solute accuracy of any method of power spectrum prediction, but
+instead demonstrates how well a method responds to the changes
+of the new paradigm. Computing the response from simulations
+that share an initial random seed has the additional advantage of
+cancelling cosmic variance and some resolution artefacts (e.g., Mc-
+Donald et al. 2006; Smith et al. 2014). In Mead et al. (2015b) we
+demonstrated the absolute accuracy of our augmented halo model
+and we direct the reader to that paper for more information.
+
+For each new paradigm we also compare the power spectrum
+response as predicted by various incarnations of HALOFIT: a ﬁtting
+function that is commonly used to produce the non-linear power
+spectrum that was originally developed by Smith et al. (2003).
+HALOFIT was trained to accurately reproduce non-linear power for
+a wide range of cosmological models, including those with power
+law initial spectra as well as Einstein–de–Sitter, ΛCDM and open
+models with standard curved initial spectra. HALOFIT was updated
+by Takahashi et al. (2012) where some parameters were re-tuned so
+that the ﬁt was more accurate at smaller scales around the smaller
+range of cosmological parameter space preferred by contemporary
+observational data. In addition, the re-tuning involved simulations
+with constant w = p/ρ DE, and this w appears explicitly in the re-
+vised ﬁtting formula. HALOFIT can be used to produce non-linear
+spectra for any model, all that is required is an input linear spectrum
+together with values of the cosmological density parameters. How-
+ever, there is no guarantee of accuracy for models that are ‘far’ from
+where HALOFIT was trained. For massive neutrino models Bird,
+Viel & Haehnelt (2012) provided an update with new HALOFIT
+parameters that depend explicitly on the neutrino mass, and Zhao
+(2014) provided a similar update for f (R) chameleon gravity mod-
+els.
+
+3.1 Dark energy: quintessence
+
+DE models provide an alternative to the standard cosmological con-
+stant to bring about the accelerated expansion of the Cosmos and
+are dynamical, with a ﬁeld whose value changes with time. The
+simplest possible models involve a single scalar ﬁeld with a self-
+interaction potential (often called quintessence; Ratra & Peebles
+
+1988) and that are minimally coupled to gravity via(cid:112)|g| that ap-
+
+pears in the action. Additional complexity is possible by adding
+multiple ﬁelds, a non-standard kinetic term, or by considering ﬁelds
+
+1.59 + 0.0314 lnσ8(z)
+
+m
+
+418Ω−0.352
+(z)
+0.603− 0.3σ8(z)
+0.188σ 4.29
+(z)
+8
+0.584σ−1
+d (z)
+3.13
+2.93× 1.77neff
+
+-
+-
+-
+
+-
+-
+
+0.0095σ 1.37
+
+d,100(z)
+
+3.24× 1.85neff
+
+10
+7, 8
+6
+14
+6
+13
+15
+
+Table 2. Parameters of the w(a)CDM simulations. All simulations use 5123
+particles in cubes of size L = 200h−1Mpc and start from identical initial
+conditions. The initial transfer function was generated using CAMB with
+cosmological parameters Ωm = 0.307, Ωv = 1 − Ωm, Ωb = 0.0483, h =
+0.678, ns = 0.961.
+
+wa
+
+w0
+Model
+ΛCDM −1
+0
+−1
+VLOW −1
+−1 −0.5
+LOW
+−1
+0.5
+HIGH
+VHIGH −1
+0.7
+
+σ8
+
+0.844
+0.888
+0.871
+0.794
+0.754
+
+other than scalars. The motivation behind many of these mod-
+els is that they may explain the ‘why now’ aspect of the cosmo-
+logical constant problem because certain scalar ﬁeld models have
+been shown to demonstrate ‘tracking’ behaviour whereby the scalar
+energy-density tracks that of the dominant component in the back-
+ground (Copeland, Liddle & Wands 1998; Barreiro, Copeland &
+Nunes 2000). It may be that such a scalar ﬁeld started life track-
+ing the radiation density, and that the radiation-to-matter transition
+changed the ﬁeld to a state where it causes accelerated expansion
+in the late Universe.
+
+For DE models it is usual to express the pressure in terms
+of the energy density via p = wρ. A cosmological constant has
+w = −1 and simple scalar-ﬁeld DE models have time-varying w
+with the constraint −1 ≤ w ≤ 1. One can consider models with
+constant w, but constant w (cid:54)= −1 is strongly constrained by ob-
+servations: Planck Collaboration XIII (2015) combine CMB and
+SN1a to give constraints of w = −1.006 ± 0.045 (2σ). In Mead
+et al. (2015b) we ﬁtted our halo model to the simulations of COS-
+MIC EMU that included models with constant −1.3 < w < −0.7.
+Here we investigate models with a time-varying equation of state
+of the form
+w(a) = w0 + (1− a)wa ,
+(17)
+which has been demonstrated to capture much of the phenomenol-
+ogy of a wide range of quintessence models (Chevallier & Polarski
+2001; Linder 2003). If wa = 0 this reduces to the constant wCDM
+case. Linder (2015) showed that a broad range of thawing mod-
+els can be accommodated with a ﬁxed relation, wa (cid:39) 1.58(1 + w0).
+In general, dynamical models are less constrained than constant w
+models, with acceptable ranges given by Planck Collaboration XIV
+(2015; ﬁg. 4); approximately −1.2 <∼ w0 <∼ −0.7 and −1.5 <∼ wa <∼
+0.5.
+To test the accuracy of our halo model we created ﬁve cos-
+mological N-body simulations, all with w0 = −1 and wa = −1,
+
+MNRAS 000, 1–18 (2016)
+
+Extended accurate halo models
+
+5
+
+geneous in the simulations4 and only affects the background evo-
+lution; many quantities of relevance to non-linear clustering (such
+as the mass function) have been shown to be expressible as near-
+universal functions of σ (R) (Sheth & Tormen 1999), and this is
+incorporated into both models. This explains the accuracy to which
+both methods predict the ‘bump’ (anti-bump) that develops around
+k = 0.2hMpc−1, which arises due to the boosted (depleted) halo
+population in models with enhanced (decreased) linear amplitude.
+The DE parameter w appears explicitly in HALOFIT of Takahashi
+et al. (2012) because it was ﬁtted to wCDM models. Therefore,
+we have a choice to set this to w0 or w(a) in dynamical mod-
+els; we found that more accurate HALOFIT results were obtained
+in the latter case and these are the results we present. The halo
+model knows about the evolution of w(a) through linear growth as
+well as the c(M) relation, which is calculated using the prescription
+of Bullock et al. (2001) and depends on the linear growth history.
+This may explain the improved performance over HALOFIT around
+k = 5hMpc−1. In view of this result, we merely present these re-
+sults and do not attempt to optimise any of our halo model param-
+eters further.
+
+The non-linear power spectrum has been investigated via sim-
+ulations in more exotic quintessence models (e.g., Jennings et al.
+2010; Alimi et al. 2010) and in the future it would be interesting
+to compare our halo model to simulations, although Fig. 1 suggests
+that results should be excellent. Although COSMIC EMU only inves-
+tigate models with constant w, recently Casarini et al. (2016) have
+demonstrated that the COSMIC EMU models may be remapped to
+time-varying DE models by equating a w(a) model with a cosmol-
+ogy with identical spectral shape and amplitude as well as confor-
+mal time, which is nearly equivalent to matching the growth his-
+tory, and achieved by ﬁxing w. Spherical collapse models in DE
+have been investigated (e.g., Percival 2005), and compared to sim-
+ulations. For example, Courtin et al. (2011) show that including the
+predicted DE dependence of δc provides better matches to the mass
+function, but only at the high-mass end, and we discuss this more
+in Section 5. We do not attempt to include any spherical model mo-
+tivated corrections at this stage.
+
+3.2 CODECS: non-minimally coupled scalar ﬁelds
+
+The next paradigm we consider is that of non-minimally coupled
+scalar ﬁelds (Wetterich 1995). These models are an attempt to unify
+the dark sector and attempt to mitigate the cosmological constant
+problem by introducing a coupling between dark matter (DM) and
+DE; thus it is possible that DE arises through the transfer of energy
+from DM to DE. We consider models that may be derived from the
+These models were ﬁrst simulated by Baldi et al. (2010)
+and we use publicly available data from the CODECS simulation
+project5 (Baldi 2012b) for scalar ﬁeld DE models with a CDM–DE
+coupling, so that energy can ﬂow between these two components
+of the Cosmos. The continuity equations in the background are:
+
+¨φ + 3H ˙φ +
+
+dV
+dφ =
+
+β (φ )ρc ,
+
+˙ρc + 3Hρc = −
+˙ρb + 3Hρb = 0 .
+
+3
+
+(cid:114) 16πG
+(cid:114) 16πG
+
+3
+
+β (φ )ρc ˙φ ,
+
+(18)
+
+Figure 1. The power spectra of four different DE cosmologies, compared to
+a ΛCDM model at z = 0 (top) and 1 (bottom). We show power from models
+with wa =−1 (highest curve; darkest blue), −0.5, 0.5 and 0.7 (lowest curve;
+lightest blue) as measured in simulations (ﬁlled circles) and as predicted by
+linear theory (short-dashed; ﬂat lines), the Mead et al. (2015b) halo model
+(solid) and the Takahashi et al. (2012) HALOFIT (long-dashed). Both non-
+linear models predict the trend seen in simulations well.
+
+−0.5, 0, 0.5 and 0.7 that cover some of the wa range allowed by
+Planck Collaboration XIV (2015). Each simulation was run in a
+cube with L = 200h−1Mpc, particle number N = 5123, and with
+softening set at 1/50 the mean inter-particle separation3. Our sim-
+ulations were run using a modiﬁed version of the GADGET-2 code
+(Springel 2005) that can accept DE of the form given in equation
+(17). We veriﬁed our modiﬁcations at the level of the power spec-
+trum by conﬁrming that the correct linear growth of perturbations
+was seen at the largest scales in our simulations. Initial transfer
+functions were generated using CAMB (Lewis et al. 2000) and all
+simulations start from identical initial conditions. In the wa = 0
+ΛCDM model σ8 = 0.844, but in the other models, perturbations
+have grown by different amounts due to the time-varying nature of
+the DE: parameters are given in Table 2.
+
+In Fig. 1 we show the power spectrum response as measured
+in our w(a) simulations and as predicted by the Mead et al. (2015b)
+halo model and the HALOFIT model of Takahashi et al. (2012) at
+z = 0 and 1. We see that both models do an excellent job (few
+per cent accuracy) at predicting the response in non-linear power
+to the dynamical DE. This is probably because the DE is homo-
+
+3 The other non-physical simulation parameters are: PMGRID=1024;
+zi = 199;
+conditions; MAXSIZETIMESTEP = 0.01;
+ERRTOLINTACCURACY = 0.025;
+ERRTOLTHETA = 0.7;
+ERRTOLFORCEACC = 0.005
+
+initial
+
+grid
+
+4 In reality scalar ﬁeld dark energy does cluster, but only on scales compa-
+rable to the horizon, far larger than typical simulation boxes.
+5 http://www.marcobaldi.it/web/CoDECS.html
+
+MNRAS 000, 1–18 (2016)
+
+ 0.7 0.8 0.9 1 1.1 1.2 1.3P(k) / PΛCDM(k)z = 0wa = -1.00wa = -0.50wa =  0.50wa =  0.75 0.7 0.8 0.9 1 1.1 0.01 0.1 1 10P(k) / PΛCDM(k)k / (h Mpc-1)z = 1SimulationsLinear theoryTakahashi (2012)This paper6
+
+A. J. Mead et al.
+
+Figure 2. The power spectrum response of DE models explored by the CODECS simulation project of Baldi (2011). The response measured in simulations
+spectra (blue points) is shown compared to halo model of Mead et al. (2015b; short-dashed; black), HALOFIT (long-dashed; red) and our updated model (solid;
+black) at z = 0 (left) and z = 1 (right). In the update we have ﬁtted the concentration–mass relation in the halo model to the simulation data, at each z, but we
+have not predicted these a-priori.
+
+Where φ is the scalar ﬁeld, V is the scalar-ﬁeld potential, ρc,b are
+the background densities of CDM and baryons, and β (φ ) is a cou-
+pling function. Note that ρb ∝ a−3 as usual, but this is not the case
+for the CDM because of the energy ﬂow to and from the scalar
+ﬁeld. Baryons are unaffected by the ﬂow of energy, which means
+these models are able to pass conventional gravity tests. If β ˙φ > 0
+energy is transferred from CDM to DE and visa-versa.
+
+The model has free functions in V (φ ) and β (φ ). The
+CODECS project considers two choices for the potential, an ex-
+ponential (e.g., Wetterich 1988)
+V (φ ) = Ae−αφ ,
+and a super-gravity potential (Brax & Martin 1999)
+V (φ ) = Aφ−αeφ 2/2 .
+The coupling is taken to have the exponential form
+β (φ ) = β0eβ1φ .
+We refer the reader to Amendola (2000); Baldi (2011, 2012a) for a
+detailed discussion of these models. The names and parameters of
+the CODECS models we investigate are given in Table 3.
+
+(19)
+
+(21)
+
+(20)
+
+Linear perturbations in baryons evolve according to the stan-
+dard equation, but those in CDM are affected by the energy ex-
+
+change. On sub-horizon scales the perturbation equations are:
+
+(cid:20)
+
+(cid:18)
+
+(cid:19)(cid:21)
+
+4
+3
+
+β 2
+
+(22)
+
+.
+
+¨δb + 2H ˙δb = 4πG(ρbδb + ρcδc) ,
+
+¨δc + 2H
+
+˙δc = 4πG
+
+ρbδb + ρcδc
+
+1 +
+
+(cid:21)
+
+(cid:20)
+1− β ˙φ√
+6H
+
+The friction term involving β on the left-hand side of the CDM
+equation arises as a consequence of momentum conservation,
+whereas the β 2 term on the right-hand side is a direct force term
+from the scalar ﬁeld. In addition, linear perturbations evolve differ-
+ently because of the altered background expansion. This is in con-
+trast to a minimally coupled quintessence model (β = 0), where
+small-scale differences arise only because of the modiﬁed back-
+ground expansion. Note that DE should also cluster in this model,
+but this is ignored in both our linear perturbation theory and the
+simulations because this clustering is of order the gravitational po-
+tential, O(10−6), and is therefore negligible.
+
+The results of our halo model calculation are shown in Fig. 2,
+where we show the response from the CODECS simulations to-
+gether with that predicted by HALOFIT and the Mead et al. (2015b)
+halo model. One can see that both models perform similarly, but
+that the halo model has improved accuracy when modelling the
+bump that starts around k (cid:39) 0.2hMpc−1. In the halo model, this
+bump is power due to halo shot noise, and should be captured
+
+MNRAS 000, 1–18 (2016)
+
+ 1 1.02 1.04 1.06 1.08 1.1P(k) / PΛCDM(k)z = 0CoDECSTakahashi (2012)Mead (2015)This paperEXP001z = 1 1 1.1 1.2 1.3 1.4 1.5P(k) / PΛCDM(k)EXP002 1 1.2 1.4 1.6 1.8P(k) / PΛCDM(k)EXP003 1 1.1 1.2 1.3 1.4 1.5 1.6P(k) / PΛCDM(k)EXP008e3 1 1.2 1.4 1.6 1.8 0.1 1 10P(k) / PΛCDM(k)k / (h Mpc-1) 0.1 1 10k / (h Mpc-1)SUGRA003Table 3. Parameters of the CODECS coupled DE models. A and α relate
+to the potential deﬁned in equations (19; EXP models) and (20; SUGRA
+model), while β0 and β1 relate to the coupling function deﬁned in equa-
+tion (21). With the exception of the SUGRA model all have w (cid:39) −1 at
+z = 0, but due to the different growth histories have different σ8 at z = 0,
+despite all models sharing initial conditions. For the SUGRA003 model we
+note that there is a small difference in the σ8 quoted in the CODECS papers
+(0.806) compared to that we infer from the ratio of power spectra (0.794)
+at large scales. We use the σ8 value inferred from this ratio in our HALOFIT
+and halo model calculations for our results, which ensures that the large-
+scale response in Fig. 2 is accurate.
+
+Model
+
+A
+
+ΛCDM
+EXP001
+EXP002
+EXP003
+EXP008e3
+SUGRA003
+
+0.0219
+0.0218
+0.0218
+0.0218
+0.0217
+0.0202
+
+α
+
+-
+
+β0
+
+-
+
+0.08
+0.05
+0.08
+0.1
+0.08
+0.15
+0.08
+0.4
+2.15 −0.15
+
+β1
+
+w(z = 0)
+
+σ8
+
+-
+0
+0
+0
+3
+0
+
+−1
+
+−0.997
+−0.995
+−0.992
+−0.982
+−0.901
+
+0.809
+0.825
+0.875
+0.967
+0.895
+0.806
+
+Table 4. Values of the amplitude (A) of the c(M) relation (equation 13) that
+best ﬁt power spectrum data from the CODECS simulations. The standard
+Mead et al. (2015b) value calibrated to wCDM is A = 3.13 independent of
+redshift.
+
+Model
+
+A (z = 0)
+
+A (z = 1)
+
+ΛCDM
+EXP001
+EXP002
+EXP003
+EXP008e3
+SUGRA003
+
+3.13
+3.02
+2.78
+2.48
+2.59
+6.59
+
+3.13
+3.07
+2.90
+2.55
+2.85
+5.31
+
+by both methods through their dependence on σ (R) under the as-
+sumption of mass function universality. The mass function in the
+CODECS simulations has been investigated by Cui et al. (2012),
+who show that at z = 0 and 1 deviations from universality never ex-
+ceed 10 per cent apart from for the highest mass haloes, where they
+reach a maximum of 20 per cent, this is despite the great differences
+in growth history; this is in accordance with Press & Schechter
+(1974) theory which suggests that the linear power spectrum de-
+termines the mass function. This explains the relatively good per-
+formance of both the halo model and HALOFIT for k < 1hMpc−1.
+However, both models fail to predict the power for k > 1hMpc−1,
+which must be a consequence of neither model correctly account-
+ing for the CDM–DE energy transfer, and the effect of this on the
+internal structure of the halo. Within the framework of HALOFIT it
+is difﬁcult to improve matters, but with the halo model we still re-
+tain knowledge of the halo proﬁles and so can modify halo internal
+structure to account for the coupling.
+
+Rather than attempting to calculate the necessary changes to
+halo proﬁles using theoretical arguments, we opt to ﬁt the ampli-
+tude of the concentration–mass relation (A in equation 13) within
+the halo model to the power spectrum of each CODECS model at
+each z. The result of this ﬁt is shown as the solid-black line in Fig. 2,
+where we see that a few per cent level accuracy can be achieved for
+each model. The best-ﬁtting values of A for each model and z are
+given in Table 3.2. Without this amplitude shift, the Bullock et al.
+(2001) (with Dolag et al. 2004 augmentation) relation predicts sim-
+
+MNRAS 000, 1–18 (2016)
+
+Extended accurate halo models
+
+7
+
+ilar c(M) for all models, but there are some small differences due
+to the different growth history in each model. However, these dif-
+ferences do not exceed 25 per cent for any model at any halo mass.
+It is expected that the Bullock et al. (2001) concentrations would
+be appropriate for a minimally coupled quintessence model, but
+they do not have knowledge of the β -coupling, and thus will fail
+for the CODECS models. Pleasingly, the required amplitude shifts
+in the concentration–mass relation necessary to provide accurate
+halo-model power spectra reﬂect concentration differences mea-
+sured in haloes from the CODECS simulations. For example, Cui
+et al. (2012) and Giocoli et al. (2013) show that the SUGRA003
+model has halo concentrations that are enhanced by a factor of
+(cid:39) 2, while concentrations are similar to, or slightly less than, the
+ΛCDM value in the other models. This trend is exactly what we
+need to remedy our halo model results. If some way was found to
+predict c(M) from ﬁrst principles then our results indicate that the
+halo model would deliver accurate power for k < 10hMpc−1. Using
+spherical model arguments (Wintergerst & Pettorino 2010) it may
+be possible to predict the c(M) change via changes in δc (which
+appears in the Bullock et al. 2001 relations) and ∆v, but we did not
+pursue this.
+
+Alternative approaches have been investigated for predicting
+the non-linear spectrum in the CODECS models. Baldi (2012b)
+investigated HALOFIT predictions and show the same results as can
+be seen in Fig. 2. Casas et al. (2015) produced accurate ﬁts to the
+CODECS simulation response using 5 ﬁtting parameters for each
+model, and then forecast the constraining power of future surveys.
+Although our ﬁts are less accurate, we suggest that using the halo
+model is preferable in general because it has the potential to capture
+the cosmology dependence of the response (e.g., the dependence on
+Ωm). However, this would require a physically motivated model for
+the change in halo internal structure, which we do not have.
+
+3.3 Massive neutrinos
+
+.
+
+The cosmological background number density of standard model,
+active neutrinos can be predicted exactly from thermal equilibrium
+arguments, and is set when the neutrinos decouple from other mat-
+ter in the early Universe. Therefore ﬁxing the mass of each neutrino
+ﬁxes the physical cosmological neutrino density parameter:
+Ων h2 (cid:39) ∑ν mν
+94.1eV
+3 neutrino species appear in the standard model and have been mea-
+sured by particle physics experiments. Neutrinos contribute to the
+radiation density in the early Universe and therefore have observ-
+able consequences for structure formation because they prolong the
+radiation epoch and this delays the time at which matter perturba-
+tions can start to collapse. The number of extra radiation species
+can therefore be measured through cosmological observations and
+these measurements are also consistent with there being 3 neutrino
+species (e.g., Planck Collaboration XIII 2015).
+
+(23)
+
+Flavour oscillations point deﬁnitively to a non-zero mass
+for at least two of the three neutrino mass eigenstates (Super-
+Kamiokande Collaboration 1998; SNO Collaboration 2002), but
+oscillation experiments only measure mass–squared differences be-
+tween eigenstates, and not the absolute masses. For standard-model
+active neutrinos, this places a minimum combined mass for all neu-
+trino species of mν >∼ 0.06eV (0.1eV) for the normal (inverted)
+hierarchy (Otten & Weinheimer 2008). Constraints from β -decay
+experiments place an upper limit of mν,e < 2.2eV for the elec-
+tron neutrino (Lobashev 2003). From cosmology: at the upper end,
+
+8
+
+A. J. Mead et al.
+
+Table 5. Parameters of the massive neutrino simulations from Massara
+et al. (2014) that were used in this paper. Ωm = 0.3175, Ωb = 0.049,
+Ωv = 1−Ωm, h = 0.671 and ns = 0.962 are ﬁxed for each model, but as the
+total neutrino mass is increased the CDM density, Ωc, decreases. Transfer
+functions were generated using CAMB and each of the three neutrinos was
+assigned a third of the total neutrino mass.
+
+Model
+
+ΛCDM
+M015
+M030
+M060
+
+∑ν mν /eV
+
+Ωm
+
+0.00
+0.15
+0.30
+0.60
+
+0.3175
+0.3175
+0.3175
+0.3175
+
+Ων
+
+0.0000
+0.0035
+0.0071
+0.0142
+
+Ωc
+
+0.2685
+0.2650
+0.2614
+0.2543
+
+fν
+
+0.000
+0.011
+0.022
+0.044
+
+σ8
+
+0.834
+0.800
+0.763
+0.693
+
+simply requiring the Universe not to be closed places a limit of
+∑ν mν <∼ 94.1h2 eV (Gershtein & Zel’dovich 1966) while probes of
+cosmological structure place limits of mν < 0.23eV (Planck Col-
+laboration XIII 2015) and even tentative detections of a non-zero
+mass (South Pole Telescope Collaboration 2014) from the CMB
+in combination with other cosmological data. More recently, lim-
+its of mν < 0.12eV have been obtained from the Lyman-α forest
+(Palanque-Delabrouille et al. 2015) in combination with CMB data.
+Given the cosmological constraints, it is known that neutri-
+nos cannot make up the entirety of the DM, but they will make up
+a small mass fraction. These neutrinos are relativistic when they
+decouple, and only become non-relativistic after recombination.
+Given the number of neutrinos that are known to exist, this places
+a lower limit on the neutrino density parameter of Ων >∼ 0.001. We
+deﬁne fν = Ων /Ωm and Ωm as the total matter density parame-
+ter Ωm = Ωc + Ωb + Ων with Ωc being the CDM density. Cos-
+mologically viable neutrinos are very light, and thus have large
+free-streaming lengths, and are considered a species of hot DM.
+This washes perturbations out in the neutrino component on small
+scales, below free-streaming, and this has a back reaction effect
+on the full matter distribution. For a ﬁxed matter density cluster-
+ing is suppressed at linear order below the free streaming scale be-
+cause a fraction of matter below this scale is smoothly distributed.
+If Ωm = 1 and fν (cid:28) 1 then the growth factor changes from ∝ a
+to ∝ a1−3 fν /5. Despite small values of fν allowed by observations,
+having a fraction of mass in neutrinos suppresses linear power by a
+surprisingly large amount, ∼ 8 fν at ﬁxed Ωm, because the suppres-
+sion is an integrated effect from the time at which perturbations
+start to develop. The mildly non-linear effect of neutrinos can be
+investigated using perturbation theory (e.g., Upadhye et al. 2014;
+Peloso et al. 2015), or via simulations, which show that the non-
+linear power is suppressed by a greater amount than the linear (e.g.,
+Agarwal & Feldman 2011; Bird et al. 2012; Massara et al. 2014).
+Thus examining structure via weak lensing is a promising methods
+for determining the mass of the neutrino and, in principle, the non-
+linear matter distribution is more discriminating than the linear.
+
+Simulating massive neutrinos involves some subtleties: nor-
+mally in gravity-only simulations, one considers the clustering of
+‘all matter’ and does not differentiate between matter species. This
+is despite the great differences in transfer functions for baryons
+and CDM at the high redshifts at which simulations typically be-
+gin. These differences arise due to different physical processes act-
+ing on different speices prior to recombination. This is accounted
+for by taking the linear-theory all-matter power spectrum at z = 0,
+when the transfer functions of baryons and CDM are nearly iden-
+tical, and evolving this back to the simulation start redshift using a
+scale-independent growth function that is appropriate for ‘all mat-
+
+ter’. Whilst this ensures that the correct z = 0 linear matter power
+is evolved, it means that the simulation will not be an accurate
+reﬂection of the real Universe at high z when baryons and CDM
+are strongly differentiated. In contrast, when massive neutrinos are
+simulated one must consider the spectra of cold and hot matter sep-
+arately, because their linear clustering is very different at z = 0.
+Neutrinos have been incorporated into simulations in a variety of
+ways: the simplest possible method is to treat neutrinos only via
+their effects on the background expansion, assuming they are al-
+ways in the linear regime (e.g., Agarwal & Feldman 2011). This
+is justiﬁed because the large free-streaming lengths of viable neu-
+trinos ensure they are distributed more linearly and with a more
+Gaussian distribution than the CDM. A more accurate method is
+to evolve neutrinos in tandem with cold dark matter (CDM) parti-
+cles, but using neutrino linear equations and simulating them on a
+mesh rather than as a separate particle species (e.g., Brandbyge &
+Hannestad 2009). This means that any non-linear structure in the
+neutrinos is missing, which makes a small impact at the level of
+the matter power spectrum. The ﬁnal, and potentially most accu-
+rate, option is to include the neutrinos as a separate particle species
+in the simulation (e.g., Brandbyge et al. 2008; Viel et al. 2010),
+thus capturing all aspects of their non-linear evolution and the back-
+reaction of this on the CDM. These methods have been compared
+by (e.g., Agarwal & Feldman 2011; Bird et al. 2012; Upadhye et al.
+2014) and there is some disagreement about the accuracy of each
+method, particularly because particle neutrinos are difﬁcult to im-
+plement in practice due to the large neutrino thermal velocities at
+high redshifts.
+
+A consequence of the discussion in the above paragraph is that
+we must account for the different scale-dependent linear growth
+functions for cold and hot matter in our halo model. In weak lens-
+ing, one is interested in the power spectrum of all matter, but from
+a clustering point of view it is the cold matter that is of prime im-
+portance in the formation of dense virialized structures. This means
+that in the halo model we should calculate σ (R), which regulates
+clustering, using the cold matter component only (i.e. CDM and
+baryons; σcb) and ignoring the contribution from hot matter. Us-
+ing this deﬁnition of σ (R) was shown to produce more ‘universal’
+(function of σ only) mass functions in νΛCDM models by Casto-
+rina et al. (2014), more universal halo bias by Villaescusa-Navarro
+et al. (2014) and a more accurate halo-model power spectrum re-
+sponse by Massara et al. (2014). Although this approach ignores
+neutrino non-linearity, it should be a good approximation to de-
+scribe the suppression in the non-linear clustering of cold matter in
+response to the neutrinos. In reality, we expect the neutrinos to start
+falling into the potential wells of the cold matter once they become
+non-relativistic and to eventually form neutrino haloes around those
+of CDM (e.g., Abazajian et al. 2005; Inman et al. 2015); but this is
+ignored in our modelling. Note that the conservation of the neutrino
+phase-space density prevents these neutrino haloes from becoming
+as dense as their CDM counterparts (Tremaine & Gunn 1979).
+
+We compare halo-model predictions from the Mead et al.
+(2015b) model to the massive-ν simulations presented in Massara
+et al. (2014), which consider neutrinos with mν = 0.15, 0.3 and
+0.6eV in a box of L = 200h−1Mpc with N = 5123 of both CDM
+and neutrino particles and are detailed in Table 5 Both ‘all matter’
+and baryon densities are held ﬁxed as the neutrino mass is varied,
+so increasing mν consequently decreases Ωc. The neutrino mass is
+taken to be evenly distributed between 3 degenerate species, even
+though this is in conﬂict with oscillation experiments for low mν .
+Using the prescription for the halo model advocated by Massara
+et al. (2014; i.e. using σcb for clustering calculations) we present
+
+MNRAS 000, 1–18 (2016)
+
+Extended accurate halo models
+
+9
+
+Figure 3. A comparison of the power spectrum response for massive-ν models with 3 degenerate neutrinos with total mass 0.15eV (top) 0.3eV (middle) and
+0.6eV (bottom) compared to an equivalent ΛCDM model (with Ωm ﬁxed between models, rather than Ωc) at z = 0 (left column) and 1 (right column). We
+show the response from the simulations of Massara et al. (2014; blue points), that from the Bird et al. (2012) version of HALOFIT (long-dashed; red) and that
+from the Mead et al. (2015b) halo model (short-dashed; black). We see that all models of the response are in broad agreement, but that the halo model of
+Mead et al. (2015b) mis-predicts the degree of quasi-linear damping. Our updated version of the halo model, with tuned parameters (solid; black), matches the
+simulations at the few per cent level across the full range of scales shown, with the eventual agreement being similar to, but slightly better than, that of Bird
+et al. (2012).
+
+our results in Fig. 3. We show the response from simulations to-
+gether with that from the halo model of Mead et al. (2015b) and
+from the ﬁtting formula of Bird et al. (2012), which is an update of
+the Smith et al. (2003) version of HALOFIT6. We see that all mod-
+els do a reasonable job of predicting the suppression of power that
+peaks around k = 1hMpc−1, which is caused by the massive neu-
+trinos suppressing CDM clustering. The Bird et al. (2012) model is
+accurate at the 3 per cent level, but seems to over-predict the power
+suppression at k > 1hMpc−1, whereas Mead et al. (2015b) halo
+model does well for k > 1hMpc−1, but under-predicts the magni-
+tude of the quasi-linear (k ∼ 0.1hMpc−1) damping.
+
+To improve the halo model predictions we note that the mag-
+nitude of quasi-linear damping is governed by f in equation (14),
+which depends on σ8(z) in Mead et al. (2015b). In massive neu-
+trino models, clustering is suppressed and σ8 drops quite drasti-
+cally as the neutrino mass is increased (see Table 5), which in turn
+changes f and causes the under-prediction of damping. We remedy
+this by re-parameterizing f in terms of σd(R) (i.e., the standard de-
+
+6 Note that we show the response from the published Bird et al. (2012) ap-
+pendage to the original Smith et al. (2003) HALOFIT. This is not the version
+currently implemented in CAMB, which contains some unpublished correc-
+tions.
+
+MNRAS 000, 1–18 (2016)
+
+viation in the linear displacement ﬁeld convolved with top-hat ﬁl-
+ter of radius R, which is less inﬂuenced by small scales than σ (R))
+where we found good matches to COSMIC EMU power spectra us-
+ing R = 100h−1Mpc. The updated form of f is given in Table 1.
+In order to maintain a good ﬁt to the COSMIC EMU simulations as
+obtained in Mead et al. (2015b) we simultaneously reﬁt the coef-
+ﬁcients of f and the quasi-linear α term in equation (15); updated
+values are given in Table 1. This actually makes a small improve-
+ment to the quality of the ﬁt to the COSMIC EMU simulations that
+was presented in ﬁg. 2 in Mead et al. (2015b).
+
+To further improve predictions we use the spherical model of
+non-linear structure formation to calculate values for the linear-
+collapse density (δc) and virialised over-density (∆v) for an isolated
+top-hat density perturbation. These values will change in massive
+neutrino models because some fraction of the matter is unclustered.
+The spherical model for massive-ν cosmologies has been consid-
+ered in detail in Ichiki & Takada (2012) and LoVerde (2014) but
+we consider a simpler model where we work in the limit that neu-
+trinos are completely unclustered, and therefore only contribute to
+the background expansion. In this case, if Ωm = 1, we ﬁnd a good
+match to spherical model results with
+δc (cid:39) 1.686× (1− 0.041 fν ) ,
+∆v (cid:39) 178× (1 + 0.763 fν ) .
+
+(24)
+
+ 0.88 0.9 0.92 0.94 0.96 0.98 1P(k) / P(k)mν=0 eVmν=0.15 eV; z=0SimulationBird (2012)Mead (2015)This papermν=0.15 eV; z=1 0.8 0.85 0.9 0.95 1P(k) / P(k)mν=0 eVmν=0.30 eV; z=0mν=0.30 eV; z=1 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 0.1 1 10P(k) / P(k)mν=0 eVk / (h Mpc-1)mν=0.60 eV; z=0 0.1 1 10k / (h Mpc-1)mν=0.60 eV; z=110
+
+A. J. Mead et al.
+
+Figure 4. A comparison of the power spectrum response from the halo model approach of this paper (solid lines) compared to the PKANN emulator (crosses)
+of Agarwal et al. (2014) at z = 0 (left) and 1 (right). We show the response as the total neutrino mass (3 degenerate species) is varied linearly between 0.05
+(blue; top curve) to 0.4eV (pink; bottom curve) while Ωmh2 and Ωbh2 are held ﬁxed and h is adjusted to match the acoustic scale. We simultaneously vary σ8
+between 0.8 (blue) and 0.7 (pink) to keep the large scale portion of the power spectrum similar (note well that this is not perfect). We see few per cent level
+agreement across most of the range of scales up to k = 1hMpc−1. The larger differences around k (cid:39) 1hMpc−1 at z = 0 are consistent with the differences in
+simulation scheme between the simulations used for PKANN and those to which our model was tuned.
+
+(25)
+
+We also found that, when including Λ, the deviation from the
+ΛCDM prediction was only weakly dependent on Λ (i.e. the fν
+dependence in equations 24 holds). Taking these functional forms
+for δc and ∆v as inspiration, we ﬁt for the coefﬁcients of the depen-
+dence on fν to the simulation data of Massara et al. (2014) at z = 0
+and 1 for mν = 0.15, 0.3 and 0.6eV. The best ﬁtting values were
+found to be
+δc ∝ 1 + 0.262 fν ,
+∆v ∝ 1 + 0.916 fν .
+We note that the best ﬁtting dependence on δc is opposite to, and
+much stronger than, the spherical model dependence, but that of ∆v
+is of a similar magnitude and sign. Our ﬁtted halo model is shown
+as the solid black line in Fig. 3 where we see a per cent level match
+to simulations across all scales and a small improvement over the
+ﬁtting formula of Bird et al. (2012). It should be noted that this has
+been achieved using only two free parameters to ﬁt a range of neu-
+trino masses at two different redshifts. It is possible that some of
+the ﬁtting of δc and ∆v accounts for neutrino non-linearity, which
+we have not accounted for explicitly in our modelling. In this future
+this could be accounted for using the halo modelling of Abazajian
+et al. (2005), although their results suggest that the effects of neu-
+trino non-linearity are around one per cent for the neutrino masses
+we consider here. We also note that, prior to ﬁtting δc and ∆v, our
+model is already a rather good match to the simulation data. This is
+not shown in Fig. 3, but the match is of similar accuracy to the Bird
+et al. 2012 model.
+
+In Fig. 4 we show a comparison of the response of our up-
+dated halo-model to the matter power spectrum prediction emula-
+tor of PKANN (Agarwal et al. 2012, 2014) where we vary the neu-
+trino mass within the range 0 to 0.4eV and simultaneously vary
+σ8 from 0.8 to 0.7 to keep the large-scale power similar. The sim-
+ulations that were used to create PKANN treat the neutrinos as a
+linear component and they only affect cold matter via their effects
+on the background. Note that h is not a free parameter in PKANN
+and is set so as to match the combined WMAP 7 and BAO acous-
+
+tic scale results (Komatsu et al. 2011). Since the physical densities
+Ωch2 and Ωbh2 are also ﬁxed this implies a change in Ωm, Ωc and
+Ωb. We see a good (few per cent level) agreement for all neutrino
+masses up to the smallest scale output by PKANN (k (cid:39) 1hMpc−1)
+at z = 0 and 1. However, there is a slight mismatch between the cal-
+ibrated halo model and PKANN for the neutrino induced damping
+around k = 1hMpc−1 at z = 0, which is consistent with the differ-
+ing simulations schemes used by Massara et al. (2014) and Agar-
+wal et al. (2014). Bird et al. (2012) show that linear neutrino sim-
+ulations over-predict the magnitude of the neutrino-induced sup-
+pression around k = 1hMpc−1 when compared to Fourier-space
+methods. The linear scheme will be more accurate for lower neu-
+trino masses and it is here that we see the best overall agreement
+between PKANN and the halo model. Note also that the simula-
+tions run for the PKANN project incorporate some hydrodynamics,
+and this may conceivably account for the poorer agreement around
+k = 1hMpc−1 at z = 0. As we are compare our results at the level
+of the response, not the absolute power, hydrodynamics may well
+cancel out, unlike differences from the neutrino simulation method.
+
+3.4 Chameleon screening
+
+In this section, we work with the Hu & Sawicki (2007a) f (R) model
+f (R) models
+that exhibits the chameleon screening mechanism.
+(Buchdahl 1970; Capozziello et al. 2003; Nojiri & Odintsov 2003;
+Carroll et al. 2005) are derived from a modiﬁed Einstein-Hilbert
+action, in which a general f (R) is added to the standard linear R
+term. In this work we use the high curvature limit of the Hu &
+Sawicki (2007b) f (R) function that is widely deployed throughout
+the literature:
+f (R) = −2Λ− ¯R0
+
+(cid:18) ¯R0
+
+(cid:19)n
+
+(26)
+
+fR0
+n
+
+,
+
+R
+
+where fR0 and n are the model parameters and ¯R0 is the background
+value of the Ricci scalar, R, measured today. Here f (R) has the
+form of a (cosmological) constant plus a modiﬁcation term and the
+
+MNRAS 000, 1–18 (2016)
+
+ 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 0.01 0.1 1P(k) / P(k)mν=0 eVk / (h Mpc-1)z=0mν = 0.05 eVmν = 0.40 eV 0.01 0.1 1k / (h Mpc-1)z=1PkANNThis papermechanism for accelerated expansion (−2Λ) is entirely divorced
+from that which directly modiﬁes gravitational forces. We consider
+only models with fR0 < 0 and n > 0, and we work in the limit where
+| fR0| (cid:28) 1 (which covers values that are interesting observationally)
+such that the inverse R term is negligible when considering the evo-
+lution of the background, which means that the background expan-
+sion is that of a ΛCDM model. This has the advantage of allowing
+us to study the modiﬁcation in isolation from effects that may arise
+from a different expansion history. Throughout this section we use
+units such that c = 1.
+The derivative of f (R) ≡ fR can be considered a new scalar
+
+ﬁeld, related to R via:
+
+(cid:19)n+1
+
+(cid:18) ¯R0
+
+R
+
+fR = fR0
+
+,
+
+At the background level
+0 (Ωma−3 + 4Ωv) ,
+¯R = 3H2
+and
+
+(cid:18) 1 + 4Ωv/Ωm
+
+¯fR(a) = fR0
+
+a−3 + 4Ωv/Ωm
+
+(27)
+
+(28)
+
+(29)
+
+(cid:19)n+1
+
+.
+
+1
+3
+
+¯ρmδ ,
+
+In the quasi-static limit the equation that governs departures of fR
+from the background is:
+δ R− 8πG
+1
+a2 ∇2δ fR =
+(30)
+3
+where, δ fR ≡ fR − ¯fR, δ R ≡ R− ¯R and the Laplacian is comoving
+and we have not assumed that |δ fR| is small in comparison with
+| fR0|. Non-relativistic particles in an f (R) model feel a modiﬁed
+acceleration compared to standard gravity counterparts. This can
+be seen most easily via the perturbed metric in ﬂat space:
+ds2 = (1 + 2Ψ)dt2 − a2(t)(1− 2Φ)dx2 ,
+(31)
+from which equations for the time-gravitational potential Ψ and
+space-gravitational potential Φ can be derived:
+1
+a2 ∇2Ψ =
+
+¯ρmδ − 1
+6
+
+16πG
+
+δ R ,
+
+(32)
+
+3
+
+8πG
+
+3
+
+1
+6
+
+δ R .
+
+¯ρmδ +
+
+1
+a2 ∇2Φ =
+Non-relativistic particles are accelerated by the Ψ potential, and are
+thus affected by the δ fR ﬁeld. Photon trajectories (and thus lensing)
+are governed by Ψ + Φ, which is unchanged from that in standard
+gravity as long as | fR0| (cid:28) 1. If δ fR is small then we may linearise:
+
+(33)
+
+(cid:12)(cid:12)(cid:12)(cid:12) ¯R
+
+δ fR (cid:39) d fR
+dR
+
+δ R ≡ 1
+3
+
+λ 2δ R ,
+
+(34)
+
+(cid:18) ¯R0
+
+(cid:19)n+2
+
+where λ is known as the ‘Compton wavelength’ and is the scale at
+which the linear modiﬁcation becomes active. In the model consid-
+ered here
+λ 2 = −3(n + 1)
+(35)
+Larger | fR0| values mean the modiﬁcation is felt at larger scales.
+Linearising the equation for Ψk allows us to see that the sub-
+horizon growth of linear matter perturbations is scale dependent:
+
+fR0
+¯R0
+
+¯R
+
+.
+
+(cid:20)
+
+(cid:18)
+
+(cid:19)(cid:21)
+
+1 +
+
+1
+3
+
+1
+
+1 + a2/λ 2k2
+
+δk ,
+
+(36)
+
+¨δk + 2H ˙δk =
+
+3
+2
+
+H2Ωm(a)
+
+MNRAS 000, 1–18 (2016)
+
+Extended accurate halo models
+
+11
+
+8πG
+
+where the over-dots denote physical time derivatives. For linear
+scales much smaller than the Compton wavelength gravity is en-
+hanced by a factor 4/3, whereas gravity is standard on large scales.
+A remarkable feature of f (R) models is that they can screen
+the effect of the 4/3 modiﬁcation in massive haloes and that this
+screening exhibits itself naturally, without it having to be intro-
+duced by hand. This screening allows stringent tests of gravity
+within the Solar system to remain satisﬁed (see e.g., Will 2006),
+while modifying gravity on larger scales. It was shown that f (R)
+models can exhibit the chameleon mechanism by Li & Barrow
+(2007), Hu & Sawicki (2007b) and Brax et al. (2008). If ∇2δ fR = 0
+then
+1
+3
+and gravitational forces are restored to the standard. Determining
+when this condition is satisﬁed in a cosmological context can be
+achieved using simulations (Oyaizu 2008; Zhao et al. 2011; Li et al.
+2012; Puchwein et al. 2013; Llinares et al. 2014; summarised by
+Winther et al. 2015) or via direct calculations in idealised situations
+with symmetry properties (e.g., Hu & Sawicki 2007b; Schmidt
+et al. 2010; Lombriser et al. 2012). These calculations show that
+the screening depends primarily on halo mass, with screening ex-
+tending to lower halo masses for smaller | fR0| values. The fact that
+the Milky Way is screened, and has a potential O(10−6), can be
+used to place limits of | fR0| <∼ 10−6 (Hu & Sawicki 2007b) on these
+models.
+
+¯ρmδ ,
+
+δ R =
+
+(37)
+
+3
+
+Alternatively, limits on chameleon models can be placed by
+searching for differences between samples of similar objects in
+screened and unscreened environments (e.g., dwarf galaxies – Jain
+et al. 2013; Vikram et al. 2013) and constraints of | fR0| <∼ 10−7
+are obtained. Independent constraints can be placed from large-
+scale structure measurements – particularly from the abundance
+of clusters, which increases in these models due to the enhanced
+large-scale gravity. Cataneo et al. (2014) report constraints of
+| fR0| <∼ 10−5 from cluster abundance and Terukina et al. (2014)
+use the difference between hydrostatic and lensing masses (i.e., the
+same mass cluster will have a higher X-ray temperature if it is un-
+screened) to infer constraints of | fR0| < 6× 10−5. Li et al. (2015)
+use cluster gas fractions to place limits of | fR0| < 5× 10−5. Cos-
+mologically, Dossett et al. (2014) used redshift space distortions in
+the WiggleZ survey to place the limit of | fR0| <∼ 10−5. Harnois-
+D´eraps et al. (2015a) rules out | fR0| = 10−4 using CFHTLenS data
+while simultaneously accounting for massive neutrinos and bary-
+onic feedback (which can partially compensate for the enhanced
+gravity; see Section 4). While astrophysical constraints are cur-
+rently tighter than cosmological this may change in the future.
+Lombriser, Simpson & Mead (2015) show that the modiﬁcation
+signal in the power spectrum can be enhanced in simulations by
+using the clipping technique (Simpson et al. 2011, 2013) to ‘un-
+screen’ the modiﬁcation; removing high-density peaks in the den-
+sity ﬁeld exposes more of the unscreened matter to the power spec-
+trum. The clipping technique has recently been applied to lensing
+simulations by Simpson et al. (2015), paving the way for a direct
+application of unscreening to lensing data.
+
+We note that it is theoretically feasible for the fR ﬁeld may
+couple only to DM (if the model is couched as a scalar ﬁeld with
+non-universal couplings in the Einstein frame), and that this would
+invalidate Solar system and Galactic constraints, meaning that the
+model may only be constrained on cluster or cosmological scales.
+If Solar system and baryonic constraints are excluded then a con-
+servative bound on current limits is | fR0| <∼ 10−5 otherwise this
+limit is more like | fR0| <∼ 10−7. Note that all constraints quoted are
+
+12
+
+A. J. Mead et al.
+
+Table 6. Simulations of standard gravity (GR) and f (R) (F4, F5, F6) models
+from Li et al. (2013) that are used in this paper. The cosmological param-
+eters are h = 0.73, Ωm = 0.24, Ωb = 0.042, Ωv = 1− Ωm, ns = 0.958 and
+σ8 = 0.77. All f (R) models have n = 1 but differing values of fR0. Sim-
+ulations begin at zi = 49 in a cube of side 512h−1Mpc from exactly the
+same initial conditions, but growth is enhanced in models with larger | fR0|
+values. The inverse Compton scale (equation 35) at z = 0 is also shown for
+each model, and indicates the k-scale at which the modiﬁcation is active.
+
+Simulation
+
+n
+
+fR0
+
+σ8(z = 0)
+
+1/λ
+
+GR
+F6
+F5
+F4
+
+–
+
+–
+1 −10−6
+1 −10−5
+1 −10−4
+
+0.770
+0.784
+0.824
+0.887
+
+–
+
+0.427hMpc−1
+0.135hMpc−1
+0.043hMpc−1
+
+2σ for n = 1 Hu & Sawicki (2007b) models; constraints on | fR0|
+are degraded if n > 1 because these models transition to mimic
+ΛCDM more quickly in the recent past and the linear enhancement
+in power is therefore less strong because it is a cumulative effect.
+
+We implement
+
+One might expect the enhanced gravity to change the halo
+proﬁle, but it has been shown (e.g., Lombriser et al. 2012) that
+haloes in f (R) simulations can be well described by NFW pro-
+ﬁles with close to standard concentration–mass relations (although
+there seems to be a small transition in amplitude at low mass –
+ﬁg.4 of Shi et al. 2015). However, as would be expected from Press
+& Schechter (1974) theory, the mass function is enhanced because
+σ (R) is boosted due to the enhanced growth of linear perturbations
+f (R) models into our halo model using the
+modiﬁed scale-dependent growth function (solutions to equa-
+tion 36) and we use this to calculate σ for the mass function. In
+Fig. 5 we compare our results for the power spectrum response to
+the simulations presented in Li et al. (2013), which are detailed in
+Table 6. Although we can see that the Mead et al. (2015b) results
+are reasonable for k < 1hMpc−1, they fail to match the subtleties
+of the response as a function of fR0. We also show the HALOFIT
+based extended ﬁtting formula of Zhao (2014), which was tuned to
+these same simulations and ﬁts the data reasonably well, although
+we note that the ﬁtting function contains 39 free parameters in ad-
+dition to the 38 from Takahashi et al. (2012).
+
+To improve halo-model predictions we use a simple model
+for chameleon screening that derives from spherical-collapse ar-
+guments. If Ωm = 1 and we simply take G → Geff (a constant) for
+perturbations, then we ﬁnd good ﬁts to spherical model results7 of
+δc (cid:39) 1.686× (Geff/G)0.041 ,
+∆v (cid:39) 178× (Geff/G)−0.763 .
+For Geff/G = 4/3 these results are equivalent to those in Schmidt
+et al. (2009) for the deviation from a ΛCDM model. A simple
+model for screening in haloes is as follows: a region of the Uni-
+verse can be considered screened when
+¯fR(a) (cid:39) 2
+3
+as the fR ﬁeld is forced into the minimum of the effective potential
+when the local gravitational potential is of the order of the back-
+ground fR value (Schmidt 2010). This fact was used in Mead et al.
+
+ΨN ,
+
+(39)
+
+(38)
+
+7 The fact that the powers in equation (38) are the same as the multiples
+in equation (24) is not coincidental. In the limit in which we work, an un-
+clustered massive neutrino background has an identical effect to a drop in
+G.
+
+(cid:20)
+
+(cid:18) x− x0
+
+(cid:19)(cid:21)
+
+(2015a; ﬁg. 1) to develop a simple model for Geff/G as a function
+of halo mass for NFW haloes, by relating the gravitational poten-
+tial of a halo to the fR value. This toy calculation agrees well with
+results of full numerical calculations of screening in idealised sym-
+metric haloes and N-body simulations (e.g., see ﬁg. 3 of Schmidt
+2010).
+
+We then use a sigmoid approximation for for Geff/G as a func-
+
+∆
+
+1
+2
+
+1 + tanh
+
+(B− A)
+
+tion of halo mass:
+S(x− x0,∆,A,B) = A +
+(40)
+which transitions between A for x (cid:28) x0 to B for x (cid:29) x0 with transi-
+tion width governed by ∆. This allows Geff/G to transition from un-
+screened 4/3 enhancement at low halo masses to screened at high
+mass:
+Geff
+G = S(log10 M/Ms,∆,
+with Ms a screening mass and a comparison of this function with
+the model in Mead et al. (2015a) leads us to ﬁx the transition via
+∆ = 0.38 and
+
+,1) ,
+
+(41)
+
+4
+3
+
+(cid:18) Ms
+
+(cid:19)
+
+log10
+
+h−1M(cid:12)
+
+= 14.6 +
+
+3
+2
+
+(5 + log10| fR(a)|)− 1
+2
+
+log10 Ωm .
+
+(42)
+We then ﬁt our model δc, ∆v and Ms to the simulation re-
+sponse, taking the exponents in equation (38) and the amplitude
+of Ms in equation (42) to be free parameters. Our best ﬁtting model
+is shown as the solid line in Fig. 5 and is given by the relations
+δc ∝ constant
+∆v ∝ (Geff/G)−0.5 ,
+(cid:19)
+and
+
+(43)
+
+(cid:18) Ms
+
+3
+2
+
+(5 + log10| fR(a)|)− 1
+2
+
+log10 Ωm .
+
+log10
+
+h−1M(cid:12)
+
+= 18.9 +
+
+(44)
+Note that ﬁtting the halo model to simulation data prefers δc to
+have no dependence on Geff, but that the dependence of ∆v is in
+the same sense and of a similar magnitude to the spherical model
+prediction. Also note that the leading factor in the ﬁtted Ms ex-
+pression means that our toy model prefers all haloes to be un-
+screened at z = 0; although we caution the reader against taking
+this too literally. This improves accuracy to the 2 per cent level for
+k < 1hMpc−1 and 10% level for k < 10hMpc−1, apart from for
+the z = 0 F4 model. The halo model is still lacking in accuracy
+compared to MG-HALOFIT, but there is some indication that the ac-
+curacy of MG-HALOFIT may degrade when away from the cosmo-
+logical models on which it was trained (Tessore et al. 2015) and we
+suggest that using a halo model approach may be preferable in gen-
+eral. Given the current statistical power of weak lensing, our level
+of accuracy is sufﬁcient to test f (R) models. It may be possible to
+improve our accuracy using more accurate prescriptions for spheri-
+cal model parameters. Although previous results in this paper (and
+others, e.g., Schmidt 2010; Lombriser et al. 2014) should caution
+us against taking spherical model calculations as being relevant to
+power spectrum prediction (i.e. one should not expect a perfect cal-
+culation of δc or ∆v to translate into perfect mass function or halo
+model power predictions).
+
+Instead of equation (38), the effect of the chameleon screening
+mechanism on the collapse density can be described by adopting a
+thin-shell approximation in the modiﬁed evolution equation of a
+
+MNRAS 000, 1–18 (2016)
+
+Extended accurate halo models
+
+13
+
+Figure 5. A comparison of the ratios of power spectra for f (R) models compared to an equivalent ΛCDM model for | fR0| = 10−4 (top), 10−5 (middle) and
+10−6 (bottom) at z = 0 (left column) and 1 (right column). We show power from the simulations of Li et al. (2013; blue points) together that from two versions
+of the halo model; that of Mead et al. (2015b) (short-dashed; black) and the update advocated in this paper (solid; black). We also show the MG-HALOFIT
+model of Zhao (2014; long-dashed; red) that was ﬁtted to the same simulation data as shown (amongst others) and provides a better ﬁt.
+
+spherical top-hat overdensity (Brax et al. 2010; Li & Efstathiou
+2012). This approach was used to compute δc for f (R) gravity in
+Lombriser et al. (2013). Alternatively, Borisov et al. (2012) and
+Kopp et al. (2013) compute δc by considering an isolated, initial
+over-density proﬁle set by peaks theory and its isotropic evolution
+according to equations (30) and (32).
+
+A halo-model power spectrum based on the collapse density
+from the thin-shell approximation was used in Lombriser et al.
+(2014) but this over-predicts the modiﬁcation in the power spec-
+trum, although a correction term suppressing the enhancements in
+the two-halo term at quasilinear scales can be adopted to improve
+the description. Other approaches to modelling the power spectrum
+in f (R) interpolate between the modiﬁed and screened Newtonian
+regimes. The interpolation can directly be modelled in the power
+spectrum as has been proposed by Hu & Sawicki (2007b). This
+transition was described through perturbation theory in Koyama
+et al. (2009) and an extension of it was ﬁtted to N-body simula-
+tions in Zhao et al. (2010). An alternative interpolation was in-
+troduced by Li & Hu (2011) who model the chameleon transi-
+tion in σ (equation 3) and ﬁt the resulting halo mass function to
+N-body simulations. They then adopt the halo model to describe
+the power spectrum with an interpolation between the two- and
+one-halo terms following the HALOFIT approach. Brax & Valageas
+(2013) used a combination of one-loop perturbations with a one-
+
+MNRAS 000, 1–18 (2016)
+
+halo term to describe the power spectrum and Achitouv et al. (2015)
+incorporate the mass function model of Kopp et al. (2013) into halo
+model predictions and achieve 20% level matches to simulations
+for k < 3hMpc−1. A comparison between some of these differ-
+ent approaches can be found in Lombriser (2014; ﬁgs. 4 and 5).
+While some of these methods provide a better description of the
+f (R) power spectra than the tuned halo model in this work, when
+comparing theoretical predictions to observations we are particu-
+larly interested in methods that efﬁciently compute the non-linear
+power spectrum and allow us to sample the entire available param-
+eter space. Our halo model does not require spherical collapse or
+higher-order perturbation theory calculations and can therefore pro-
+vide fast predictions. Due to its physical motivation, it may also be
+more easily be generalised to other chameleon models besides the
+f (R) modiﬁcations covered by MG-HALOFIT.
+
+3.5 Vainshtein screening
+
+The Vainshtein (1972) screening mechanism is different from the
+chameleon, in that the screening depends primarily on local den-
+sity, rather than halo mass. In this paper we work with a toy Dvali,
+Gabadadze & Porrati (DGP; 2000) model that exhibits this screen-
+ing. We work with the normal branch of the model, which does
+not self accelerate, but we impose an exact ΛCDM background ex-
+
+ 1 1.1 1.2 1.3 1.4 1.5 1.6 1.7P(k) / PGR(k)F4; z=0SimulationZhao (2014)Mead (2015)This paperF4; z=1 1 1.05 1.1 1.15 1.2 1.25 1.3 1.35P(k) / PGR(k)F5; z=0F5; z=1 0.98 1 1.02 1.04 1.06 1.08 1.1 0.1 1 10P(k) / PGR(k)k / (h Mpc-1)F6; z=0 0.1 1 10k / (h Mpc-1)F6; z=114
+
+A. J. Mead et al.
+
+pansion on the model artiﬁcially. Once again, this means that the
+modiﬁcation to gravity is not responsible for the acceleration, but
+allows us to study the MG in isolation from background effects.
+In practice, this model could be realised within the normal branch
+of DGP by adding a contrived, homogeneous DE to exactly can-
+cel the non-standard background expansion that would otherwise
+be present. Throughout this section we use units such that c = 1.
+
+In the quasi-static, sub-horizon limit the Ψ and Φ potentials
+
+feel contributions from a new scalar ﬁeld φ:
+1
+a2 ∇2Ψ = 4πG ¯ρδ +
+
+1
+2a2 ∇2φ ,
+
+(45)
+
+(46)
+
+(cid:105)
+
+=
+
+8πG
+3β (a)
+
+¯ρδ ,
+
+(47)
+
+1
+
+a2 ∇2Φ = 4πG ¯ρδ − 1
+
+2a2 ∇2φ .
+
+Once again, lensing is not directly affected by the modiﬁcation
+because Ψ + Φ is unchanged from the standard. However, non-
+relativistic particles (accelerated by Ψ) feel φ, the equation of mo-
+tion of which is given by
+
+1
+a2 ∇2φ +
+
+r2
+c
+
+3β (a)a4
+
+(∇2φ )2 − (∇i∇ jφ )(∇i∇ jφ )
+
+(cid:104)
+
+(cid:18)
+
+(cid:19)
+
+A
+2H2
+
+4
+3
+
+(e.g., Koyama & Silva 2007) where we have employed summation
+convention over spatial coordinates. rc is a free parameter in the
+model and is known as the ‘crossing radius’; the larger rc the less
+strong the modiﬁcation. The function β (a) is given by
+
+(cid:20)
+
+(cid:21)
+
+,
+
+1 +
+
+Hrc
+
+β (a) = 1 +
+(48)
+where H is the Hubble function and A ≡ ¨a/a. Note that β > 0 al-
+ways and larger β implies less modiﬁcation. Since β (a) was larger
+in the past, the modiﬁcation is only felt at late times. For stan-
+dard ΛCDM backgrounds the value of β saturates as the Universe
+reaches the de Sitter phase.
+
+If we linearise for small values of φ, the Ψ Poisson equation
+
+reads
+1
+a2 ∇2Ψ = 4πG
+and we see the linear gravity modiﬁcation is time dependent, but
+scale independent.
+
+3β (a)
+
+¯ρδ ,
+
+(49)
+
+1 +
+
+1
+
+Insight into the non-linear action of the Vainshtein mechanism
+can be gained from either simulations (e.g., Schmidt 2010; Falck
+et al. 2015) or spherical calculations (e.g., Schmidt et al. 2010).
+These reveal that in regions of sufﬁciently high density ∇φ (cid:28) ∇Ψ
+and screening has occurred. For spherically symmetric density pro-
+ﬁles an exact solution exists for the radial derivative of the ﬁeld (i.e.
+the force modiﬁcation):
+
+ ,
+(cid:19)3 − 1
+
+3β (a)r
+
+(cid:115)
+(cid:18) 16GM(r)r2
+
+4r2
+c
+
+c
+
+1 +
+
+9β 2(a)
+
+(cid:18) r∗(r)
+(cid:19)1/3
+
+r
+
+,
+
+dφ
+dr =
+
+r∗(r) =
+
+where the Vainshtein radius has been deﬁned
+
+(50)
+
+(51)
+
+and M(r) is the mass enhancement, relative to the backround, en-
+closed at radius r. For r (cid:28) r∗ the modiﬁcation to gravity is neg-
+ligible. Note that ‘the’ Vainshtein radius is actually a function of
+r. Outside the halo M(r) → M and the Vainshtein radius scales
+∝ M1/3, which is exactly the scaling of the virial radius, and this
+
+Table 7. Simulations of standard gravity (GR) and DGP models analysed in
+this paper. The cosmological parameters are h = 0.703, Ωm = 0.271, Ωb =
+0.045, Ωv = 1− Ωm and ns = 0.966. Structure formation takes place in a
+cube of side 250h−1Mpc from exactly the same initial conditions. Linear
+growth is more enhanced in models with smaller rc values.
+
+Simulation
+
+H0rc
+
+rc/(h−1Mpc)
+
+GR
+DGP1
+DGP2
+DGP3
+
+∞
+0.5
+1.2
+5.6
+
+∞
+
+1,500
+3,600
+16,800
+
+σ8
+
+0.800
+0.896
+0.849
+0.812
+
+means that the Vainshtein mechanism is roughly independent of
+halo mass; although it does depend on the details of the halo pro-
+ﬁle to some extent. Also note that these equations conspire to make
+the efﬁciency of screening at r a function of the enclosed, average
+density at r. For cosmologically interesting values of rc the force
+modiﬁcations are only felt further out than the halo virial radius,
+allowing these models to pass Solar system and Galactic gravity
+tests.
+
+Note that the non-linear modiﬁcation depends on density mor-
+phology through the structure of the derivatives in the quadratic φ
+term in equation (47). For example, in situations of planar symme-
+try the quadratic φ term vanishes and the screening mechanism is
+annihilated simply due to the symmetry. Therefore, different envi-
+ronments (e.g., clusters, ﬁlaments, sheets, voids) feel different lev-
+els of modiﬁed forces. However, Schmidt (2010) and Falck et al.
+(2015) show that although morphology screening is active for gen-
+eral dark matter particles, it is negligible for particles inside haloes
+because it is the spherical nature of the halo that trumps over the
+environment of the halo: thus all haloes are screened independently
+of environment.
+
+We utilise simulations for three different values of rc as well as
+for a ΛCDM model with matched initial conditions, these are listed
+in Table 7 and were run using the simulation code ISIS (Llinares
+et al. 2014). The linear gravity enhancement means that large-scale
+structure is more developed in the Vainshtein models compared
+to ΛCDM. We compute the power spectrum for each simulation
+at z = 0 and show the response in Fig. 6. The short-dashed lines
+show the expected, constant enhancement from linear perturba-
+tion theory, which the simulations follow with their largest modes
+(k ≤ 0.1hMpc−1). The long-dashed lines show the power spectrum
+prediction of HALOFIT, which we see matches the standard bump
+enhancement around k (cid:39) 0.2hMpc−1 for each model. However, we
+see that this enhancement is suppressed in the simulations relative
+to the HALOFIT expectation, and is almost absent in the H0rc = 5.6
+model. The same is true of predictions from the halo model pre-
+sented in Mead et al. (2015b). Clearly this defect in modelling
+arises because we have not included the Vainshtein mechanism at
+all, which ensures that gravitational forces on small scales return
+to standard. To ameliorate this we once again turn to the spherical
+model.
+
+The spherical model in DGP gravity was investigated in
+Schmidt et al. (2010) where it was found that improved mass func-
+tion, halo bias and halo-model power spectra predictions were pro-
+duced when incorporating spherical model predictions for δc and
+∆v. However, the results are not perfect for the power spectrum,
+and not accurate enough to be used in an analysis. We employ the
+same strategy in this work, but permit ourselves the freedom of
+altering the amplitude of the spherical model δc and ∆v relations
+to best match the simulated power spectrum data. We also ignore
+
+MNRAS 000, 1–18 (2016)
+
+Extended accurate halo models
+
+15
+
+Figure 6. A comparison of the power spectrum response for DGP models with the same expansion history as ΛCDM but a time-varying gravitational constant
+on large scales, but which is screened by the Vainshtein mechanism within haloes. We show power from full simulations (ﬁlled circles) and linear simulations
+(crosses) for three models: H0rc = 0.25 (top; red) 1.2 (middle; green) and 5.6 (bottom; blue) at z = 0 (left column) and 1 (right column). Also shown are the
+linear enhancement (medium-dashed) predictions from HALOFIT of Takahashi et al. (2012; long-dashed), predictions from Mead et al. (2015b; short-dashed)
+as well as the ﬁtted halo-model prediction in this work (solid).
+
+the Vainshtein mechanism in our spherical model calculation, be-
+cause Schmidt (2010) show that it makes very little difference to
+the values of δc and ∆v. Our hope is that allowing ourselves the
+freedom of altering the amplitude of the deviation in the spheri-
+cal model calculations will account for the Vainshtein mechanism
+and produces accurate results. We ﬁnd that DGP Einstein-de-Sitter
+spherical model results (see Appendix A) can be well ﬁt by:
+δc (cid:39) 1.686× S(log10[2.33a/(H0rc)0.65],0.4,1.,0.9973) ,
+∆v (cid:39) 178× [1− 0.08a(H0rc)−0.7] .
+where S is the sigmoid function deﬁned in equation (40). We then
+ﬁt the halo model power spectrum to simulation data letting the am-
+plitude of the δc and ∆v relations be free parameters (the 0.9973 in
+the δc equation and −0.08 in that of ∆v). We ﬁnd best ﬁtting ampli-
+tudes for δc of 1.008 and −0.0388 for ∆v. Our ﬁnal power spectra
+are presented in Fig. 6 (solid lines), where it can be seen that we
+achieve few per cent level matches to all three models at z = 0 and
+1. Once again, the trend in δc preferred by the halo model ﬁtted
+to the simulation data is opposite to that of spherical model cal-
+culations. Schmidt (2010) show improved response from the halo
+
+(52)
+
+MNRAS 000, 1–18 (2016)
+
+model when using the spherical model to calculate both δc and ∆v,
+but the resulting response is by no means accurate.
+
+The spherical model in Galileon models (which are also Vain-
+shtein screened) has been investigated by Barreira et al. (2013) and
+the Galileon halo model by Barreira et al. (2014). For the mass
+function they ﬁnd a need to recalibrate the parameters of Sheth &
+Tormen (1999) to obtain good results to the mass function in their
+simulations. The eventual halo model power spectra presented are
+only accurate at the 20% level even when using relations (e.g., mass
+function, c(M)) calibrated from the exact simulations they compare
+to for the halo model power spectrum. Again, this indicates that the
+halo model in its unaltered form is not an accurate tool for pre-
+dicting the non-linear spectrum, we suppose primarily because of
+features in the non-linear density ﬁeld that are missing from the
+model.
+
+4 DEGENERACY
+
+The modelling developed in the previous section allows us to in-
+vestigate degeneracies in the matter power spectrum between ex-
+
+ 1 1.1 1.2 1.3 1.4 1.5P(k) / PGR(k)z=0Linear simulationsFull simulationsH0rc=0.5z=1 1 1.05 1.1 1.15 1.2P(k) / PGR(k)Linear theoryTakahashi (2012)H0rc=1.2 0.98 0.99 1 1.01 1.02 1.03 1.04 1.05 1.06 0.1 1 10P(k) / PGR(k)k / (h Mpc-1)Mead (2015)This paper 0.1 1 10k / (h Mpc-1)H0rc=5.616
+
+A. J. Mead et al.
+
+Figure 7. The ratio of power compared to a ﬁducial ΛCDM model for
+cosmological models with combinations of massive neutrinos (∑ν mν =
+0.3eV), baryonic feedback (an AGN model) and MG ( fR0 = −10−5 and
+n = 1). We show combinations of two of the three effects where the ratio
+is computed both by assuming the effects act independently (dashed line)
+and via the full halo model calculation (solid line) where the effects are
+treated in tandem. Differences between each pair of dashed and solid lines
+indicate the extent to which the effects can be treated independently. We see
+that this is a good approximation in the case of the combination of baryonic
+feedback with either MG or massive neutrinos. However, the approximation
+degrades when one considers MG and massive neutrinos together; the non-
+linear neutrino suppression effect is weaker in f (R) compared to standard
+gravity.
+
+tensions to the standard cosmological paradigm. Simulations that
+investigate these degeneracies are rare due to their complexity and
+expense, but notable exceptions are presented in Puchwein et al.
+(2013); Arnold et al. (2014); Baldi et al. (2014); Arnold et al.
+(2015). However, we may use the halo model to compute the power
+spectrum for combinations of extensions, and we may also include
+the effects of baryons using the method presented in Mead et al.
+(2015b). Our results are presented in Fig. 7 where we show power
+spectra for combinations of massive neutrinos (Mν = 0.3eV from
+the modelling in Section 3.3), baryonic feedback (the AGN halo
+model from Mead et al. 2015b; obtained by altering parameters
+within the halo model that govern halo internal structure) and MG
+(an f (R) model with fR0 = −10−5 and n = 1 from Section 3.4). For
+each pair of extensions, the solid line show the result of a full halo-
+model calculation, with the combined effects, whereas the dashed
+line shows the result of using the halo model, but assuming that the
+extensions to the standard paradigm can be treated independently.
+The difference between each pair of lines for the different combi-
+nations indicate how good an approximation it is to treat the effects
+independently. Recent work (e.g., Harnois-D´eraps et al. 2015b,a)
+looking at cosmological constraints from all three effects in tan-
+dem has been forced to assume they act independently, due to the
+lack of theoretical models, but with the work presented in this pa-
+per we are now in a position to model these effects simultaneously.
+The linear spectrum for the ‘ f (R) and massive neutrino’ case is cal-
+culated using MG-CAMB (Hojjati et al. 2011b,a), but we ﬁnd that
+the approximation of treating the two effects separately and then
+combining them is almost perfect for the linear spectra (within a
+per cent for k < 10hMpc−1). For this model, we compute δc and
+∆v by multiplying the deviations from equation (25) and (43). This
+is justiﬁed because the origin of the deviation is the same in each
+
+case being due to either an increased or a decreased effective G,
+and is small in any case. Since the spherical model calculation is
+non-linear it may seem preferable to repeat it for each combined
+model. However, we do not do this since we found that the spheri-
+cal model calculations did not provide accurate halo-model power
+spectra.
+
+From Fig. 7 we see that the halo model predicts that baryonic
+feedback should act quite independently from either massive neu-
+trinos or MG. Physically, this can be understood as feedback affect-
+ing halo internal structure only, but not altering the mass function
+or large-scale clustering to the same extent (e.g., van Daalen et al.
+2014). Thus the power spectrum response predicted by considering
+feedback in isolation is a fairly good approximation to the response
+in more general models. This is in qualitative agreement with re-
+sults presented by Puchwein et al. (2013) and may be good news
+considering the relative uncertainty and expense of simulations that
+contain hydrodynamics and baryonic feedback: it may be sufﬁcient
+to run detailed hydrodynamic simulations with feedback for stan-
+dard ΛCDM models and then to translate these effects into exten-
+sions of the standard model. In contrast, from Fig. 7 we see much
+larger differences when considering massive neutrinos and MG in
+tandem. Baldi et al. (2014) investigate N-body simulations that in-
+clude both massive neutrinos and Hu & Sawicki (2007b) f (R) grav-
+ity (their ﬁg. 4) and come to a similar conclusion. Our results are
+in qualitative agreement with those from the full simulations, in
+that we see that the suppression of power caused by massive neu-
+trinos is less in the f (R) models compared to standard gravity. This
+is despite the multiplication of ratios being a very good approxi-
+mation to create the linear spectrum for these models. Physically
+this may be because both mechanisms effect the linear growth of
+perturbations, and this translates into the non-linear density ﬁeld in
+a non-linear way. For example, both mechanisms affect the mass
+function, but not in such a way that the induced power spectrum
+change is well approximated by considering each separately. The
+level of this non-linear coupling is not sufﬁcient to have affected
+the results of Harnois-D´eraps et al. (2015b,a) and will probably not
+need to be modelled for near-term lensing surveys. However, lens-
+ing surveys that will be active in the next decade have stringent,
+per cent level accuracy requirements on the theoretical modelling
+of the power spectrum in order to provide forecasted constraints.
+Our results indicate that it will not be sufﬁcient to consider these
+extensions to the cosmological paradigm in isolation.
+
+5 SUMMARY AND DISCUSSION
+
+We have demonstrated that it is possible to use the halo model to
+provide accurate matter power spectrum predictions for a variety
+of extensions to the standard cosmological paradigm. Starting from
+the accurate halo model of Mead et al. (2015b) we investigated
+both minimally and non-minimally coupled DE models, massive
+neutrinos and MG forces. In each case we compared predictions
+from the halo model to simulations of each extension at the level
+of the power spectrum response; a measure of deviation from a
+ﬁducial model.
+We demonstrated that models of DE parameterised via w(a) =
+w0 + (1 − a)wa could be matched at the few per cent level for
+k < 10hMpc−1 with no modiﬁcations to the Mead et al. (2015b)
+halo model and we noted that our predictions are more accurate
+than those the Takahashi et al. (2012) version of HALOFIT. This
+suggests that our halo model would produce reasonable answers
+for other quintessence models, simply by using the correct lin-
+
+MNRAS 000, 1–18 (2016)
+
+ 0.6 0.7 0.8 0.9 1 1.1 1.2 0.001 0.01 0.1 1 10P(k) / PΛCDM(k)k / (h Mpc-1)Baryons + neutrinosBaryons + MGMG + neutrinosear growth function and power spectrum. We were able to pro-
+duce few per cent level accuracy for coupled quintessence models
+for k < 1hMpc−1, but to extend to smaller scales we were forced
+to re-ﬁt the concentration–mass relation that enters into the halo
+model calculation to power spectrum data for each coupled model.
+While this is unsatisfactory, we take comfort in the fact that the re-
+quired relation at least reﬂects that measured in these simulations.
+If some way were developed to predict this relation from ﬁrst prin-
+ciples then we feel conﬁdent that an accurate halo model prediction
+scheme could be developed.
+
+For massive neutrinos, we adapted our halo model calcula-
+tion so that quantities relevant to structure formation were com-
+puted using only the cold, clustering component of the matter only
+(i.e. ignoring the hot neutrino component). Results from this ap-
+proach were satisfactory on small scales, but we observed that the
+Mead et al. (2015b) halo model under-predicted the power spec-
+trum suppression caused by massive neutrinos around quasi-linear
+scales (k (cid:39) 0.3hMpc−1). To remedy matters we re-parameterised
+the Zel’dovich damping term in the Mead et al. (2015b) halo model
+such that results presented in that paper were unaffected (even
+improved), but so that we matched the quasi-linear damping in
+massive neutrino cosmologies. To further improve predictions at
+smaller scales we turned to the spherical model, utilising the simpli-
+fying assumption that neutrinos are completely unclustered in the
+background, which corresponds exactly to a reduced gravitational
+constant for clustering. While the exact form of the predictions for
+the linear-collapse threshold (δc) and virialised over-density (∆v)
+did not provide improved power spectrum predictions, we were
+able to use the fν dependence from the spherical model results
+as the basis for a ﬁtting function that does provide improvement.
+However, the trend in δc preferred by our ﬁtting to power spectrum
+data is opposite to that in spherical-model calculations, whereas
+the trend in ∆v is of the same sense and magnitude. It may be that
+our spherical model is too simplistic, and that if we were to in-
+clude neutrino clustering and free-streaming (e.g., Ichiki & Takada
+2012; LoVerde 2014) our result for δc may be fundamentally dif-
+ferent. Certainly a neutrino perturbation in addition to that of CDM
+will accelerate collapse, but results from Ichiki & Takada (2012)
+indicate that this accelerated collapse is not sufﬁcient to reverse
+the trend in δc. Regardless, our ﬁnal accuracy in comparison to
+simulations with massive neutrinos is at the few per cent level for
+k < 10hMpc−1 and offer a slight improvement over the Bird et al.
+(2012) extension to HALOFIT.
+
+We investigated non-linear power spectrum predictions for
+chameleon models taking Hu & Sawicki (2007b) f (R) models as
+an example. Once again we turned to the spherical model for a way
+to parameterise functional forms for δc and ∆v that we could use
+to improve predictions. In chameleon models, screening is a func-
+tion of halo mass, and we introduced a ﬁtting formula for spherical
+model parameters that included a ‘screening mass’ below which
+haloes feel a 4/3 gravity enhancement and their spherical model
+parameters are adjusted accordingly. Even when ﬁtting this three
+parameter model to simulation data we were only able to produce
+10 per cent level matches for k < 10hMpc−1. While the deviation
+in models with smaller | fR0| values is smaller, our model for the
+deviation is also a poorer ﬁt to simulated data for these smaller val-
+ues. Also, the simulation data prefer the absence of a change in δc
+for f (R) models while the trend in ∆v is of a similar magnitude
+and the same sense as the spherical model prediction. Our model
+for chameleon screening in the halo model is perhaps too simple,
+and in the future it may be fruitful to consider more complicated
+spherical models (e.g., Li & Efstathiou 2012; Kopp et al. 2013) or
+
+MNRAS 000, 1–18 (2016)
+
+Extended accurate halo models
+
+17
+
+some more universal model for screening such as that proposed by
+Gronke et al. (2015) to see if these result in improved power spec-
+trum predictions when using the same ﬁtting approach we advise
+in this work. For example, it may be useful to incorporate environ-
+mental screening and the fact that some haloes transition between
+being screened and unscreened as the universe evolves.
+
+We also investigated the example Vainshtein screened MG
+model of Dvali, Gabadadze & Porrati (DGP; 2000) and were able
+to provide few per cent level accuracy compared to simulation data
+with ﬁtting formula for the spherical model parameters. Once again
+the trend in δc required to ﬁt simulation power spectrum data is op-
+posite to that predicted by the spherical collapse model, whereas
+that for ∆v is of a similar magnitude and the same sense. The rela-
+tively good performance of our halo model for Vainshtein screened
+models compared to chameleon may be because the screening
+mechanism itself is simpler than the chameleon, and all haloes are
+essentially screened for all times in the model.
+
+It is difﬁcult to know how to interpret our ﬁtting formula in
+terms of spherical model results: we have seen that to get accurate
+power spectra we usually require a trend in δc that is opposite to
+that predicted by the spherical model. This contradiction may arise
+because we are using a tuned version of the halo model, rather than
+a pure one. However, it has been shown by many other authors that
+including the ‘correct’ spherical model predictions within a halo
+model power spectrum calculation often leads to only marginal im-
+provements (e.g., Schmidt et al. 2009, 2010; Barreira et al. 2014).
+It has been shown that the mass function is approximately uni-
+versal for a set halo deﬁnition (∆v either via a friends-of-friends
+linking length or spherical over-density criterion) but that univer-
+sality breaks down if different ∆v (e.g., from the spherical model)
+are used to deﬁne haloes in different cosmologies (e.g., Jenkins
+et al. 2001; Tinker et al. 2008; Courtin et al. 2011) even though en-
+hanced universality might be expected. This inconsistency between
+halo deﬁnition and spherical model prediction means we cannot
+make direct comparisons between haloes identiﬁed in simulations
+and the spherical model. Given this, it then seems strange (and
+lucky) that the mass function is so close to universal for a cosmol-
+ogy independent δc and halo deﬁnition. Indeed, using the ‘correct’
+value of δc in a mass function prediction such as that of Sheth &
+Tormen (1999) seems to provide only marginal gains at the high
+mass end (Courtin et al. 2011) and certainly does not ﬁx remaining
+non-universality in the mass function. Comparing spherical model
+∆v predictions to simulations is hard because a ∆v criterion is often
+used to deﬁne a halo in the ﬁrst place.
+
+The spherical top-hat is incredibly useful as an analytically
+soluble non-linear structure formation model and the predictions
+∆v (cid:39) 200 and δc (cid:39) 1.686 are held ﬁrmly in the mind of any large-
+scale structure cosmologist. The Press & Schechter (1974) model
+predicts universality in the mass function, and this model and its
+extensions work absurdly well for halo formation, the mass func-
+tion and halo bias given the simplistic assumptions. However, uni-
+versality primarily arises through σ in ν = δc/σ and what is less
+obvious is that if accurate calculations of δc are relevant for im-
+proving mass function predictions or halo model power spectra, or
+that if the number 1.686 should be used as a guideline. Indeed, most
+modern mass functions (e.g., Sheth & Tormen 1999; Warren et al.
+2006; Tinker et al. 2008) are parameterised only in terms of σ; δc
+is either not present of phased out by some ﬁtting parameters.
+
+So, are we to conclude that the details of spherical model cal-
+culations are irrelevant for the details of the mass function and
+halo model power spectrum? The spherical model is simplistic, and
+clearly the minutiae of non-linear structure formation are far from
+
+18
+
+A. J. Mead et al.
+
+the minutiae of a collapsing top-hat, and may even be unrelated. It
+may be that in order to progress a more complicated model needs to
+be devised. One example is the ellipsoidal collapse model, which
+has been shown to better reﬂect the mass function by Sheth, Mo
+& Tormen (2001) and more recently to provide an accurate model
+of halo concentrations by Okoli & Afshordi (2015). Though even
+this model is simplistic when compared to the chaos of true non-
+linear collapse. Maybe we have reached the limits of what we can
+learn about non-linear structure formation from simplistic calcula-
+tions and detailed understanding can only come from the detailed
+analysis of simulations?
+
+Finally, we investigated non-linear degeneracies between the
+extensions we consider, with a particular emphasis on investigating
+the approximation that extensions beyond the standard cosmologi-
+cal paradigm can be considered independently. Our results indicate
+that is it a reasonably good assumption to consider baryonic feed-
+back processes in isolation from either MG or massive neutrinos,
+probably because feedback affects the internal structure of haloes,
+while leaving their numbers unaffected. In contrast, we found that
+our halo model predicts a non-negligible coupling between f (R)
+gravity and massive neutrinos, such that a full halo model power
+spectrum is different from one where the effects were treated inde-
+pendently at the 5 per cent level for k > 0.5hMpc−1. Relatively few
+N-body simulations have been run that investigate combinations of
+beyond standard model physics, but we note that our halo-model
+results are in qualitative agreement with those in the joint f (R)-
+massive neutrino simulations of Baldi et al. (2014). This may have
+profound implications for the modelling effort required to extract
+accurate cosmological parameter constraints from so-called Stage
+IV lensing surveys that will be active in the next decade.
+
+An updated version of our publicly available halo-model
+power spectrum generation code (HMCODE)
+is available at
+https://github.com/alexander-mead/hmcode. At the mo-
+ment this just covers the w(a) dark energy models, but we hope
+to have a version of HMCODE integrated within CAMB that incor-
+porates the new features in the near future.
+
+ACKNOWLEDGEMENTS
+
+AJM acknowledges support from a CITA National Fellowship and,
+together with CH, support from the ERC under the EC FP7 grant
+number 240185. CH also acknowledges ERC support under grant
+number 647112. LL has been supported by the STFC Consolidated
+Grant for Astronomy and Astrophysics at the University of Edin-
+burgh and from an Advanced Postdoc. Mobility Grant from the
+Swiss National Science Foundation (No. 161058). We thank: Peter
+Ballett and Alex Hall for useful discussions regarding neutrinos,
+Marco Baldi for making the CODECS data public, Elena Massara
+and Francisco Villaescusa Navarro for providing the massive neu-
+trino power spectrum data, Shankar Agarwal for making PKANN
+public and Baojiu Li for providing the f (R) power spectrum data
+and all for useful discussions.
+
+REFERENCES
+
+Abazajian K., Switzer E. R., Dodelson S., Heitmann K., Habib S., 2005,
+
+PRD, 71, 043507
+
+Abazajian K. N., et al., 2013, preprint, (arXiv:1309.5383)
+Achitouv I., Baldi M., Puchwein E., Weller J., 2015, preprint,
+
+(arXiv:1511.01494)
+
+Agarwal S., Abdalla F. B., Feldman H. A., Lahav O., Thomas S. A., 2012,
+
+MNRAS, 424, 1409
+
+Agarwal S., Abdalla F. B., Feldman H. A., Lahav O., Thomas S. A., 2014,
+
+MNRAS, 439, 2102
+
+Alimi J.-M., F¨uzfa A., Boucher V., Rasera Y., Courtin J., Corasaniti P.-S.,
+
+2010, MNRAS, 401, 775
+
+Amendola L., 2000, PRD, 62, 043511
+Amendola L., Tsujikawa S., 2010, Dark Energy: Theory and Observations.
+
+Cambridge University Press
+
+Arnold C., Puchwein E., Springel V., 2014, MNRAS, 440, 833
+Arnold C., Puchwein E., Springel V., 2015, MNRAS, 448, 2275
+Baldi M., 2011, MNRAS, 411, 1077
+Baldi M., 2012a, MNRAS, 420, 430
+Baldi M., 2012b, MNRAS, 422, 1028
+Baldi M., Pettorino V., Robbers G., Springel V., 2010, MNRAS, 403, 1684
+Baldi M., Villaescusa-Navarro F., Viel M., Puchwein E., Springel V.,
+
+Moscardini L., 2014, MNRAS,
+
+Barreira A., Li B., Baugh C. M., Pascoli S., 2013, J. Cosmol. Astropart.
+
+Phys., 11, 56
+
+Barreira A., Li B., Hellwing W. A., Lombriser L., Baugh C. M., Pascoli S.,
+
+2014, J. Cosmol. Astropart. Phys., 4, 29
+
+Barreiro T., Copeland E. J., Nunes N. J., 2000, PRD, 61, 127301
+Bird S., Viel M., Haehnelt M. G., 2012, MNRAS, 420, 2551
+Borisov A., Jain B., Zhang P., 2012, PRD, 85, 063518
+Brandbyge J., Hannestad S., 2009, J. Cosmol. Astropart. Phys., 5, 2
+Brandbyge J., Hannestad S., Haugbølle T., Thomsen B., 2008, J. Cosmol.
+
+Astropart. Phys., 8, 20
+
+Brax P. H., Martin J., 1999, Physics Letters B, 468, 40
+Brax P., Valageas P., 2013, PRD, 88, 023527
+Brax P., van de Bruck C., Davis A.-C., Shaw D. J., 2008, PRD, 78, 104021
+Brax P., Rosenfeld R., Steer D. A., 2010, J. Cosmol. Astropart. Phys., 8, 33
+Buchdahl H. A., 1970, MNRAS, 150, 1
+Bullock J. S., Kolatt T. S., Sigad Y., Somerville R. S., Kravtsov A. V.,
+
+Klypin A. A., Primack J. R., Dekel A., 2001, MNRAS, 321, 559
+
+Capozziello S., Carloni S., Troisi A., 2003,
+
+in , Vol. 1, Recent
+
+Res.Dev.Astron.Astrophys.. Research Signpost, p. 625
+
+Carroll S. M., de Felice A., Duvvuri V., Easson D. A., Trodden M., Turner
+
+M. S., 2005, PRD, 71, 063513
+
+Casarini L., Bonometto S. A., Tessarotto E., Corasaniti P.-S., 2016, preprint,
+
+(arXiv:1601.07230)
+
+Casas S., Amendola L., Baldi M., Pettorino V., Vollmer A., 2015, preprint,
+
+(arXiv:1508.07208)
+
+Castorina E., Sefusatti E., Sheth R. K., Villaescusa-Navarro F., Viel M.,
+
+2014, J. Cosmol. Astropart. Phys., 2, 49
+
+Cataneo M., et al., 2014, preprint (arXiv:e-prints 1412.0133),
+Chevallier M., Polarski D., 2001, International Journal of Modern Physics
+
+D, 10, 213
+
+Cooray A., Sheth R., 2002, Physics Reports, 372, 1
+Copeland E. J., Liddle A. R., Wands D., 1998, PRD, 57, 4686
+Copeland E. J., Sami M., Tsujikawa S., 2006, International Journal of Mod-
+
+ern Physics D, 15, 1753
+
+Courtin J., Rasera Y., Alimi J.-M., Corasaniti P.-S., Boucher V., F¨uzfa A.,
+
+2011, MNRAS, 410, 1911
+
+Crocce M., Scoccimarro R., 2006, Phys. Rev. D, 73, 063520
+Cui W., Baldi M., Borgani S., 2012, MNRAS, 424, 993
+Dolag K., Bartelmann M., Perrotta F., Baccigalupi C., Moscardini L.,
+
+Meneghetti M., Tormen G., 2004, A&A, 416, 853
+
+Dossett J., Hu B., Parkinson D., 2014, J. Cosmol. Astropart. Phys., 3, 46
+Dvali G., Gabadadze G., Porrati M., 2000, Physics Letters B, 485, 208
+Falck B., Koyama K., Zhao G.-B., 2015, J. Cosmol. Astropart. Phys., 7, 49
+Gershtein S. S., Zel’dovich Y. B., 1966, Soviet Journal of Experimental and
+
+Theoretical Physics Letters, 4, 120
+
+Giocoli C., Marulli F., Baldi M., Moscardini L., Metcalf R. B., 2013, MN-
+
+RAS, 434, 2982
+
+Gronke M., Mota D. F., Winther H. A.,
+
+2015,
+
+preprint,
+
+(arXiv:1505.07129)
+
+Agarwal S., Feldman H. A., 2011, MNRAS, 410, 1647
+
+Hall A. C., Challinor A., 2012, MNRAS, 425, 1170
+
+MNRAS 000, 1–18 (2016)
+
+Extended accurate halo models
+
+19
+
+Harnois-D´eraps J., Munshi D., Valageas P., van Waerbeke L., Brax P., Coles
+
+P., Rizzo L., 2015a, preprint, (arXiv:1506.06313)
+
+Harnois-D´eraps J., van Waerbeke L., Viola M., Heymans C., 2015b, MN-
+
+RAS, 450, 1212
+
+Heavens A., 2003, MNRAS, 343, 1327
+Heitmann K., Higdon D., White M., Habib S., Williams B. J., Lawrence E.,
+
+Wagner C., 2009, ApJ, 705, 156
+
+Heitmann K., White M., Wagner C., Habib S., Higdon D., 2010, ApJ, 715,
+
+104
+
+Navarro J. F., Frenk C. S., White S. D. M., 1997, ApJ, 490, 493
+Nojiri S., Odintsov S. D., 2003, PRD, 68, 123512
+Okoli C., Afshordi N., 2015, preprint, (arXiv:1510.03868)
+Otten E. W., Weinheimer C., 2008, Reports on Progress in Physics, 71,
+
+086201
+
+Oyaizu H., 2008, PRD, 78, 123523
+Palanque-Delabrouille N., et al., 2015, preprint, (arXiv:1506.05976)
+Peacock J. A., Smith R. E., 2000, MNRAS, 318, 1144
+Peloso M., Pietroni M., Viel M., Villaescusa-Navarro F., 2015, J. Cosmol.
+
+Heitmann K., Lawrence E., Kwan J., Habib S., Higdon D., 2014, ApJ, 780,
+
+Astropart. Phys., 7, 1
+
+111
+
+Heymans C., et al., 2013, MNRAS, 432, 2433
+Hojjati A., Zhao G.-B., Pogosian L., Silvestri A., 2011a, MGCAMB: Mod-
+iﬁcation of Growth with CAMB, Astrophysics Source Code Library
+(ascl:1106.013)
+
+Hojjati A., Pogosian L., Zhao G.-B., 2011b, J. Cosmol. Astropart. Phys., 8,
+
+5
+
+Hu W., Sawicki I., 2007a, PRD, 76, 064004
+Hu W., Sawicki I., 2007b, PRD, 76, 104043
+Ichiki K., Takada M., 2012, PRD, 85, 063521
+Inman D., Emberson J. D., Pen U.-L., Farchi A., Yu H.-R., Harnois-D´eraps
+
+J., 2015, PRD, 92, 023502
+
+Jain B., Vikram V., Sakstein J., 2013, ApJ, 779, 39
+Jenkins A., Frenk C. S., White S. D. M., Colberg J. M., Cole S., Evrard
+
+A. E., Couchman H. M. P., Yoshida N., 2001, MNRAS, 321, 372
+
+Jennings E., Baugh C. M., Angulo R. E., Pascoli S., 2010, MNRAS, 401,
+
+2181
+
+Joudaki S., et al., 2016, preprint, (arXiv:1601.05786)
+Joyce A., Jain B., Khoury J., Trodden M., 2015, Phys. Rep., 568, 1
+Khoury J., Weltman A., 2004, PRD, 69, 044026
+Kitching T. D., et al., 2014, MNRAS, 442, 1326
+Komatsu E., et al., 2011, ApJS, 192, 18
+Kopp M., Appleby S. A., Achitouv I., Weller J., 2013, PRD, 88, 084015
+Koyama K., 2015, preprint, (arXiv:1504.04623)
+Koyama K., Silva F. P., 2007, PRD, 75, 084040
+Koyama K., Taruya A., Hiramatsu T., 2009, PRD, 79, 123512
+Lawrence E., Heitmann K., White M., Higdon D., Wagner C., Habib S.,
+
+Williams B., 2010, ApJ, 713, 1322
+
+Lesgourgues J., Pastor S., 2006, Phys. Rep., 429, 307
+Lewis A., Challinor A., Lasenby A., 2000, ApJ, 538, 473
+Li B., Barrow J. D., 2007, PRD, 75, 084010
+Li B., Efstathiou G., 2012, MNRAS, 421, 1431
+Li Y., Hu W., 2011, PRD, 84, 084033
+Li B., Zhao G.-B., Teyssier R., Koyama K., 2012, J. Cosmol. Astropart.
+
+Phys., 1, 51
+
+Li B., Hellwing W. A., Koyama K., Zhao G.-B., Jennings E., Baugh C. M.,
+
+2013, MNRAS, 428, 743
+
+Li B., He J.-h., Gao L., 2015, preprint, (arXiv:1508.07366)
+Linder E. V., 2003, Physical Review Letters, 90, 091301
+Linder E. V., 2015, PRD, 91, 123012
+Llinares C., Mota D. F., Winther H. A., 2014, A&A, 562, A78
+LoVerde M., 2014, PRD, 90, 083518
+Lobashev V. M., 2003, Nucl. Phys., A719, C153
+Lombriser L., 2014, Ann. Phys., 526, 259282
+Lombriser L., Koyama K., Zhao G.-B., Li B., 2012, PRD, 85, 124054
+Lombriser L., Li B., Koyama K., Zhao G.-B., 2013, PRD, 87, 123511
+Lombriser L., Koyama K., Li B., 2014, J. Cosmol. Astropart. Phys., 3, 21
+Lombriser L., Simpson F., Mead A., 2015, Physical Review Letters, 114,
+
+251101
+
+Massara E., Villaescusa-Navarro F., Viel M., 2014, J. Cosmol. Astropart.
+
+Phys., 12, 53
+
+McDonald P., Trac H., Contaldi C., 2006, MNRAS, 366, 547
+Mead A., 2015, HMcode: Halo-model matter power spectrum computation,
+
+Astrophysics Source Code Library (ascl:1508.001)
+
+Mead A. J., Peacock J. A., Lombriser L., Li B., 2015a, MNRAS, 452, 4203
+Mead A. J., Peacock J. A., Heymans C., Joudaki S., Heavens A. F., 2015b,
+
+MNRAS, 454, 1958
+
+Nakamura T. T., Suto Y., 1997, Progress of Theoretical Physics, 97, 49
+
+MNRAS 000, 1–18 (2016)
+
+Percival W. J., 2005, A&A, 443, 819
+Planck Collaboration XIII 2015, preprint (arXiv:e-prints 1502.01589),
+Planck Collaboration XIV 2015, preprint, (arXiv:1502.01590)
+Press W. H., Schechter P., 1974, ApJ, 187, 425
+Puchwein E., Baldi M., Springel V., 2013, MNRAS, 436, 348
+Ratra B., Peebles P. J. E., 1988, PRD, 37, 3406
+SNO Collaboration 2002, Phys. Rev. Lett., 89, 011301
+Schmidt F., 2010, PRD, 81, 103002
+Schmidt F., Lima M., Oyaizu H., Hu W., 2009, PRD, 79, 083518
+Schmidt F., Hu W., Lima M., 2010, PRD, 81, 063005
+Seljak U., 2000, MNRAS, 318, 203
+Sheth R. K., Tormen G., 1999, MNRAS, 308, 119
+Sheth R. K., Mo H. J., Tormen G., 2001, MNRAS, 323, 1
+Shi D., Li B., Han J., Gao L., Hellwing W. A., 2015, MNRAS, 452, 3179
+Simpson F., James J. B., Heavens A. F., Heymans C., 2011, Phys. Rev. Let.,
+
+107, 271301
+
+Simpson F., Heavens A. F., Heymans C., 2013, PRD, 88, 083510
+Simpson F., Harnois-D´eraps J., Heymans C., Jimenez R., Verde L., 2015,
+
+preprint, (arXiv:1507.04862)
+
+Smith R. E., et al., 2003, MNRAS, 341, 1311
+Smith R. E., Reed D. S., Potter D., Marian L., Crocce M., Moore B., 2014,
+
+MNRAS, 440, 249
+
+South Pole Telescope Collaboration 2014, ApJ, 782, 74
+Springel V., 2005, MNRAS, 364, 1105
+Super-Kamiokande Collaboration 1998, Phys. Rev. Lett., 81, 1562
+Takahashi R., Sato M., Nishimichi T., Taruya A., Oguri M., 2012, ApJ, 761,
+
+152
+
+Terukina A., Lombriser L., Yamamoto K., Bacon D., Koyama K., Nichol
+
+R. C., 2014, J. Cosmol. Astropart. Phys., 4, 13
+
+Tessore N., Winther H. A., Metcalf R. B., Ferreira P. G., Giocoli C., 2015,
+
+preprint, (arXiv:1508.04011)
+
+Tinker J., Kravtsov A. V., Klypin A., Abazajian K., Warren M., Yepes G.,
+
+Gottl¨ober S., Holz D. E., 2008, ApJ, 688, 709
+
+Tremaine S., Gunn J. E., 1979, Physical Review Letters, 42, 407
+Upadhye A., Biswas R., Pope A., Heitmann K., Habib S., Finkel H., Fron-
+
+tiere N., 2014, PRD, 89, 103515
+
+Vainshtein A., 1972, Phys. Lett., B39, 393
+Viel M., Haehnelt M. G., Springel V., 2010, J. Cosmol. Astropart. Phys., 6,
+
+15
+
+Vikram V., Cabr´e A., Jain B., VanderPlas J. T., 2013, J. Cosmol. Astropart.
+
+Phys., 8, 20
+
+Villaescusa-Navarro F., Marulli F., Viel M., Branchini E., Castorina E., Se-
+
+fusatti E., Saito S., 2014, J. Cosmol. Astropart. Phys., 3, 11
+
+Warren M. S., Abazajian K., Holz D. E., Teodoro L., 2006, APJ, 646, 881
+Wetterich C., 1988, Nuclear Physics B, 302, 645
+Wetterich C., 1995, A&A, 301, 321
+Will C. M., 2006, Progress of Theoretical Physics Supplement, 163, 146
+Wintergerst N., Pettorino V., 2010, PRD, 82, 103516
+Winther H. A., et al., 2015, MNRAS, 454, 4208
+Zhao G.-B., 2014, ApJS, 211, 23
+Zhao G.-B., Giannantonio T., Pogosian L., Silvestri A., Bacon D. J.,
+
+Koyama K., Nichol R. C., Song Y.-S., 2010, PRD, 81, 103510
+
+Zhao G.-B., Li B., Koyama K., 2011, PRD, 83, 044007
+van Daalen M. P., Schaye J., McCarthy I. G., Booth C. M., Vecchia C. D.,
+
+2014, MNRAS, 440, 2997
+
+20
+
+A. J. Mead et al.
+
+Figure A1. The results of a spherical model calculation (black dots) and
+a ﬁt to those results (red lines) for models where gravity is enhanced or
+suppressed for perturbations by a constant factor for all scales and at all
+times. The background expansion is standard, with Ωm = 1 and Ωv = 0. At
+this level the effect of Ge f f can be mapped directly into having a smoothly
+distributed matter component via Geff = G(1− fν ) and an increase in fν is
+exactly equivalent to a lower gravitational constant for perturbations.
+
+Figure A2. Results from our spherical model calculations for DGP grav-
+ity for a background with Ωm = 1, Ωv = 0 and an expansion given by the
+standard gravity expectation (Einstein-de-Sitter). The solid lines show the
+calculation for H0rc = 0.57 (red), 1.2 (green) and 5.65 (blue) while the
+dashed lines shows our ﬁtting function. The solid black lines show the stan-
+dard gravity expectation of δc (cid:39) 1.686 and ∆v (cid:39) 178, which is independent
+of collapse time.
+
+APPENDIX A: SIMPLE SPHERICAL MODEL
+CALCULATIONS
+
+In this appendix we give our method and results for the spherical
+model calculations that are used as the basis for ﬁtting formula that
+are used in this paper.
+
+In the spherical model we are interested in solving the full
+non-linear equations that govern the evolution of a spherical top-
+hat overdensity. Under the assumption that a spherical hat remains
+a spherical hat throughout its evolution, the equation of motion for
+the over-density is
+˙δ 2
+¨δ + 2H ˙δ − 4
+1 + δ =
+3
+In an Einstein-de-Sitter universe, an initially over-dense top hat will
+always collapse at some point in the future, but this is only true
+in ΛCDM if the initial perturbation is sufﬁciently dense. The time
+of collapse is deﬁned as the time at which δ → ∞. On linearising
+equation (A1) we recover the standard equation for the evolution of
+an arbitrary perturbation conﬁguration
+
+Ωm(a)H2δ (1 + δ ) .
+
+3
+2
+
+(A1)
+
+¨δ + 2H ˙δ =
+
+3
+2
+
+Ωm(a)H2δ .
+
+(A2)
+
+The linear collapse threshold, δc, is deﬁned as the value that the
+linear ﬁeld has reached at the time that collapse occurs in the full
+non-linear model. In practice this is calculated by simultaneously
+evolving equations (A1) and (A2) for the same initial condition: a
+small seed over-density evolving in the linear theory growing solu-
+tion (note this is δ ∝ a only if Geff = 1). The virialized over-density
+is calculated assuming that the virial theorem applies at the time of
+collapse; essentially that there is the virial split of kinetic and po-
+tential energy. This determines the radius of the collapsed top-hat
+that may then be translated into ∆v. For models with Λ (or any DE)
+one should also consider the contribution of Λ to halo support, but
+our calculations only consider Ωm = 1 and Ωv = 0 models.
+In our simpliﬁed calculations for massive neutrinos, the right-
+hand sides of equations (A1) and (A2) are multiplied by 1 − fν
+to reﬂect the fact that the fraction of mass in neutrinos does not
+
+contribute to gravitational clustering on small scales. For a con-
+stant, enhanced gravitational constant the right-hand sides are mul-
+tiplied by Geff/G, which arises because the right-hand sides derive
+from the gravitational Poisson equation ∇2Φ = 4πG ¯ρδ . Note that
+this means increasing fν is exactly equivalent to a drop in G. The
+spheircal model parameters that result from a change in the gravi-
+tational constant for perturbations are shown in Fig. A1. The ﬁtting
+functions are power laws
+δc (cid:39) 1.686× (Geff/G)0.041 ,
+∆v (cid:39) 178× (Geff/G)−0.763 .
+
+(A3)
+
+In the case of DGP we include the factor of 1 + 1/3β in the
+right-hand sides of the equations, which comes from the linear DGP
+scalar-ﬁeld equation. We do not explicitly account for the screening
+mechanism in our calculation. We show results for Ωm = 1 DGP
+models in Fig. A2 together with ﬁtting formulae for δc and ∆v that
+were calibrated to the results of this calculation. The ﬁtting function
+for ∆v is a power law, but that for δc had to be ﬁt via a sigmoid
+because of the ‘S’ shaped bend visible in the most extreme model
+in Fig. A2. The ﬁtting functions are
+δc (cid:39) 1.686× S(log10[2.33a/(H0rc)0.65],0.4,1.,0.9973) ,
+∆v (cid:39) 178× [1− 0.08a(H0rc)−0.7] ,
+where the sigmoid is deﬁned in equation (40).
+
+(A4)
+
+Note that our integration methods display some numerical
+noise in the results for δc and ∆v, which manifests in the non-
+smooth curves seen in Fig. A2, particularly for δc. However, we
+checked our δc calculations for ΛCDM models against the ﬁtting
+formula of Nakamura & Suto (1997) and ﬁnd excellent agreement,
+and no indication that our calculation is biased. Our results also
+agree with δc and ∆v values given in Schmidt et al. (2010) for the
+DGP model also agree with those in Schmidt et al. (2009) for a
+gravity enhancement of 1/3.
+
+MNRAS 000, 1–18 (2016)
+
+ 1.65 1.66 1.67 1.68 1.69 1.7 1.71 1.72 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4δcGeff/GModelCalculation 140 160 180 200 220 240 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4∆vGeff/G 1.681 1.682 1.683 1.684 1.685 1.686 1.687 0 0.2 0.4 0.6 0.8 1δc(a)aH0rc=0.57H0rc=1.20H0rc=5.65 155 160 165 170 175 180 0 0.2 0.4 0.6 0.8 1∆v(a)a

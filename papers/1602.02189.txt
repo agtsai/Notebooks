@@ -1,0 +1,1038 @@
+Searching for new yellow symbiotic stars: positive identiﬁcation of
+
+StHα63
+
+N.O. Baella1,2, C.B. Pereira3, L.F. Miranda4, and A. Alvarez-Candal3
+
+1: Unidad de Astronom´ıa, Instituto Geof´ısico del Per´u, Lima, Per´u
+
+2: Departamento de Ciencias, Secci´on F´ısica, Pontiﬁcia Universidad Cat´olica del Per´u,
+
+Apartado 1761, Lima, Per´u
+
+3: Observat´orio Nacional/MCTI, Rua Gen. Jos´e Cristino, 77, 20921-400, Rio de Janeiro,
+
+Brazil
+
+4: Instituto de Astrof´ısica de Andaluc´ıa - CSIC, C/ Glorieta de la Astronom´ıa s/n, E-18008
+
+Email:nobar.baella@gmail.com,claudio@on.br,lfm@iaa.es,alvarez@on.br
+
+Granada, Spain
+
+Submitted to The Astronomical Journal
+
+Received
+
+;
+
+accepted
+
+Submitted to the Astronomical Journal
+
+6
+1
+0
+2
+
+ 
+
+b
+e
+F
+5
+
+ 
+
+ 
+ 
+]
+
+.
+
+R
+S
+h
+p
+-
+o
+r
+t
+s
+a
+[
+ 
+ 
+
+1
+v
+9
+8
+1
+2
+0
+
+.
+
+2
+0
+6
+1
+:
+v
+i
+X
+r
+a
+
+1Based on the observations collected at the Centro Astron´omico Hispano-Alem´an, Calar
+
+Alto, jointly operated by the Max-Planck-Institut f¨ur Astronomie (Heidelberg) and the
+
+Instituto de Astrof´ısica de Andaluc´ıa (CSIC), and at the 4.1m telescope at Cerro Pach´on
+
+Observatory, Chile.
+
+– 2 –
+
+ABSTRACT
+
+Yellow symbiotic stars are useful targets to probe whether mass transfer
+
+has happened in these binary systems. However, the number of known yellow
+
+symbiotic stars is very scarce. We report spectroscopic observations of ﬁve
+
+candidate yellow symbiotic stars selected by their position in the 2MASS (J−H)
+
+versus (H−Ks) diagram and included in some emission-line catalogs. Among
+
+the ﬁve candidates, only StHα63 is identiﬁed as a new yellow symbiotic star
+
+because of its spectrum and its position in the [TiO]1 – [TiO]2 that indicates a
+
+K4–K6 spectral type. In addition, the derived electron density (∼ 108.4 cm−3)
+
+and several emission line intensity ratios provide further support for that
+
+classiﬁcation. The other four candidates are rejected as symbiotic stars because
+
+three of them actually do not show emission lines and the fourth one shows
+
+only Balmer emission lines. We also found that the WISE W3–W4 index clearly
+
+separates normal K-giants from yellow symbiotic stars and, therefore, can be
+
+used as an additional tool to select candidate yellow symbiotic stars.
+
+Subject headings: binaries : symbiotic stars - stars : fundamental parameters -
+
+stars : individual (StHα63)
+
+– 3 –
+
+1.
+
+Introduction
+
+Symbiotic stars are interacting binary systems formed by a red giant star and a hot
+
+source (in most cases a white dwarf) that ionizes the stellar wind from the cool component.
+
+They can be divided in three diﬀerent infrared types, D, D′ and S, that are related to the
+
+nature of the cool giant in the system, orbital separation and physical conditions in the
+
+emitting nebulae (see Mikolajewska 1997). The number of currently identiﬁed symbiotics
+
+is much smaller than the predicted one. The catalog of Belczy´nski et al. (2000) contains
+
+173 Galactic symbiotics, while the predicted number ranges from 3×103 to 4×105 (Allen
+
+1984; Kenyon et al. 1993; Munari & Renzini 1992; Magrini et al. 2003). Recently, several
+
+surveys have discovered new symbiotic stars increasing their number. Corradi et al. (2008,
+
+2010) and Rodr´ıguez-Flores et al. (2014) discovered 12 S-type and 4 D-type new symbiotics
+
+by combining the IPHAS survey and the position of the candidate stars in the 2MASS
+
+color-color diagram. Miszalski et al. (2013) used the SuperCosmos Hα Survey (SHS)
+
+(Parker et al. 2005), selected Hα emission candidates towards the Galactic bulge, and
+
+discovered 13 S-type, 6 D-type, and 1 D′-type new symbiotics. Miszalski & Mikolajewska
+
+(2014), also based on the SHS catalogue, found 11 S-type and 1 D-type new symbiotics in
+
+the southern hemisphere. Therefore, a total of 48 new symbiotic stars have been added to
+
+the 173 previously known ones.
+
+Among S-type symbiotic stars, there is a group known as “yellow type symbiotics” in
+
+which the cool component is a K-type star rather than an M-type giant. Yellow symbiotics
+
+are useful objects to probe whether mass transfer has taken place in the past of these binary
+
+systems. The atmosphere of the K-type component of yellow symbiotics will be free from
+
+the strong molecular opacities due to TiO, CN and C2 absorption features that are present
+
+in the S-type symbiotics with an M-type giant, thereby enabling the determination of stellar
+
+abundances based on atomic lines. Studies of chemical abundances in yellow symbiotics
+
+– 4 –
+
+indeed show that these stars are enriched in s-process elements. Because these stars are
+
+not luminous enough to be self-enriched in s-process elements, the observed enrichment can
+
+be attributed to mass transfer from the former AGB star (now the white dwarf) of the
+
+system (see Smith et al 1996, 1997; Pereira & Roig 2009). Therefore, yellow symbiotics
+
+are valuable objects to test models of AGB nucleosynthesis (Busso et al. 2001). However,
+
+they are very rare objects: only 12 Galactic yellow symbiotics are included in the catalogue
+
+of Belczy´nski et al. (2000) that represent only ∼ 5.4% of the total number of 221 S-type
+
+symbiotics identiﬁed to date (see above). Moreover, yellow symbiotics are members of the
+
+ﬁeld Galactic halo population (Schmid & Nussbaumer 1993; Jorissen 2003). Therefore,
+
+there is not a speciﬁc Galactic direction where they can be surveyed and, in consequence,
+
+are very diﬃcult to ﬁnd. In fact, among the ∼ 3.6 million stellar spectra obtained with the
+
+LAMOST survey, only one new yellow symbiotic was found: LAMOST J12280490-014825.7,
+
+a K3 star with a high radial velocity and at high Galactic latitude (Li et al. 2015), similarly
+
+to some yellow symbiotics previously analyzed (Pereira & Roig 2009).
+
+Due to the rarity of these objects and absence of a particular Galactic location, surveys
+
+to search for new yellow symbiotics were inhibited in the past. However, Baella (2012)
+
+showed that combining their infrared properties and emission spectrum, yellow symbiotics
+
+are located in a particular region of the 2MASS color-color diagram. This led to the
+
+discovery of SS 383 as our ﬁrst candidate yellow symbiotic that has been identiﬁed following
+
+the criteria above mentioned (Baella et al. 2013, hereafter BPM13).
+
+In this work we report further spectroscopic results of our survey speciﬁcally dedicated
+
+to search and to identify new yellow symbiotics. Our major result is the identiﬁcation of
+
+StHα63 as a new yellow symbiotic star.
+
+– 5 –
+
+2. Target selection
+
+The selection of the candidates followed the same method as we applied for the
+
+identiﬁcation of SS 383 as a new candidate yellow symbiotic star (BPM13). Basically our
+
+method rely on the two observed properties of the yellow symbiotic stars, the emission-line
+
+spectrum and the K-type continuum.
+
+It was already well stablished that symbiotics
+
+occupy particular regions in the 2MASS (J − H) versus (H − Ks) diagram (Phillips 2007;
+
+Corradi et al. 2008, 2010). Furthermore, Baella (2012) showed that, after reddening
+
+correction, yellow symbiotics are clustered around (H − Ks) ∼ 0.2 and (J − H) ∼ 0.8
+
+because their positions in the two color diagram are mainly determined by the K-type
+
+component and they are clearly separated from S-type symbiotics with M-type components.
+
+By using the emission line catalogs of Stephenson & Sanduleak (1977), Stephenson
+
+(1986), Schwartz, Persson & Hamamm (1990) and Kohoutek & Wehmeyer (1997) we have
+
+identiﬁed ﬁve more stars that are located in the region of yellow symbiotics of the 2MASS
+
+color-color diagram and, therefore, are good candidates to be yellow symbiotics. Table
+
+1 lists the candidates and Figure 1 show their position in the (J − H) versus (H − Ks)
+
+diagram. To determine the corresponding reddening value for each object, we used the
+
+Galactic Dust Reddening and Extinction Service of IRSA (Infrared Science Archive):
+
+http://irsa.ipac.caltech.edu/applications/DUST/ to obtain the “E(B-V) Reddening” values,
+
+and converted E(B-V) to A(J), A(H), and A(Ks) extinctions using the relationships given
+
+by Bilir et al. (2008), which are used to draw the corresponding reddening vectors in
+
+Figure 1. In particular, for StHα63 we used a mean E(B-V) = 0.14 (Schlaﬂy & Finkbeiner
+
+2011; Schlegel et al. 1998), and obtained A(J-H) = 0.05 and A(H-Ks) = 0.03.
+
+– 6 –
+
+3. Observations & Reductions
+
+Spectroscopic observations of the ﬁve targets in Table 1 were performed on 2013 and
+
+2014 with the Cassegrain Twin Spectrograph (TWIN) attached to the 3.5 m telescope of the
+
+Calar Alto Observatory (Spain), and with the Goodman spectrograph attached to the 4.1 m
+
+telescope of the SOAR Observatory (Chile). Table 1 also includes the date of observations
+
+and the used spectrograph. TWIN includes two separate spectroscopic channels (blue and
+
+red) behind the common entrance slit aperture. The detectors were a SITe CCD 22b in
+
+the blue channel and a SITe CCD 20b in the red channel. We used gratings T08 (blue)
+
+and T04 (red) to cover the spectral ranges 3200–5800 ˚A and 5500–7600 ˚A , respectively, at
+
+a spectral resolution of 1.08 ˚A pixel−1 in both channels. The slit was oriented east–west
+
+and its width was 2′′. The Goodman spectrograph was used with the Farchild CCD 486
+
+and three gratings: blue, mid, and red mode, covering the spectral ranges 3550–6300 ˚A ,
+
+4500–7250 ˚A , and 6400–9150 ˚A . respectively, at a spectral resolution of 0.65 ˚A pixel−1 in
+
+the three spectral ranges. The slit was oriented north–south and its width was 1′′. Spectra
+
+of each target were obtained with several exposure times between 15 and 1200 seconds, the
+
+short exposures to avoid saturation of possibly strong emission lines (e.g., Hα), the long
+
+exposures to detected faint emission lines.
+
+The spectra were reduced using standard IRAF tasks, from bias subtraction and
+
+ﬂat-ﬁeld correction, through spectral extraction and wavelength and ﬂux calibration.
+
+Spectrophotometric standards from Massey et al. (1988) and Hamuy et al. (1994) were
+
+also observed with the same instrumental conﬁguration before and after the objects for ﬂux
+
+calibration.
+
+– 7 –
+
+4. StHα63 : a new yellow symbiotic star
+
+Figure 2 presents the spectrum of StHα63 and Table 2 lists the observed ﬂuxes of
+
+the identiﬁed emission lines. The spectrum of StHα63 shows recombination Balmer, He i,
+
+and He ii λ4686 emission lines, and forbidden [O iii] λ4363,4959,5007 emission lines. The
+
+absorption spectrum presents the TiO bands at 6200, 7125, and 7160˚A, and absorption
+
+lines due to Fe i at 4202,5227,5269,5227,5415 ˚A , Ca i at 4226 ˚A , Mg i at 5183 ˚A , Cr i at
+
+5206 ˚A , Na i at 5890 ˚A , and a strong absorption around 6500 ˚A that is due to contributions
+
+of several strong absorption lines of Fe i at 6494,6496 ˚A , Ba ii at 6497 ˚A , and Ca i at 6499 ˚A.
+
+The spectrum clearly points to a symbiotic nature for StHα63. Moreover, the spectrum is
+
+very similar to that of the yellow symbiotic CD-43◦14304 with a K7 spectral type (Schmid
+
+& Nussbaumer 1993; Pereira et al. 1999; M¨urset & Schmid 1999), and to that of the
+
+candidate yellow symbiotic SS 383 with a spectral type K7–M0 (BPM13). These similarities
+
+strongly suggest a K spectral type for StHα63 and, in consequence, that StHα63 is a yellow
+
+symbiotic.
+
+To obtain a more precise estimate for the spectral type of StHα63 we proceeded as
+
+we did for SS 383: we measure the quantitative TiO indexes (Kenyon & Fern´andez-Castro
+
+1987) and put StHα63 in the [TiO]1 – [TiO]2 diagram. Figure 3 shows the position of
+
+StHα63 in this diagram, which lies between those of AG Dra and TV CVn, two stars
+
+with spectral types K4 III and K5.3 III, respectively (Kenyon & Fern´andez-Castro 1987).
+
+Therefore, we estimate a spectral type between K4 and K6 for StHα63 that conﬁrms the
+
+yellow symbiotic nature of the object.
+
+Some physical parameters of StHα63, such as the color excess E(B − V ), optical depth
+
+in Hα (τHα), electron density (Ne), and infrared type based on He i line intensity ratios can
+
+be obtained directly from the observed spectrum. To obtain these parameters we follow
+
+the same basic procedures as outlined in BPM13 (see also Guti´errez-Moreno & Moreno
+
+– 8 –
+
+1996, and Proga et al. 1994). Table 3 shows the results. The electron density derived
+
+from the [O iii] emission lines intensity ratio is logNe ∼ 8.4 (see Table 3), a value that is
+
+typical of S-type symbiotics (logNe ∼ 8–10) but larger than the values found in D-type
+
+symbiotics (logNe ∼ 6–7, e.g., Schmid & Schild 1990; Mikolajeska & Kenyon 1992). As for
+
+the infrared (D or S) type (Proga et al. 1994), the line ratios I(He iλ6678)/(He iλ5876)
+
+and I(He iλ7065)/(He iλ5876) corrected for reddening are 0.31 and 0.78, respectively. The
+
+value of the I(He iλ6678)/(He iλ5876) ratio is not typical for S-type symbiotics according
+
+to Proga et al. (1994), although PU Vul investigated in their sample also presents a similar
+
+ratio of 0.30. The I(He iλ7065)/(He iλ5876) intensity ratio in StHα63 is similar to that
+
+observed in the yellow symbiotic AG Dra (Proga et al. 1994).
+
+Finally, our spectrum allow us to analyze the position of StHα63 in the [O iii]5007/Hβ
+
+versus [O iii]4363/Hγ diagnostic diagram that was previously used in our studies of
+
+planetary nebulae (Pereira & Miranda 2005; Pereira et al. 2010) and of the yellow symbiotic
+
+SS 383 (BPM13). The line intensity ratios (see Table 2) place StHα63 in the region of the
+
+diagram occupied by S-type symbiotics (see BPM13, their Figure 5 ) thus further reinforcing
+
+our conclusion of the symbiotic nature for this object.
+
+5. The spectra of [KW97] 37-26, [KW97] 61-27, StHα116 and SS 360.
+
+Figure 4 presents the spectra of the four candidates in Table 1 that were rejected as
+
+symbiotics either due to the absence of emission lines or, when present, because they were
+
+not the appropriate ones to classify the star as a symbiotic. Noticeably, [KW97] 37-26,
+
+[KW97] 61-27, and StHα116 do not show the Hα emission line even though the are included
+
+in Hα emission-line star catalogs (see MacConnel 1981; Stephenson 1986; Kohoutek &
+
+Wehmeyer 1999). In the cases of [KW97] 61-27 and StHα116 we note that these two
+
+stars are characterized by very strong TiO absorption bands (Figure 4) that produce an
+
+– 9 –
+
+“apparent emission peak” around 6540˚A , bluewards the position of Hα, which may be
+
+confused with the Hα emission line in very low resolution (objective-prism) spectra. Only
+
+SS 360, discovered as an emission-line star by Stephenson & Sanduleak (1977), presents
+
+Balmer emission lines. However, the other typical emission lines of symbiotics (e.g., [O iii])
+
+are absent, discarding a symbiotic classiﬁcation.
+
+The spectrum of [KW97] 37-26 (= [M81] I-734 = BD+00◦4203) is very similar to those
+
+of HD 1069 and HD 26946 with K2 I and K3 III spectral types, respectively (Jacoby et al.
+
+1984), if we apply to these two stars a reddening of 1.4 as used in Figure 1 for [KW97]
+
+37-26. This points out that [KW97] 37-26 is an early K supergiant or giant star. A more
+
+precise classiﬁcation is not possible because our spectra do not cover the oxygen line at
+
+7774˚A , the calcium infrared triplet and/or the CN band at 7925˚A that are useful spectral
+
+features to discriminate among supergiants, giants and dwarf stars (see Pereira & Miranda
+
+2007). The spectra of StHα116 (= BD+14◦2953) and [KW97] 61-27 are similar to that
+
+of SAO 21753, a K7 III star, whereas the spectrum of SS 360 is similarities to that of the
+
+M3 III star SAO 63340 (see Jacoby et al. 1984 for the spectra of the used comparison stars).
+
+6. The W34-index from WISE bands as an additional constraint to search for
+
+candidates to S-type yellow symbiotic stars.
+
+As shown above, SS 360 fullﬁls the two criteria used by us to select candidate yellow
+
+symbiotics but its spectrum rules out this classiﬁcation. This suggests to look for additional
+
+constraints for a better selection of candidates. We have explored the data provided in the
+
+WISE (Wide-ﬁeld Infrared Survey Explorer) archive. The WISE satellite scanned the whole
+
+sky in the 3.4, 4.6, 12, and 22µm bands (Wright et al. 2010) commonly named W1, W2,
+
+W3 and W4, respectively. We used the W3–W4 (W34) index and created ﬁve histograms
+
+to analyze the possibility of distinguishing true S-type yellow symbiotics stars among the
+
+– 10 –
+
+candidate objects in Figure 1.
+
+Figure 5 shows these ﬁve histograms. Histogram A presents a sample of about 340
+
+K-giant stars with eﬀective temperature between 3700 and 5200 K (Hekker & Mel´endez
+
+2007). It shows that the probability of ﬁnding K-giant stars with W34 > 0.4 is very low.
+
+Histogram B presents the distribution of S-type symbiotic stars from Belczynski et al.
+
+(2000). These objects cover the entire range of W34 values in the ﬁgure, although there
+
+is a small increase of the number of S-type symbiotics in the W34 0.4–0.8 range. This
+
+could be an indication that S-type symbiotics have an emission excess between 12µm and
+
+22µm. To check this possibility, histogram C shows a sub-sample of objects of histogram B,
+
+namely, those S-type symbiotics that contain giant stars with eﬀective temperatures higher
+
+than 3500 K; these symbiotics present W34 values higher than 0.4. It is worth noting that
+
+eﬀective temperatures higher than ∼ 3500 K are required for yellow symbiotics. Histogram
+
+D shows a sample of nine true S-type yellow symbiotics. Remarkably, they all have W34 >
+
+0.4, indicating that the diﬀerence between S-type yellow symbiotics and “normal” K-giants
+
+(without symbiotic activity) is the W34 value. This is probably due to the presence of a
+
+dust shell in true S-type yellow symbiotics. The dust shell could add an excess of emission
+
+between 12µm and 22µm, that is revealed through the W34 index that appears as an useful
+
+tool to distinguish between yellow symbiotic and “normal” K-giants.
+
+To investigate these results further, we construct the histogram E with the ﬁve objects
+
+of Table 1 and SS 383 (BPM13). Only SS 383 and StHα63 have W34 > 0.4, which is
+
+compatible with the yellow symbiotic classiﬁcation for StHα63, and provides further support
+
+for a yellow symbiotic nature of the candidate SS 383. Moreover, SS 360 has W34 ∼ 0.21
+
+and, therefore, it is not located in the region of yellow symbiotics, in agreement with its
+
+non-yellow symbiotic nature stablished above, even though it is an emission-line star and its
+
+position on the 2MASS two color diagram favors such a classiﬁcation. From these ﬁndings,
+
+– 11 –
+
+we conclude that the W34 index can be used as a useful tool to identify candidate yellow
+
+symbiotics, in combination with emission-line star catalogs and the 2MASS color-color
+
+diagram.
+
+7. Conclusions
+
+In this work we presented spectroscopic observations of ﬁve emission-line stars that are
+
+candidates for yellow symbiotics on the basis of their position in the 2MASS color-color
+
+diagram. Only one of them, StHα63, has been positively identiﬁed as a new yellow
+
+symbiotic. Its spectrum and position in the [TiO]1 - [TiO]2 diagram indicates a spectral
+
+type between K4 and K6. In addition, He i emission line ratios, derived electron density,
+
+and position in the [O iii]5007/Hβ versus [O iii]4363/Hγ diagram provide further support
+
+for the yellow symbiotic nature of StHα63. The other four candidates are rejected as
+
+symbiotics because three of them do not show emission lines (although they were classiﬁed
+
+as emission-line stars) or one shows only Balmer emission lines.
+
+Our survey for yellow symbiotics based on their particular position in the 2MASS
+
+color-color diagram and four emission-line star catalogs raised only six candidates (SS 383
+
+and the ﬁve stars analyzed in this work). This small number is not surprising given the
+
+rarity of yellow symbiotics. Two of them (SS 383 and StHα63) have been identiﬁed as new
+
+yellow symbiotics, which provides strong support to our method of target selection. The
+
+success of this survey becomes more clear if one takes into account that three of the six
+
+selected objects were erroneously classiﬁed as emission-line stars.
+
+We used the WISE archive to explore the possibility of distinguishing yellow symbiotic
+
+stars. We found that yellow symbiotics have a W3–W4 (W34) index > 0.4 and are clearly
+
+separated from “normal” K-giant stars. Therefore, the W34 index is an useful tool to
+
+– 12 –
+
+improve the selection of candidate yellow symbiotics.
+
+We are very grateful to the staﬀ at the Calar Alto Observatory by the excellent
+
+observations, and to David Sanmartin (SOAR) for the excellent support given during the
+
+observation of SS 360. LFM acknowledges partial support by grant AYA2011-30228-C03.01
+
+and AYA2014-57369-C3-3-P of the Spanish MINECO, both co-funded by FEDER funds.
+
+– 13 –
+
+Table 1: List of objects spectroscopically observed, with the equatorial coordinates, V-
+
+magnitudes, used spectrograph, and observed infrared color-indexes.
+
+Star
+
+Date Obs
+
+α2000
+
+δ2000
+
+V (GSC)a T/Gc
+
+J−Hd H−Kd
+
+[KW97] 37-26
+
+2013 Jun 26
+
+19 26 12.5 +00 55 20.3
+
+[KW97] 61-27
+
+2013 Jun 26
+
+22 07 38 +49 00 18.0
+
+SS 360
+
+StHα63
+
+2014 Jul 18
+
+18 17 37.7 −28 37 05.6
+
+2013 Oct 15
+
+07 58 05.9 −07 43 55.5
+
+10.0
+
+11.8
+
+12.3
+
+13.2b
+
+StHα116
+
+2013 Jun 26
+
+15 52 19.7 +14 15 19.8
+
+10.4
+
+a: The Guide Star Catalog, Lasker et al. (2008)
+
+T
+
+T
+
+G
+
+T
+
+T
+
+0.88
+
+0.92
+
+0.93
+
+0.80
+
+0.79
+
+0.24
+
+0.26
+
+0.25
+
+0.25
+
+0.22
+
+b: Nomad Catalog, Zacharias et al. (2005)
+
+c: T: Twin spectrograph; G: Goodmann spectrograph
+
+d: Cutri et al. (2003)
+
+– 14 –
+
+Table 2: Observed emission line ﬂuxes (relative to F(Hβ) = 100) in StHα63.
+
+Wavelength (˚A )
+
+Identiﬁcation F(λ)
+
+3869
+
+3889
+
+3970
+
+4101
+
+4340
+
+4363
+
+4471
+
+4686
+
+4861
+
+4959
+
+5007
+
+5876
+
+6563
+
+6678
+
+7065
+
+[Ne iii]
+
+He i
+
+Hǫ
+
+Hδ
+
+Hγ
+
+[O iii]
+
+He i
+
+He ii
+
+Hβ
+
+[O iii]
+
+[O iii]
+
+He i
+
+Hα
+
+He i
+
+He i
+
+7.8
+
+6.3
+
+7.5
+
+13.9
+
+29.6
+
+17.0
+
+5.0
+
+6.6
+
+100.0
+
+6.6
+
+25.3
+
+16.2
+
+596.0
+
+7.4
+
+20.2
+
+F(Hβ) erg cm−2 s−1
+
+5.1×10−14
+
+– 15 –
+
+Table 3: Physical parameters of StHα63.
+
+Parameter
+
+Value
+
+E(B-V)
+
+0.19±0.04
+
+AV
+
+τ Hα
+
+0.59±0.12a
+
+1.1±0.1
+
+log(Ne)b cm−3
+
+He i λ6678/λ5876c
+
+He i λ7065/λ5876c
+
+8.4
+
+0.31
+
+0.78
+
+Spectral Typed
+
+K4 - K6
+
+a Using R=3.1
+
+b From the [O iii] emission lines and Te = 10 000 K
+
+c Reddening corrected
+
+d From [TiO]1 and [TiO]2 indexes
+
+– 16 –
+
+REFERENCES
+
+Allen, D.A., 1984, PASA, 5, 369.
+
+Baella, N.O., 2012, PhD thesis, Observat´orio Nacional, Rio de Janeiro.
+
+Baella, N.O., Pereira, C.B. & Miranda, L.F., 2013, AJ, 146, 115 (BPM13)
+
+Belczy´nski, K., Mikolajewska, J., Munari, U., Ivison, R.J. & Friedjung, M., 2000, Astron.
+
+Astrophys. Sup. Ser., 146, 407
+
+Bilir, S., Ak, S., Karaali, S., Cabrera-Lavers, A., Chonis, T.S. et al. 2008, MNRAS, 384,
+
+1178.
+
+Busso, M., Gallino, R., Lambert, D.L., Travaglio, C. & Smith, V.V. 2001, ApJ, 557, 802
+
+Corradi, R.L.M., Rodr´ıguez-Flores, E.R., Mampaso, A., Greimel, R., Viironen, K. et al.
+
+2008, A&A, 480, 409
+
+Corradi, R.L.M., Valentini, M., Munari, U., Drew, J.E.; Rodr´ıguez-Flores, E.R. et al. 2010,
+
+A&A, 509, 41
+
+Cutri, R.M., Skrutski, M.F., van Dyk, S., Beichman, C.A., Carpenter, J.M. et al. 2003, The
+
+IRSA 2MASS All Sky Point Source Catalog, NASA/IPAC Infrared Science Archive
+
+Downes, R.A. & Keyes, C.D., 1988, AJ, 96, 777
+
+Guti´errez-Moreno, A. & Moreno, H., 1996, PASP, 108, 972
+
+Guti´errez-Moreno, A., Moreno, H. & Cortes, G., 1995, PASP, 107, 462
+
+Guti´errez-Moreno, A., Moreno, H. & Costa, E., 1999, PASP, 111, 571
+
+Hamuy, M., Suntzeﬀ, N.B., Heathcote, S.R., Walker, A.R., Gigoux, P. et al, 1994, PASP,
+
+106, 566
+
+– 17 –
+
+Hekker, S., & Mel´endez, J. 2007, A&A, 475, 1003
+
+Jacoby, G.H., Hunter, D.A. & Christian, C.A., 1984, ApJS, 56, 257
+
+Jorissen, A., 2003, in Symbiotic stars probing stellar evolution, ed. R.L.M. Corradi, J.
+
+Mikolajewska & T.J. Mahoney, ASP Conf. Ser., 303, 25
+
+Kenyon, S.J.& Fern´andez-Castro, T., 1987, AJ, 93, 938
+
+Kenyon, S.J., Livio, M., Mikolajewska, J. & Tout, C.A., 1993, ApJ, 407, L81
+
+Kingsburgh, R.L. & Barlow, M.J., 1994, MNRAS, 271, 257
+
+Kohoutek, L. & Wehmeyer, R., 1997, Catalogue of stars in the Northern Milky Way having
+
+Hα in emission, Publisher : Hamburg Sternwarte - ESO
+
+Lasker, B.M., Lattanzi, M.G., McLean, B.J., Bucciarelli, B., Drimmel, R., et al. 2008, ApJ,
+
+136, 735.
+
+Li, J., Mikolajewska, J., Chen, Xue-Fei, Luo, A.-Li, Rebassa-Mansergas, A., 2015c, RAA
+
+(Research in Astronomy and Astrophysics), 15, 1332
+
+MacConnell, D.J., 1981, Astron. Astrophys. Sup. Ser., 44, 387
+
+Magrini, L., Corradi, R.L.M. & Munari, U., 2003, in Symbiotic stars probing stellar
+
+evolution, ASP Conf. Ser., 303, 539
+
+Massey, P., Strobel, K., Barnes, J.V. & Anderson, E., 1988, ApJ, 328, 315
+
+Maheswar, G., Manoj, P. & Bhatt, H.C., 2003, A&A, 402, 963
+
+Mikolajewska, J. & Kenyon, S.J., 1992, AJ, 103, 579
+
+Mikolajewska, J. 1997, in Mikolajewska J., ed., Physical Processes in Symbiotic Binaries
+
+and Related Objects. Copernicus Foundation for Polish Astronomy, Warsaw, p. 3.
+
+– 18 –
+
+Miszalski, B., Mikolajewska, J. & Udalski, A., 2013, MNRAS, 432, 3186
+
+Miszalski, B. & Mikolajewska, J., 2014, MNRAS, 440, 1410
+
+Munari, U. & Renzini, A., 1992, ApJ, 397, L87
+
+Munari, U. & Zwitter, T., 2002, A&A, 383, 188
+
+M¨urset, U. & Schmid, H.M., 1999, Astron. Astrophys. Sup. Ser., 137, 473
+
+Osterbrock, D.E. & Ferland, G.J, 2006, Astrophysics of Gaseous Nebulae and Active
+
+Galactic Nuclei (2nd ed.; Mill Valley, CA: Univ. Science Books)
+
+Parker, Q.A., Phillipps, S., Pierce, M.J., Hartley, M., Hambly, N.C., 2005, MNRAS, 362,
+
+689
+
+Pereira, C.B., Baella, N.O., Daﬂon, S. & Miranda, L.F., 2010, ˚a, 509, A13
+
+Pereira, C.B. & Miranda, L.F., 2005, A&A, 433, 579
+
+Pereira, C.B. & Miranda, L.F., 2007, A&A, 467, 1249
+
+Pereira, C.B. & Roig, F., 2009, AJ, 137, 118
+
+Phillips, J.P., 2007, MNRAS, 376, 1120
+
+Proga, D., Mikolajewska, J. & Kenyon, S.J., 1994, MNRAS, 268, 213
+
+Rodr´ıguez-Flores, E.R., Corradi, R.L.M., Mampaso, A., Garc´ıa-Alvarez, D., Munari, U. et
+
+al, 2014, A&A, 567, 49
+
+Schlaﬂy, E.F. & Finkbeiner, D.P., 2011, ApJ, 737, 103.
+
+Schlegel, E.M., Finkbeiner, D.P. & Davies, M., 1998, ApJ, 500, 525
+
+Schmid, H.M. & Schild, H., 1990, MNRAS, 246, 84
+
+– 19 –
+
+Schmid, H.M. & Nussbaumer, H., 1993, A&A, 268, 159
+
+Schwartz, R.D., Persson, S.E. & Hamann, F.W., 1990, AJ, 100, 793
+
+Smith, V.V., Cunha, K., Jorissen, A. & Boﬃn, H.M.J., 1996, A&A, 315, 179
+
+Smith, V.V., Cunha, K., Jorissen, A. & Boﬃn, H.M.J., 1997, A&A, 324, 97
+
+Stephenson, C.B. & Sanduleak, N., 1977, ApJS, 33, 459
+
+Stephenson, C.B., 1986, ApJ, 300, 779
+
+Turnshek, D.E, Turnshek, D.A., Craine, E.R. & Boeshaar, P.C. 1985, An Atlas of Digital
+
+Spectra of Cool Stars (Tucson: Western Research Company)
+
+Wright, E. L. et al. 2010, AJ, 140, 1868
+
+Zacharias, N., Monet, D. G., Levine, S. E., et al. 2005, yCat, 1297,
+
+This manuscript was prepared with the AAS LATEX macros v4.0.
+
+– 20 –
+
+Fig. 1.— Position of the candidate yellow symbiotic stars [KW97] 37-26 (1), [KW97] 61-27
+
+(2), StHα116 (3), SS 360 (4), and StHα63 (red star) in the 2MASS color-color diagram. The
+
+arrows connect the observed and reddening corrected (J − H) and (H − Ks) colors. For
+
+StHα116 we do not show any correction due to the low extinction in the direction of this
+
+object. Green diamonds represent the reddening corrected infrared colors of seven S-type
+
+yellow symbiotic stars. SS 383 (magenta star) previously identiﬁed as a candidate yellow
+
+symbiotic is also shown. Black circles represent the S-type symbiotics.
+
+– 21 –
+
+Fig. 2.— Flux calibrated spectra of StHα63. Several emission and absorption lines, and TiO
+
+absorption bands are indicated.
+
+– 22 –
+
+Fig. 3.— Position of StHα 63 (red star) in the [TiO]1 vs [TiO]2 diagram for a sample of
+
+symbiotic stars analyzed by Kenyon & Fern´andez-Castro (1987b). Black crosses represent
+
+the S- and the D-type symbiotics with spectral types later than M0. The smaller sample of
+
+S-type symbiotics with spectral types not later than K9 (the yellow symbiotics) AG Dra, RS
+
+Oph and TX CVn also analyzed by Kenyon & Fernandez-Castro (1987b), are represented in
+
+this diagram by red crosses. The green star represents SS 383 and the red star StHα63.
+
+– 23 –
+
+Fig. 4.— Flux calibrated spectrum of the four candidate yellow symbiotics [KW97] 37-26,
+
+StHα116, [KW97] 61-27, and SS 360. Some emission and absorption features are indicated.
+
+– 24 –
+
+Fig. 5.— Distribution of the WISE W3-W4 (W34) index for ﬁve samples of K-giant and
+
+symbiotic stars. The content of the histograms is explained within each of them (see text
+
+for details).
+
+

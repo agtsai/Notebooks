@@ -1,0 +1,1211 @@
+Draft version February 9, 2016
+Preprint typeset using LATEX style emulateapj v. 5/2/11
+
+6
+1
+0
+2
+
+ 
+
+b
+e
+F
+5
+
+ 
+
+.
+
+ 
+ 
+]
+E
+H
+h
+p
+-
+o
+r
+t
+s
+a
+[
+ 
+ 
+
+1
+v
+8
+8
+1
+2
+0
+
+.
+
+2
+0
+6
+1
+:
+v
+i
+X
+r
+a
+
+RADIO NON-DETECTION OF THE SGR 1806−20 GIANT FLARE AND IMPLICATIONS FOR FAST RADIO
+
+Shriharsh P. Tendulkara, Victoria M. Kaspia, and Chitrang Patela
+
+Draft version February 9, 2016
+
+BURSTS
+
+ABSTRACT
+
+We analyse archival data from the Parkes radio telescope which was observing a location 35.6◦ away
+from SGR 1806−20 during its giant γ-ray ﬂare of 2004 December 27. We show that no FRB-like burst
+counterpart was detected, and set a radio limit of 11 MJy at 1.4 GHz, including the suppression of the
+signal due to the predicted scattering and its location in the far side lobe of Parkes. A conservative
+upper limit for the magnetar giant ﬂare radio to γ-ray ﬂuence ratio is ηSGR < 106.9 Jy ms erg−1 cm2.
+Based on the non-detection of a short and prompt γ-ray counterpart of ﬁfteen FRBs in γ-ray transient
+monitors, we set a lower limit on the ﬂuence ratios of FRBs to be ηFRB > 106.8−8.9 Jy ms erg−1 cm2.
+The ﬂuence ratio limit for SGR 1806−20 is inconsistent with all but one of the ﬁfteen FRBs. We
+discuss possible variations in the magnetar-FRB emission mechanism and observational caveats that
+may reconcile the theory with observations.
+Subject headings: stars: individual (SGR 1806−20) – stars: neutron
+
+1.
+
+INTRODUCTION
+
+2014, 2015; Pen & Connor 2015; Kulkarni et al. 2015).
+
+Fast Radio Bursts (FRBs) are bright (0.1–30 Jy peak
+ﬂux), millisecond-timescale bursts with an event-rate of
+∼ 3.3 × 103 sky−1 day−1 (Rane et al. 2016) at 1.4 GHz.
+To date, 16 events have been reported: 14 from the
+Parkes observatory (Lorimer et al. 2007; Keane et al.
+2011; Thornton et al. 2013; Burke-Spolaor & Bannister
+2014; Petroﬀ et al. 2015a; Champion et al. 2015; Ravi
+et al. 2015), one from the Arecibo radio telescope (Spitler
+et al. 2014) and one from the Green Bank telescope (Ma-
+sui et al. 2015). Unlike ‘perytons’ (Burke-Spolaor et al.
+2011a) which are now known to be local sources of inter-
+ference (Petroﬀ et al. 2015b), FRBs very precisely obey
+the ν−2 time-delay induced by cold plasma. The hall-
+mark is their dispersion measure (DM), which is much
+greater (by factors of 3–10) than the DM contribution ex-
+pected from the Galactic interstellar medium. The excess
+DM may be intrinsic to the source, placing it within the
+Galaxy, although this possibility now seems unlikely; it
+may arise mostly from the intergalactic medium, placing
+a source of FRBs at cosmological distances (z ∼ 0.2 − 1)
+or it may arise from the host galaxy, placing a source of
+FRBs at extragalactic, but not necessarily cosmological,
+distances (∼ 100 kpc).
+
+Due to FRBs’ mysterious nature and lack of informa-
+tion, a plethora of source models have been proposed in-
+cluding Crab-like giant pulses from young extra-galactic
+pulsars (Cordes & Wasserman 2015), planets in pulsar
+magnetospheres (Mottez & Zarka 2014), neutron-star
+mergers and the ‘blitzar’ model (Totani 2013; Ravi &
+Lasky 2014), black hole-neutron star mergers (Mingarelli
+et al. 2015,
+for a sub-population of FRBs), magne-
+tar pulse-wind interactions (Lyubarsky 2014), ﬂares from
+nearby stars (Loeb et al. 2014), quark novae (Shand et al.
+2015), and perhaps most popularly, magnetar giant ﬂares
+(Popov & Postnov 2010, 2013; Kulkarni et al. 2014; Katz
+
+shriharsh@physics.mcgill.ca
+
+A Department of Physics & McGill Space Institute,
+
+3600 University St,
+Montr´eal, QC H3A 2A8, Canada
+
+1.1. Magnetar Giant Flares as FRBs
+
+Galactic magnetars — neutron stars with strong in-
+ferred surface magnetic ﬁeld strengths (Bsurf ∼ 1015 G)
+— have been observed to emit extremely luminous X-ray
+and γ-ray bursts known as giant ﬂares. Since the advent
+of X-ray and γ-ray astronomy, we have observed three
+giant ﬂares: one from SGR 0526−66 on 1979 March 5
+(Mazets et al. 1979), one from SGR 1900+14 on 1998 Au-
+gust 27 (Hurley et al. 1999) and one from SGR 1806−20
+on 2004 December 27 (Palmer et al. 2005; Hurley et al.
+2005; Terasawa et al. 2005). A giant ﬂare consists of a
+luminous, sharp, hard X-ray peak, with rise time of order
+milliseconds, lasting 50–100 ms, followed by an oscillat-
+ing tail that is ∼ 103 times fainter.
+
+Coherent radio counterparts of X-ray bursts from mag-
+netars have been proposed with ﬂuxes as high as 1 kJy
+(Lyutikov 2002, 2006). Immediately after the ‘Lorimer’
+burst of 2001, Popov & Postnov (2010) suggested that
+such a burst may be a radio counterpart of an extra-
+galactic magnetar giant ﬂare. With the discovery of
+more FRBs, multiple authors furthered the explanation,
+pointing out the good correspondance between the FRB
+and giant ﬂare energetics, rates and between the ob-
+served high DMs and the dense gas in star forming re-
+gions (Popov & Postnov 2013; Katz 2015; Pen & Connor
+2015; Kulkarni et al. 2015). Katz (2014) suggested that
+an FRB from a Galactic magnetar giant ﬂare should be
+O(1011) times brighter (∼10–100 MJy) and would be eas-
+ily discoverable even in the sidelobes of telescopes.
+
+Here we report on archival Parkes radio telescope data
+obtained coincidentally with the 2004 December 27 giant
+ﬂare of SGR 1806−20. In Section 2 we use these data to
+place stringent limits on any radio emission produced
+by this event, and in Section 3 we calculate the radio
+to gamma-ray ﬂuence ratio with those observed for the
+15 FRBs for which this information is available. As we
+discuss in Section 4, our results call into question models
+in which FRBs arise from magnetar giant ﬂares.
+
+2
+
+Tendulkar, S. P. et al.
+
+FLARE
+
+2. RADIO NON-DETECTION OF SGR 1806−20 GIANT
+The giant ﬂare from magnetar SGR 1806−20 was the
+brightest γ-ray event in astronomical history and sat-
+urated all the γ-ray observatories (Hurley et al. 2005;
+Palmer et al. 2005; Mazets et al. 2005; Terasawa et al.
+2005). The γ-ray ﬂuence of the giant ﬂare (in the sharp
+peak) was estimated to be ∼ 2 erg cm−2 above 50 keV
+(Terasawa et al. 2005) from the Geotail satellite. Hurley
+et al. (2005) estimated the ﬂuence to be ∼ 1.4 erg cm−2
+above 30 keV. Palmer et al. (2005) estimated the ﬂuence
+to be 0.8 erg cm−2 between 45 keV and 10 MeV. In this
+work, we use a value of ∼ 1.4 erg cm−2 since it is closer in
+energy band to the detections of the current γ-ray instru-
+ments, but our conclusion is not sensitive to this range
+of values.
+
+2.1. Flare Arrival Time
+
+telescope
+
+started
+
+The
+
+observing
+
+The peak of the giant ﬂare crossed the Earth’s center
+at 21:30:25.64 UT (Mazets et al. 2005). At the epoch
+of the γ-ray ﬂare, SGR 1806−20 was at an altitude of
+31.5◦ and an azimuth of 95.1◦ (East of North) at the
+Parkes Observatory (longitude = 148.2635101◦, latitude
+= −32.9984064◦, altitude=414.80 m)2. Based on the ge-
+ometry, the ﬂare wavefront should have arrived at Parkes
+11 ms before it crossed the center of the Earth, i.e. at
+21:30:25.53 UT. These transformations were calculated
+using the astropy.coordinates and astropy.time rou-
+tines (Astropy Collaboration et al. 2013).
+pulsar
+PSR J1557−4258 at 21:29:19 UT with the central
+beam of
+the Parkes multi-beam receiver and the
+SCAMP observing system. The telescope was pointed at
+altitude of 63.1◦ and an azimuth of 121.1◦, 35.6◦ away
+from the location of SGR 1806−20. SGR 1806−20 was
+not hidden behind the telescope feed legs. If the giant
+ﬂare was accompanied by a prompt radio ﬂare similar
+to FRBs, we would expect it to arrive 66.5 s+tDM from
+the beginning of the observation, where tDM is the time
+delay between radio and γ-ray pulses due to dispersion.
+Based on the distance to SGR 1806−20 (8.7+1.8−1.5 kpc
+Bibby et al. 2008) and the NE2001 model (Cordes &
+Lazio 2002), Lazarus et al. (2012) estimated the DM
+to SGR 1806−20 to be ∼ 750 pc cm−3. The 90% up-
+per limit for the distance of SGR 1806−20 was estimated
+to be 18.6 kpc (Svirski et al. 2011) with a correspond-
+ing model-predicted DM of 1423 pc cm−3. The model-
+predicted scattering timescales at 1.4 GHz are 14 ms and
+56 ms for distances of 8.7 kpc and 18.6 kpc, respectively.
+We discuss the possibility of the NE2001 model under-
+predicting the scattering in this direction in Section 2.3.1.
+We derive another estimate for the DM from the
+line-of-sight column density estimated from X-ray ob-
+servations (NH = 9.7 ± 0.1 × 1022 cm−2; Younes
+et al. 2015). He et al. (2013) measured the correla-
+tion between NH and DM to be NH/(1020 cm−2) =
+0.30+0.13−0.09 DM/(pc cm−3). The corresponding DM for
+SGR 1806−20 is 291+126−87 pc cm−3, much lower than the
+value based on the distance estimates and the NE2001
+
+model.
+
+The dispersion delay between the γ-ray and any
+radio prompt
+tDM =
+4.148808 ms × (DM/pc cm−3) × (ν/GHz)−2, correspond-
+ing to 2.20 s/1000 pc cm−3.
+
+emission at 1.374 GHz
+
+is
+
+As described in the next section, we analysed the
+Parkes data to search for a bright single burst from
+SGR 1806−20.
+
+2.2. Archival Parkes Data and Analysis
+
+We downloaded the Parkes data (program number:
+PT242, data ﬁle name: PT0242 037) from the Parkes
+data archive and converted from the 1-bit SCAMP raw
+data format to 8-bit ﬁlterbank data using filterbank
+program from SIGPROC3. The ﬁlterbank data were pro-
+cessed with a single pulse searching pipeline based on
+PRESTO4 utilities. The pipeline has been described in de-
+tail by Spitler et al. (2014) and we summarize the data
+analysis here. The raw data were not cleaned for ra-
+dio frequency interference (RFI) to avoid accidentally
+excising bursts. Instead, we visually looked at the time-
+frequency plots of burst candidates to weed out RFI.
+We created a de-dispersion plan for searching DMs
+between 0–3940 pc cm−3 with DM steps ranging from
+0.5 pc cm−3 at the low DM end to 30 pc cm−3 above
+3220 pc cm−3. The upper limit was chosen to be ap-
+proximately three times the largest predicted Galactic
+DM, consistent but even broader than the above esti-
+mates. Single pulse candidates are identiﬁed in each
+dedispersed time series using a matched ﬁltering al-
+gorithm (single pulse search.py). This algorithm
+match-ﬁlters the time series with a series of boxcar ﬁlters
+to search for single pulse candidates of widths ranging
+from 1 to 300 time bins (0.25 µs to 75 ms). We grouped
+the candidates with similar DM and arrival time and
+made time-frequency (‘waterfall’) plots for veriﬁcation.
+
+Figure 1 shows the results of the single pulse searching
+algorithm. The circles in the bottom plot denote the
+detected single pulse candidates as a function of arrival
+time and DM. The radii of the circles represent the signal
+to noise ratio (SNR) of the detection. The three upper
+plots show the statistics of the single pulse candidates as
+explained in the caption. The line of intense detections at
+DM=144 pc cm−3 are pulses from PSR J1557−4258 and
+serve as a sanity check of our pipeline. The red track
+shows the expected ﬂare arrival time 66.5 s+tDM after
+the start of the observation. The cluster of candidates at
+DM≈ 2600 pc cm−3 was veriﬁed to be narrow-band RFI
+at 1500 MHz. At the horizontal scale of the plot, the
+width of the track corresponds to ∼ 1 s and it is unlikely
+for a radio burst to arrive outside that location unless
+the radio and γ-ray emission were separated in emission
+time.
+from
+SGR 1806−20, we now set limits on the radio ﬂux
+using the system parameters and by estimating the
+sidelobe suppression of the Parkes telescope.
+
+With a non-detection of
+
+radio ﬂare
+
+a
+
+2.3. Radio Flux Limits
+
+To calculate the lower limit on the ﬂux of a single pulse
+detection in the Parkes data, we used the methodology of
+
+2
+
+http://www.narrabri.atnf.csiro.au/observing/users_
+
+guide/html/chunked/apg.html
+
+3 http://sigproc.sourceforge.net/
+4 http://www.cv.nrao.edu/sransom/presto/
+
+Radio Non-Detection of Giant Flare from SGR 1806−20
+
+3
+
+Fig. 1.— Plots and statistics of dedispersed single pulse events on the 64-m Parkes Telescope data gathered during the SGR 1806−20
+giant ﬂare. The bottom plot shows the candidate single pulses detected as a function of time and DM. The symbol size indicates the
+detection signal to noise ratio (SNR). The ﬂare arrival time corresponds to 66.5 s after the start of the observation (red track). The slope
+of the red track corresponds to the expected dispersion delay between the γ-ray arrival and the pulse arrival at 1374 MHz. The cluster of
+candidates to the left of the red track at DM≈ 2600 pc cm−3 was veriﬁed to be narrow band RFI at 1500 MHz (single channel). The upper
+three plots show the detection statistics; Top Left: Histogram of candidate detections as a function of SNR. Top Middle: Histogram of
+number of candidate detections as a function of DM. The strong peak at DM=144 pc cm−3 corresponds to pulses from PSR J1557−4258.
+Top Right: Scatter plot of SNR vs DM for each candidate detection.
+
+the Parkes multi-beam pulsar survey (Manchester et al.
+2001) which uses the same instrumentation as the data
+analyzed here. The limiting ﬂux density is given by
+
+G(cid:112)BNpτobs
+
+σβTsys
+
+Slim =
+
+,
+
+where σ = 1.5 is a loss factor (from the one-bit sam-
+pling as well as other eﬀects), β = 6 is detection SNR
+
+threshold, Tsys = 21 K is the system temperature, G =
+0.735 K/Jy is the telescope gain for the central beam,
+B = 288 MHz is the telescope bandwidth, Np = 2 is the
+number of polarizations and τobs is the observing time.
+Thus, for τobs = 10 ms, a reasonable estimate for a intrin-
+sically narrow pulse scattered at a timescale of 14 ms, we
+get a 6-σ limit of 11 mJy. For a 1-ms and 50-ms bursts,
+the extreme ranges of scattering, the limits are 35 mJy
+and 5 mJy, respectively. The corresponding radio ﬂuence
+
+4
+
+Tendulkar, S. P. et al.
+
+limits for 10-ms, 1-ms, and 50-ms timescales are 110 mJy-
+ms, 35 mJy-ms and 250 mJy-ms, respectively.
+
+2.3.1. Scattering Timescales
+
+The 1-bit digitizer backend used in the Parkes obser-
+vations included a high-pass ﬁlter of time constant ∼0.9
+s (Manchester et al. 2001). The Parkes system thus had
+reduced sensitivity to signals with rise times comparable
+or longer than this time constant. However, this should
+not be a signiﬁcant issue when considering a putative ra-
+dio burst from SGR 1806−20 as the scattering measures,
+noted above, are predicted to be 14 ms and 56 ms for a
+distance of 8.7 kpc and 18.6 kpc, respectively. Note that
+the times refer to the 1/e decay time of a one-sided expo-
+nential that is convolved with the signal if scattered, i.e.
+the rise time should be signiﬁcantly shorter than these
+quoted times. Further, we note that the Parkes multi-
+beam survey discovered PSR J1307−6318 which has pe-
+riod 5 s and duty cycle of 50% (Manchester et al. 2001).
+Its pulse rise time is ∼40–50 ms, comparable to the max-
+imum likely scattering time for SGR 1806−20 even if it
+were as distant as 18.6 kpc. Hence, we conclude that the
+Parkes high-pass ﬁltering is unlikely to have had a dele-
+terious eﬀect on any radio burst from the SGR 1806−20,
+even for scattering times as long as ∼56 ms.
+
+We note that if the NE2001 model underpredicts the
+scattering time in this direction by a factor of 20 or
+more, the signal may be suppressed by the high-pass
+ﬁlter and may be undetectable. However, we ﬁnd this
+to be unlikely from observations of other pulsars in that
+direction. From the ATNF pulsar catalog (Manchester
+et al. 2005), we compiled a list of pulsars located within
+a 2◦ radius of SGR 1806−20 with DM > 700 pc cm−3,
+their pulse proﬁles, and pulse widths at half peak-
+intensity (W50) at 1.4 GHz (Morris et al. 2002; Hobbs
+et al. 2004). We ﬁnd seven pulsars with a DM range
+of 708.1 − 932.3 pc cm−3. The pulse proﬁles of four pul-
+sars are symmetrical or show very small scattering tails
+with W50 = 13− 47 ms, suggesting a scattering timescale
+(cid:46) 10 ms. Three pulsars have visible scattering tails, the
+longest having W50 = 46.3 ms at DM = 867 pc cm−3
+(PSR 1809−2004). The corresponding NE2001 scatter-
+ing timescale estimates for these DM are between 15–
+22 ms, corresponding to W50 = 10 − 15 ms for zero in-
+trinsic width pulses, within a factor of three from the
+measured values.
+
+2.3.2. Far Sidelobe Response and Suppression
+
+As SGR 1806−20 was 35.6◦ away from the pointing
+center of Parkes, any burst from it would have been
+detected through the sidelobe response of Parkes, sup-
+pressed by many orders of magnitude. Since the far side-
+lobes are highly suppressed, they are not ordinarily well-
+characterized.
+
+The Parkes multi-beam instrument (Staveley-Smith
+et al. 1996) was primarily designed for 21-cm (1.42 GHz)
+HI surveys (for example the Galactic All Sky Survey,
+GASS; McClure-Griﬃths et al. 2009) which require care-
+ful modelling of the near and far sidelobe response to
+accurately account for stray radiation (Kalberla et al.
+2010), albeit at a coarse spatial scale (∼degree). The far
+sidelobe structure of Parkes is dominated by reﬂections
+oﬀ the three feed support legs (‘stray cones’) and radia-
+tion from beyond the primary dish (‘spillover’). Kalberla
+
+Fig. 2.— Theoretical sensitivity of an ideal 64-m diameter tele-
+scope without and with a 2-m diameter central obstruction (green
+and blue lines, respectively) as a function of spectral frequency at
+a position 35.6◦oﬀ-axis. A continuum source will be suppressed by
+a factor of 80 dB with respect to the primary beam. The presence
+of a central obstruction does not signiﬁcantly change the result.
+
+et al. (2010) modeled the Parkes far sidelobe structure
+as a constant base level with three stray cones of ra-
+dius 40◦ and width ±3.3◦. By simultaneous modelling of
+the sidelobes and deconvolution of the Galactic HI maps,
+Kalberla et al. (2010) ﬁt the suppression of the stray
+cones and constant base level to be 54 dB and 70 dB,
+respectively, below the primary sensitivity.
+At the time of the ﬂare, SGR 1806−20 was at a lo-
+cation θ = 35.6◦, φ = 319.9◦ in antenna coordinates
+(Kalberla et al. 1980), where θ is the angular separa-
+tion from the telescope central beam and φ is the posi-
+tion angle, measured north through east. This position
+is 6.4◦ (less than one full-width at half maximum) away
+from a stray cone (P. Kalberla, private communication).
+The suppression at this position, may be estimated to
+be between 54 dB and 70 dB, ∼ 60 ± 6 dB. We note with
+caution that these values are based on averaging over
+∼degree angular scales.
+
+In estimating the strengths of ‘perytons’ which were
+also detected in the far sidelobes of the Parkes tele-
+scope, Burke-Spolaor et al. (2011a) estimate the sup-
+pression factor for Parkes sidelobes to be 2500–850000
+(corresponding to 34–59 dB) for the multi-beam receiver.
+Perytons are known to be near-ﬁeld due to their coinci-
+dent detection in all the 13 beams of the receiver while
+the radio ﬂare from SGR 1806−20 would be in the far-
+ﬁeld regime. Even so, the end of the range estimated
+by Burke-Spolaor et al. (2011a) validates the above esti-
+mate.
+
+We also calculated the diﬀraction-limited response of
+an ideal 64-m diameter circular aperture with no ob-
+struction from support legs. At an angular distance of
+35.6◦ from the center, we calculated the intensity re-
+sponse compared to unity at the central location at each
+a ﬁnely sampled frequency grid over the observing band-
+width. We then binned the intensity measurements over
+frequency into 3 MHz channels to simulate the sensitivity
+of each channel. We also calculated the response includ-
+ing a 2-m diameter central obstruction to account for the
+receiver block. Figure 2 shows the response of the ideal-
+
+125013001350140014501500Frequency (MHz)10-910-810-7Intensity Response908070Suppression (dB)Radio Non-Detection of Giant Flare from SGR 1806−20
+
+5
+
+ized telescope. In practice, scattering from support legs,
+reﬂections from the ground, telescope surface errors will
+stochastically increase the response in the sidelobes while
+decreasing the sensitivity in the primary beam. The ef-
+fect of scattering and reﬂections is challenging to quantify
+but it possibly explains the discrepancy between the the-
+oretical suppression compared to the estimate of Burke-
+Spolaor et al. (2011a).
+
+Figure 2 also shows that the fringing pattern at large
+angles varies rapidly in frequency and for a continuum
+spectrum source, there will be no sharp nulls, i.e.
+loca-
+tions in the ﬁeld of view where the sensitivity drops to
+zero. Averaging the sidelobe response from Figure 2, we
+estimate a sensitivity of 0.98 × 10−8, i.e. a suppression
+of 80 dB. The presence of a central obstruction does not
+signiﬁcantly change the result.
+
+2.4. Upper Limit on ηSGR
+
+For a suppression of 60 dB and 80 dB respectively, the
+10-ms radio ﬂuence upper limit of 110 mJy-ms, translates
+to a ﬂuence limit of 110 kJy and 11 MJy, respectively.
+With a γ-ray ﬂuence of ∼ 1.4 erg cm−2 we get a 6-σ upper
+limit for ηSGR < 104.9 Jy ms erg−1 cm2 for suppression of
+60 dB as estimated by Burke-Spolaor et al. (2011a) to
+ηSGR < 106.9 Jy ms erg−1 cm2 for a suppression of 80 dB
+in the idealized diﬀraction-limited case calculated above.
+
+3. FLUENCE LIMIT ON γ-RAY BURSTS FROM FRBS
+In the papers reporting most FRBs, the authors have
+searched the available literature or recent GRB Coor-
+dinates Network (GCN) messages and reported a non-
+detection of any counterpart in the X-ray or γ-ray regime.
+To set ﬂuence limits on the non-detections, we used the
+FRB names, radio ﬂuences, epochs and sky locations
+from the literature (Table 1). For uniformity, we consider
+only the 15 FRBs that have been detected at 1.4 GHz.
+We have not included FRB 110523 (Masui et al. 2015)
+since it was detected at 800 MHz and it is not possible
+to reasonably convert its ﬂuence to 1.4 GHz given the
+uncertainty in its intrinsic spectral index.
+
+3.1. FERMI GRB Burst Monitor
+
+The FERMI -GRB Burst Monitor (GBM) instrument
+consists of 12 Na-I detectors and two Bi-Ge scintillators
+(Meegan et al. 2009b). These detectors are sensitive to
+the entire unocculted sky for photon energies from 8 keV
+to 40 MeV. FERMI -GBM data have been available since
+2008 February. As FERMI is in a low-Earth orbit with
+an average altitude of 550 km, the detections of GRBs
+are limited by Earth occultation. For each FRB, we
+analysed the visibility of FRB sky location to FERMI
+using the spacecraft position history ﬁles for a duration
+of 10 minutes before and after the epoch of the burst to
+account for any diﬀerence in arrival times (Table 1). We
+ﬁnd that 6 of the 15 bursts were visible to GBM when
+they were detected in the radio telescopes.
+The on-board trigger threshold of GBM for short
+bursts is 0.74 photons cm−2 s−1 (Meegan et al. 2009a)5
+corresponding to a ﬂuence of 2 × 10−9 erg cm−2 for a
+nominal photon energy of 20 keV and a burst duration of
+5 The current threshold is 0.61 photons cm−2 s−1. http://f64.
+
+nsstc.nasa.gov/gbm/instrument/
+
+100 ms, characteristics similar to those of magnetar gi-
+ant ﬂares. As a conservative estimate for detection com-
+pleteness, we take the ﬂuence limit to be 5 times higher,
+i.e. 1 × 10−8 erg cm−2. This value is corroborated by
+the faintest short GRB ﬂuences listed in the GBM GRB
+catalog (von Kienlin et al. 2014).
+
+3.2. SWIFT-BAT
+
+The Burst Alert Telescope (BAT) instrument aboard
+the Swift satellite (launched 2004 November) is a coded
+aperture mask high-energy (15–150 keV) X-ray telescope
+(Barthelmy et al. 2005). The half coded ﬁeld of view
+(FoV) is 100◦ × 60◦ (1.4 sr). Using NASA’s HEASARC
+database, we checked if the BAT was pointing within a
+radius of 40◦ of each FRB between 10 minutes before and
+after the FRB epoch. We ﬁnd that 8 of the 15 bursts were
+within the BAT half coded FoV when they were detected
+in the radio telescopes.
+The design burst ﬂux sensitivity of the BAT is
+10−8 erg cm−2 s−1 (Barthelmy et al. 2005). For a 100-ms
+SGR-like burst, this corresponds to a 8-σ ﬂuence sensi-
+tivity of 8 × 10−9 erg cm−2. The short GRBs detected
+by Swift-BAT are also used to calculate an upper limit
+on the ﬂuence. From Table 1 of Sakamoto et al. (2011)
+and Table 1 of Berger (2014) we estimate that the short
+GRBs (timescale < 2 s) are detected at a 6-σ signiﬁcance
+at ﬂuences of ∼ 2 × 10−8 erg cm−2.
+
+3.3. Konus-WIND
+
+The
+
+Konus-W is a γ-ray spectrometer aboard the GGS-
+WIND mission. It has two NaI(Tl) scintillators provid-
+ing omni-directional sensitivity to γ-ray bursts between
+10 keV to 10 MeV (Aptekar et al. 1995). The mission
+was launched in 1994 November and travelled to its ﬁnal
+location at the Earth-Sun L1 point (1.5 million km from
+Earth) in 2004. At this separation, the Earth covers
+a negligible area (0.2 sq. deg) in the Konus-W sky and
+hence the Konus scintillators have an essentially unoc-
+culted view of the entire sky.
+sensitivity
+1–
+design
+5×10−7 erg cm−2
+(Aptekar et al. 1995) at a 6-σ
+level. Mazets et al. (2004) lists all the GRBs detected
+by Konus-W between 1994 and 2002. The faintest
+GRB detected had a ﬂuence of ∼ 2 × 10−7 erg cm−2.
+Svinkin et al.
+(2015) calculated the sensitivity of
+Konus-W to a scaled giant ﬂare from SGR 1806−20 to
+be 2 − 5.7 × 10−7 erg cm−2 (9-σ) for the known range
+of spectral parameters. Due to its unocculted view, we
+assume the Konus-W sensitivity as the ﬂuence lower
+limit for γ-ray counterparts for any FRB not in the
+GBM or BAT FoV.
+
+of Konus-W is
+
+3.4. Lower Limits on ηFRB
+
+We deﬁne η = F1.4 GHz/Fγ as the ratio of burst ﬂu-
+ence in the 1.4 GHz (radio) and γ-ray bands. Based
+on the individual γ-ray ﬂuence limits and the observed
+radio ﬂuences, we ﬁnd the ∼6-σ lower limits on the
+FRB radio to γ-ray ﬂuence ratio ηFRB to be between
+106.8−8.9 Jy ms erg−1 cm2 (Table 1).
+
+4. DISCUSSION
+
+In Section 2, we have derived an upper limit on the
+radio to γ-ray ﬂuence ratio, ηSGR for the 2004 December
+
+6
+
+Tendulkar, S. P. et al.
+
+Radio Fluences and γ-ray Fluence Upper Limits of FRBs.
+
+TABLE 1
+
+Name
+
+FRB 010724
+FRB 110220
+FRB 130729
+FRB 010621
+FRB 011025
+FRB 131104
+FRB 121002
+FRB 090625
+FRB 110703
+FRB 130626
+FRB 140514
+FRB 130628
+FRB 121102
+FRB 110626
+FRB 120127
+
+Time
+(UTC)
+
+Coord. (J2000)a
+RA
+Dec
+
+b
+F1.4 GHz
+(Jy-ms)
+
+Vis.c
+
+d
+
+Fγ
+
+log10(ηFRB)e
+
+Ref.
+
+01-07-24 19:50:00
+11-02-20 01:55:46
+13-07-29 09:01:49
+01-06-21 13:02:09
+01-01-25 00:29:14
+13-11-04 18:03:59
+12-10-02 13:09:14
+09-06-25 21:53:49
+11-07-03 18:59:38
+13-06-26 14:55:57
+14-05-14 17:14:09
+13-06-28 03:57:59
+12-11-02 06:35:53
+11-06-26 21:33:15
+12-01-27 08:11:20
+
+01:18:06 −75:12:18
+22:34:38 −12:23:45
+13:41:21 −05:59:43
+18:52:05 −08:29:35
+19:06:53 −40:37:14
+06:44:10 −51:16:40
+18:14:47 −85:11:53
+03:07:47 −29:55:36
+23:30:51 −02:52:24
+16:27:06 −07:27:48
+22:34:06 −12:18:46
+03:26:16
+09:03:02
+05:32:09
+33:05:13
+21:03:43 −44:44:19
+23:15:06 −18:25:38
+
+150.0
+
+8.0
+3.5
+2.9
+2.8
+2.7
+2.3
+2.2
+1.8
+1.5
+1.3
+1.2
+1.2
+0.7
+0.6
+
+K
+K
+K, B
+K
+K
+K, G
+K, G, B
+K, G, B
+K, G
+K, B
+K, B
+K, G, B
+K
+K, G, B
+K, B
+
+20
+20
+2
+20
+20
+1
+1
+1
+1
+2
+2
+1
+20
+1
+2
+
+> 8.9
+> 7.6
+> 8.2
+> 7.2
+> 7.1
+> 8.4
+> 8.4
+> 8.3
+> 8.3
+> 7.9
+> 7.8
+> 8.1
+> 6.8
+> 7.8
+> 7.5
+
+Lorimer et al. (2007)
+Thornton et al. (2013)
+Champion et al. (2015)
+Keane et al. (2011)
+Burke-Spolaor & Bannister (2014)
+Ravi et al. (2015)
+Champion et al. (2015)
+Champion et al. (2015)
+Thornton et al. (2013)
+Champion et al. (2015)
+Petroﬀ et al. (2015a)
+Champion et al. (2015)
+Spitler et al. (2014)
+Thornton et al. (2013)
+Thornton et al. (2013)
+
+a Pointing location of the telescope at the time of discovery. The FRB positions have an uncertainty of up to a few arc minutes depending
+on the telescope primary beam size.
+b Measured radio ﬂuence at 1.4 GHz. These are lower limits since the FRB may not be detected in the center of the telescope beam.
+c Visibility to γ-ray burst instruments. K: Konus-W; G: GBM; B: BAT.
+d γ-ray ﬂuence upper limit based on instrument as discussed in the text. Konus-W: 2 × 10−7 erg cm−2, BAT: 2 × 10−8 erg cm−2, GBM:
+1 × 10−8 erg cm−2. The best available sensitivity is noted in units of 10−8 erg cm−2.
+e ηFRB = F1.4 GHz/Fγ in units of Jy ms erg−1 cm2.
+
+Fig. 3.— Plot of the ratio of the 1400 MHz ﬂuence (F1.4 GHz) to the γ-ray ﬂuence (Fγ ) from the giant ﬂare of SGR 1806−20 compared to
+those of ﬁfteen FRBs. The blue upper limits denote the non-detection of a radio ﬂare in the Parkes observation from 2004 December 27.
+The 60 dB, 70 dB and 80 dB limits denote possible sidelobe suppression of a putative radio counterpart of the giant ﬂare of SGR 1806−20
+(see Section 2.3.2 for details). The red lower limits denote the non-detection of γ-ray counterparts for FRBs based on the sensitivity of
+Konus-WIND (dotted lines), Swift-BAT (dashed lines) and of FERMI -GBM (solid lines) from Table 1.
+
+103104105106107108109101010111012η=F1.4GHz(Jyms)/Fγ(ergcm−2)FRB 010724FRB 131104FRB 121002FRB 090625FRB 110703FRB 130729FRB 130628FRB 130626FRB 110627FRB 140514FRB 110220FRB 120127FRB 010621FRB 011025FRB 12110280 dB70 dB60 dBSGR 1806-20 Giant FlareKonus LimitBAT LimitGBM LimitRadio Non-Detection of Giant Flare from SGR 1806−20
+
+7
+
+27 giant ﬂare of SGR 1806−20 based on the measured γ-
+ray ﬂuence and a radio non-detection in the 64-m Parkes
+telescope for scattering times estimated from the NE2001
+model. In Section 3, we have placed ∼6-σ lower limits on
+ηFRB = F1.4 GHz/Fγ as summarized in Table 1 based on
+the non-detections of prompt γ-ray counterparts to the
+reported FRBs.
+
+Figure 3 summarizes our result, plotting ηFRB and the
+suppression-dependent values of ηSGR. Even assuming
+the strongest suppression for the sidelobe of the Parkes
+telescope (80 dB) and the scattering timescales from the
+NE2001 model, all but one of the FRBs have ηFRB >
+ηSGR by a factor of 1.6–100 with the highest η ratio being
+that of the ‘Lorimer’ burst (FRB 010724).
+
+Thus our result challenges the hypothesis that the same
+event mechanism that produces a magnetar giant ﬂare
+(at least for SGR 1806−20) also produces the known
+FRBs simultaneously.
+
+However, next we explore caveats and reasons why this
+naive conclusion may not exclude magnetar giant ﬂares
+as the origins of FRBs. This work does not have an
+obvious applicability to any of the other explanations
+that have been suggested, hence we limit our discussion
+to the magnetar giant ﬂare hypothesis.
+
+4.1. Variability of η
+
+A straightforward way to reconcile the magnetar gi-
+ant ﬂare hypothesis is to propose that η can vary wildly
+between diﬀerent magnetars and even diﬀerent bursts of
+the same magnetar. An FRB from a Galactic source
+then need not accompany a γ-ray ﬂare, but this presents
+a problem of rates.
+
+The estimate of the fraction of short γ-ray bursts
+(GRBs) that are consistent (temporally and spectrally)
+with being extragalactic magnetar giant ﬂares is between
+1% (Ofek 2007) to < 15% (Nakar et al. 2006) — see
+Hurley (2011) for a review. The all-sky detection rate
+of short GRBs by Konus-W is 18 yr−1. Thus, given the
+FRB sky rate of 3.3×103 sky−1 day−1 (Rane et al. 2016),
+if FRBs and giant ﬂares originate from the same magne-
+tars, one expects that η will be very high (FRB-like)
+∼ 4 × 105 more often than very low (giant-ﬂare-like);
+i.e.
+for every Galactic magnetar giant ﬂare we have
+seen we should be detecting 400,000 bright radio bursts,
+detectable even in the sidelobes of telescopes, if we as-
+sume that the extragalactic magnetars behave similarly
+to Galactic magnetars.
+
+4.1.1. Filtering and Mis-identiﬁcation of Galactic FRBs?
+
+A Galactic FRB, detected in the sidelobes of multi-feed
+telescopes such as Parkes and Arecibo, will likely have co-
+incident detections in all feeds. Pulsar and transient sur-
+veys utilize the the multi-feed time streams to mask out
+near-ﬁeld radio frequency interference (RFI), including
+perytons. The real-time FRB pipeline of the High Time
+Resolution Universe (HTRU) survey at Parkes uses two
+FRB detection criteria that would rule out the detec-
+tion of Galactic FRBs: (a) DM ≥ 1.5 × DMMW and (b)
+Nbeams ≤ 4, where DMMW is the Galactic DM contri-
+bution along the line of sight and Nbeams is the number
+of beams (out of a total of 13) in which the burst is
+detected (Petroﬀ et al. 2015a). The searches for Galac-
+tic bursts used an Nbeams ≤ 9 criteria (Burke-Spolaor
+
+et al. 2011b). The PALFA survey strategy is to sub-
+tract the feed-averaged zero DM time series for transient
+searches (Patel, C. et al, in preparation). This would
+signiﬁcantly reduce the sensitivity of PALFA to low-DM
+Galactic FRBs.
+Unlike ‘perytons’ however, Galactic FRBs would have
+a sharp ν−2 dispersion sweep, but the DM would be
+within the Galactic limit. A single-beam radio telescope,
+without anti-coincidence ﬁltering, may misidentify these
+bursts as candidate rotating radio transients (RRATs;
+Keane 2015) in the pointing direction. A revised search
+of archival multi-feed data with ﬁltering optimized for
+Galactic FRBs may set limits on the rate of occurence.
+Another feature of these sidelobe mis-identiﬁcations is
+that radio pulses classiﬁed as unconﬁrmed RRATs at dif-
+ferent sky locations may appear to be clustered in DM
+space since they could originate from the same Galactic
+magnetar. A preliminary scan through the RRATalog6
+for RRATs detected in only in single observations shows
+no obvious groupings, though a ﬁrm statistical analysis
+is complicated due to the heterogenous surveys that have
+contributed to the detections and is beyond the scope of
+this paper.
+
+It is worth mentioning that Galactic FRBs, especially
+due to their enormous ﬂux and small dispersion, would
+be detectable not only by astronomical telescopes but
+also by civilian and military radars, atmospheric moni-
+toring experiments, ground-satellite communication links
+etc. That such a phenomenon has not yet been reported
+suggests to us it is unlikely to exist.
+
+4.1.2. Magnetar Ages and Behavior
+
+It could be that SGR 1806−20 is a special case and
+that the ‘typical’ magnetars that produce FRBs have
+Indeed, SGR 1806−20 is the
+diﬀerent characteristics.
+youngest magnetar known, with a characteristic age7 of
+240 yr (Olausen & Kaspi 2014) and a kinematic age of
+650 yr (Tendulkar et al. 2012), has the strongest B-ﬁeld
+of all those known (Bsurf ≈ 2×1015 G; Kouveliotou et al.
+1998; Woods et al. 2007), and the giant ﬂare of 2004 De-
+cember 27 was the most luminous of all three observed
+giant ﬂares8.
+
+It is possible that a very young (<< 100 yr, ‘baby’)
+magnetar may be extremely active in emitting energetic
+radio-bright, γ-ray faint bursts. As the magnetar ages,
+the repetition may slow and η may decrease to a point
+where the bursts are infrequent (< once per decade) and
+radio faint. While this may explain the lack of a Galactic
+FRB, however, it also signiﬁcantly reduces the number
+of extragalactic magnetars that are available to explain
+the FRB rate.
+
+Another possibility is that η may be suppressed signif-
+icantly by a strong B-ﬁeld, implying an upper bound for
+the B-ﬁeld of FRB sources. In such a case, we may ex-
+pect the other, lower B-ﬁeld, Galactic magnetars to pro-
+duce Galactic FRBs, which again, would be detectable
+in sidelobes of telescopes.
+
+6 http://astro.phys.wvu.edu/rratalog/
+7 From the McGill Magnetar Catalog: http://www.physics.
+
+mcgill.ca/~pulsar/magnetar/main.html
+
+8 While the SGR 1900+14 giant ﬂare of 1998 August 27, was vis-
+ible from Parkes, the telescope was undertaking maser observations
+at 22 GHz, rendering it unusable for burst detections.
+
+8
+
+Tendulkar, S. P. et al.
+
+5. CONCLUSION
+
+From our non-detection of a prompt radio counterpart
+to the 2004 December 24 giant ﬂare of SGR 1806−20 for
+predicted scattering times, we have calculated an upper
+limit on the radio to γ-ray ﬂuence ratio, ηSGR and shown
+that it is inconsistent with ηF RB for fourteen of the ﬁf-
+teen FRB sources for which a lower limit on η is cal-
+culated from their non-detection in Fermi -GBM, Swift-
+BAT and Konus-WIND γ-ray instruments. We have
+thus ruled out the simple hypothesis that magnetar giant
+ﬂares and FRBs are the prompt multi-wavelength coun-
+terparts of the same emission mechanism can be ruled
+out. We have discussed possible modiﬁcations to this
+hypothesis that may reconcile the two phenomena which
+are very similar in other aspects: rates, energetics, and
+timescales. We also point out that if this hypothesis
+holds, extremely bright Galactic FRBs would be detected
+
+in side-lobes of radio telescopes at rates ∼ 4 × 105 times
+the rate of Galactic magnetar giant ﬂares, an unlikely
+scenario.
+
+We would like to thank Lister Staveley-Smith and Pe-
+ter Kalberla for helpful discussions regarding the Parkes
+telescope and Dick Manchester, Lawrence Toomey, and
+Vincent McIntyre for help in accessing archival Parkes
+data. This research made use of Astropy, a community-
+developed core Python package for Astronomy (Astropy
+Collaboration et al. 2013).
+
+S.P.T acknowledges support from a McGill Astro-
+physics postdoctoral fellowship. V.M.K. acknowledges
+support from an NSERC Discovery Grant and Acceler-
+ator Supplement, funds from the Centre de Recherche
+Astrophysique du Quebec, the Canadian Institute for
+Advanced Research, a Canada Research Chair and the
+Lorne Trottier Chair in Astrophysics & Cosmology.
+
+REFERENCES
+
+Aptekar, R. L., Frederiks, D. D., Golenetskii, S. V., et al. 1995,
+
+Mazets, E. P., Aptekar, R. L., Frederiks, D. D., et al. 2004, in
+
+Space Sci. Rev., 71, 265
+
+Astropy Collaboration, Robitaille, T. P., Tollerud, E. J., et al.
+
+2013, A&A, 558, A33
+
+Astronomical Society of the Paciﬁc Conference Series, Vol. 312,
+Gamma-Ray Bursts in the Afterglow Era, ed. M. Feroci,
+F. Frontera, N. Masetti, & L. Piro, 102
+
+Barthelmy, S. D., Barbier, L. M., Cummings, J. R., et al. 2005,
+
+Mazets, E. P., Cline, T. L., Aptekar, R. L., et al. 2005, ArXiv
+
+Space Sci. Rev., 120, 143
+
+Berger, E. 2014, ARA&A, 52, 43
+Bibby, J. L., Crowther, P. A., Furness, J. P., & Clark, J. S. 2008,
+
+MNRAS, 386, L23
+
+Astrophysics e-prints
+
+Mazets, E. P., Golentskii, S. V., Ilinskii, V. N., Aptekar, R. L., &
+
+Guryan, I. A. 1979, Nature, 282, 587
+
+McClure-Griﬃths, N. M., Pisano, D. J., Calabretta, M. R., et al.
+
+Burke-Spolaor, S., Bailes, M., Ekers, R., Macquart, J.-P., &
+
+2009, ApJS, 181, 398
+
+Crawford, III, F. 2011a, ApJ, 727, 18
+
+Burke-Spolaor, S., & Bannister, K. W. 2014, ApJ, 792, 19
+Burke-Spolaor, S., Bailes, M., Johnston, S., et al. 2011b,
+
+MNRAS, 416, 2465
+
+Champion, D. J., Petroﬀ, E., Kramer, M., et al. 2015, ArXiv
+
+e-prints
+
+Meegan, C., Bhat, P. N., Bissaldi, E., et al. 2009a, in American
+
+Institute of Physics Conference Series, Vol. 1133, American
+Institute of Physics Conference Series, ed. C. Meegan,
+C. Kouveliotou, & N. Gehrels, 7–11
+
+Meegan, C., Lichti, G., Bhat, P. N., et al. 2009b, ApJ, 702, 791
+Mingarelli, C. M. F., Levin, J., & Lazio, T. J. W. 2015, ApJ, 814,
+
+Cordes, J. M., & Lazio, T. J. W. 2002, ArXiv Astrophysics
+
+L20
+
+e-prints
+
+Morris, D. J., Hobbs, G., Lyne, A. G., et al. 2002, MNRAS, 335,
+
+Cordes, J. M., & Wasserman, I. 2015, ArXiv e-prints
+He, C., Ng, C.-Y., & Kaspi, V. M. 2013, ApJ, 768, 64
+Hobbs, G., Faulkner, A., Stairs, I. H., et al. 2004, MNRAS, 352,
+
+1439
+
+275
+
+Mottez, F., & Zarka, P. 2014, A&A, 569, A86
+Nakar, E., Gal-Yam, A., Piran, T., & Fox, D. B. 2006, ApJ, 640,
+
+849
+
+Hurley, K. 2011, Advances in Space Research, 47, 1337
+Hurley, K., Cline, T., Mazets, E., et al. 1999, Nature, 397, 41
+Hurley, K., Boggs, S. E., Smith, D. M., et al. 2005, Nature, 434,
+
+Ofek, E. O. 2007, ApJ, 659, 339
+Olausen, S. A., & Kaspi, V. M. 2014, ApJS, 212, 6
+Palmer, D. M., Barthelmy, S., Gehrels, N., et al. 2005, Nature,
+
+1098
+
+Kalberla, P. M. W., Mebold, U., & Reich, W. 1980, A&A, 82, 275
+Kalberla, P. M. W., McClure-Griﬃths, N. M., Pisano, D. J., et al.
+
+2010, A&A, 521, A17
+
+Katz, J. I. 2014, Phys. Rev. D, 89, 103009
+—. 2015, ArXiv e-prints
+Keane, E. F. 2015, ArXiv e-prints
+Keane, E. F., Kramer, M., Lyne, A. G., Stappers, B. W., &
+
+McLaughlin, M. A. 2011, MNRAS, 415, 3065
+
+Kouveliotou, C., Dieters, S., Strohmayer, T., et al. 1998, Nature,
+
+434, 1107
+
+Pen, U.-L., & Connor, L. 2015, ApJ, 807, 179
+Petroﬀ, E., Bailes, M., Barr, E. D., et al. 2015a, MNRAS, 447, 246
+Petroﬀ, E., Keane, E. F., Barr, E. D., et al. 2015b, MNRAS, 451,
+
+3933
+
+Popov, S. B., & Postnov, K. A. 2010, in Evolution of Cosmic
+
+Objects through their Physical Activity, ed. H. A.
+Harutyunian, A. M. Mickaelian, & Y. Terzian, 129–132
+
+Popov, S. B., & Postnov, K. A. 2013, ArXiv e-prints
+Rane, A., Lorimer, D. R., Bates, S. D., et al. 2016, MNRAS, 455,
+
+393, 235
+
+2207
+
+Kulkarni, S. R., Ofek, E. O., & Neill, J. D. 2015, ArXiv e-prints
+Kulkarni, S. R., Ofek, E. O., Neill, J. D., Zheng, Z., & Juric, M.
+
+2014, ApJ, 797, 70
+
+Ravi, V., & Lasky, P. D. 2014, MNRAS, 441, 2433
+Ravi, V., Shannon, R. M., & Jameson, A. 2015, ApJ, 799, L5
+Sakamoto, T., Barthelmy, S. D., Baumgartner, W. H., et al. 2011,
+
+Lazarus, P., Kaspi, V. M., Champion, D. J., Hessels, J. W. T., &
+
+ApJS, 195, 2
+
+Dib, R. 2012, ApJ, 744, 97
+
+Shand, Z., Ouyed, A., Koning, N., & Ouyed, R. 2015, ArXiv
+
+Loeb, A., Shvartzvald, Y., & Maoz, D. 2014, MNRAS, 439, L46
+Lorimer, D. R., Bailes, M., McLaughlin, M. A., Narkevic, D. J.,
+
+& Crawford, F. 2007, Science, 318, 777
+
+Lyubarsky, Y. 2014, MNRAS, 442, L9
+Lyutikov, M. 2002, ApJ, 580, L65
+—. 2006, MNRAS, 367, 1594
+Manchester, R. N., Hobbs, G. B., Teoh, A., & Hobbs, M. 2005,
+
+AJ, 129, 1993
+
+Manchester, R. N., Lyne, A. G., Camilo, F., et al. 2001, MNRAS,
+
+328, 17
+
+Masui, K., Lin, H.-H., Sievers, J., et al. 2015, ArXiv e-prints
+
+e-prints
+
+Spitler, L. G., Cordes, J. M., Hessels, J. W. T., et al. 2014, ApJ,
+
+790, 101
+
+Staveley-Smith, L., Wilson, W. E., Bird, T. S., et al. 1996, PASA,
+
+13, 243
+
+Svinkin, D. S., Hurley, K., Aptekar, R. L., Golenetskii, S. V., &
+
+Frederiks, D. D. 2015, MNRAS, 447, 1028
+
+Svirski, G., Nakar, E., & Ofek, E. O. 2011, MNRAS, 415, 2485
+Tendulkar, S. P., Cameron, P. B., & Kulkarni, S. R. 2012, ApJ,
+
+761, 76
+
+Radio Non-Detection of Giant Flare from SGR 1806−20
+
+9
+
+Terasawa, T., Tanaka, Y. T., Takei, Y., et al. 2005, Nature, 434,
+
+Woods, P. M., Kouveliotou, C., Finger, M. H., et al. 2007, ApJ,
+
+1110
+
+654, 470
+
+Thornton, D., Stappers, B., Bailes, M., et al. 2013, Science, 341,
+
+Younes, G., Kouveliotou, C., & Kaspi, V. M. 2015, ApJ, 809, 165
+
+53
+
+Totani, T. 2013, PASJ, 65
+von Kienlin, A., Meegan, C. A., Paciesas, W. S., et al. 2014,
+
+ApJS, 211, 13
+
+

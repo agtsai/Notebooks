@@ -1,0 +1,1470 @@
+Astronomy & Astrophysics manuscript no. Pappalardo˙ﬁr˙sed˙v2
+February 9, 2016
+
+c(cid:13) ESO 2016
+
+The Herschel(cid:63) Virgo Cluster Survey
+
+XIX. Physical properties of low luminosity FIR sources at z < 0.5
+
+Ciro Pappalardo1,2, Luca Bizzocchi3, Jacopo Fritz4, Alessandro Boselli5, Mederic Boquien10,14, Samuel Boissier5,
+Maarten Baes6, Laure Ciesla7, Simone Bianchi8, Marcel Clemens9, Sebastien Viaene6, George J. Bendo11, Ilse De
+
+Looze6,10,12, Matthew W. L. Smith13, Jonathan Davies13
+
+1 Centro de Astronomia e Astrof´ısica da Universidade de Lisboa, Observat´orio Astron´omico de Lisboa, Tapada da Ajuda, 1349-018
+
+Lisboa, Portugal
+
+2 Instituto de Astrof´ısica e Ciencias do Espac¸o, Universidade de Lisboa, OAL, Tapada da Ajuda, PT1349-018 Lisboa, Portugal
+3 Max-Planck-Institute f¨ur Extraterrestrial Physik, Giessenbachstrasse 1, D-85748 Garching bei M¨unchen
+4 Instituto de Radioastronom´ıa y Astrof´ısica, CRyA, UNAM, Campus Morelia, A.P. 3-72, C.P. 58089, Michoac´an, Mexico
+5 Aix Marseille Universit´e, CNRS, LAM (Laboratoire d’Astrophysique de Marseille) UMR 7326, 13388, Marseille, France
+6 Sterrenkundig Observatorium, Universiteit Gent, Krijgslaan 281 S9, B-9000 Gent, Belgium
+7 Department of Physics, University of Crete, 71003, Heraklion, Greece
+8 Osservatorio Astroﬁsico di Arcetri INAF, Largo E. Fermi 5, 50125 Firenze, Italy
+9 Osservatorio Astronomico di Padova, Vicolo dell’Osservatorio 5, I-35122 Padova, Italy.
+10 Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge, CB3 0HA, UK
+11 UK ALMA Regional Centre Node, Jodrell Bank Centre for Astrophysics, School of Physics and Astronomy, The University of
+
+Manchester, Oxford Road, Manchester M13 9PL, UK
+
+12 Dept. of Physics & Astronomy, University College London, Gower Street, London WC1E 6BT, UK
+13 Department of Physics and Astronomy, Cardiﬀ University, The Parade, Cardiﬀ, CF24 3AA, UK
+14 Unidad de Astronomia, Facultad de Ciencias Basicas, Universidad de Antofagasta, Avenida Angamos 601, Antofagasta, Chile
+
+ABSTRACT
+
+Context. The Star formation rate is a crucial parameter to investigate galaxy evolution. At low redshift the cosmic star formation rate
+density declines smoothly, and massive active galaxies become passive, reducing their star formation activity. This implies that the
+bulk of the star formation rate density at low redshift is mainly driven by low mass objects.
+Aims. We investigate the properties of a sample of low luminosity Far-Infrared sources selected at 250 µm from Pappalardo et
+al. (2015). We have collected data from Ultraviolet to Far-Infrared to perform a multi-wavelengths analysis. The main goal is to
+investigate the correlation between Star formation rate, stellar mass, and dust mass for a galaxy population with a wide range in dust
+content and stellar mass, including the low mass regime that most probably dominates the star formation rate density at low redshift.
+Methods. We deﬁne a main sample of ∼ 800 sources with full Spectral Energy Distribution coverage between 0.15 < λ < 500 µm
+and an extended sample with ∼ 5000 sources in which we remove the constraints on the Ultraviolet and Near-Infrared bands. We
+analyze both samples with two diﬀerent Spectral energy distribution ﬁtting methods: MAGPHYS and CIGALE, which interpret a
+galaxy Spectral energy distribution as a combination of diﬀerent simple stellar population libraries and dust emission templates.
+Results. In the Star formation rate versus stellar mass plane our samples occupy a region included between local spirals and higher
+redshift star forming galaxies. These galaxies represent the population that at z < 0.5 quenches their star formation activity and reduces
+their contribution to the cosmic Star formation rate density. The galaxies subsample with the higher masses (M∗ > 3 × 1010 M(cid:12)) does
+not lie on the main sequence, but shows a small oﬀset, as a consequence of the decreased star formation. Low mass galaxies (M∗ < 1
+× 1010 M(cid:12)) settle in the main sequence with Star formation rate and stellar mass consistent with local spirals.
+Conclusions. Deep Herschel data allow the identiﬁcation of a mixed galaxy population, with galaxies still in an assembly phase,
+or galaxies at the beginning of their passive evolution. We ﬁnd that the dust luminosity is the parameter that discriminates these
+two galaxy populations. The median Spectral energy distribution shows that even at low Star formation rate our galaxy sample have
+Mid-Infrared emission higher than previously predicted.
+Key words. methods: data analysis - galaxies: photometry - submillimetre: galaxies
+
+1. Introduction
+Diﬀerent studies in the past have addressed the problem of the
+evolution of the cosmic star formation rate (SFR) across the
+Hubble time (see Madau & Dickinson 2014, and references
+therein). The SFR is a crucial parameter to investigate galaxy
+
+(cid:63) Herschel is an ESA space observatory with science instruments
+provided by a European-led principal investigator consortia and with
+an important participation from NASA.
+
+evolution: from the Big Bang up to z ∼ 1-3, during the “galaxy
+assembly epoch”, most of galaxies grew and evolved to ﬁnally
+settle into the “main sequence”, the tight relation observed be-
+tween the SFR and the galaxy stellar mass (M∗) (Brinchmann
+et al. 2004; Noeske et al. 2007; Daddi et al. 2007; Oliver et
+al. 2010; Karim et al. 2011; Elbaz et al. 2011; Rodighiero et
+al. 2011). Below z < 1 cosmic SFR density (SFRD) declines
+smoothly, and massive active galaxies become passive early type
+with low star formation activity (Sandage 1986; Lilly et al. 1996;
+
+1
+
+6
+1
+0
+2
+
+ 
+
+b
+e
+F
+5
+
+ 
+
+ 
+ 
+]
+
+.
+
+A
+G
+h
+p
+-
+o
+r
+t
+s
+a
+[
+ 
+ 
+
+1
+v
+1
+6
+1
+2
+0
+
+.
+
+2
+0
+6
+1
+:
+v
+i
+X
+r
+a
+
+Pappalardo et al.: SED analysis of HeViCS background sources
+
+Madau et al. 1996; Boselli et al. 2001; Reddy et al. 2008; Carilli
+& Walter 2013). If massive galaxies shut down their star for-
+mation activity, the bulk of the SFRD at low redshift should be
+mainly driven by low mass objects (Gavazzi & Scodeggio 1996;
+Cowie et al. 1996; Boselli et al. 2001). Heavens et al. (2004) con-
+ﬁrmed this idea, showing that galaxies with high masses form
+their stars earlier and evolve more rapidly with respect to low
+mass objects (see Fig. 2 in Heavens et al. 2004). As a conse-
+quence, mass discriminates diﬀerent evolutionary paths: high
+mass galaxies (M∗ (cid:38) 1 × 1011 M(cid:12)) drive the rise of SFRD dur-
+ing the assembly epoch, while low mass galaxies (M∗ < 3 × 1010
+M(cid:12)) have constant SFRs at least since z ∼ 3, a result found also
+in numerical simulations (Fontanot et al. 2009; Stringer et al.
+2009; S´anchez Almeida et al. 2014). In other words, if we want
+to investigate the SFRD at z < 1 we should address our atten-
+tion to galaxies with M∗ below ≈ 1 × 1011 M(cid:12), because at low
+redshift this is the actual galaxy population that drives the total
+SFRD.
+
+The best approach to investigate the reasons of such a trend
+would then be to estimate stellar mass, gas fraction, and dust
+emission in a large sample of low mass galaxies, to trace in de-
+tail the SFRD decline and to search for possible correlations with
+the galaxies growth rate and the gas available to feed the star
+formation. Thanks to the improved sensitivity of ground based
+instruments, the stellar component of such a population can be
+investigated in great detail, detecting galaxies with M∗ ∼ 107 M(cid:12)
+up to z = 2.5 (e.g. CANDELS survey, Wuyts et al. 2011). For the
+other components the task is more complex: observations of gas
+in low luminosity galaxies even at low redshift is highly time
+consuming, while for the dust emission there are problems re-
+lated to the instrument sensitivities. The bulk of dust emission
+is at Far Infrared (FIR) wavelengths, a spectral range where ob-
+servations are severely limited by confusion noise. The advent
+of the Herschel Space Observatory (Pilbratt et al. 2010) with its
+two detectors PACS (Poglitsch et al. 2010) and SPIRE (Griﬃn et
+al. 2010), has opened a new era in the comprehension of galaxy
+dust properties, allowing a better characterization of the role of
+dust in star formation processes (see the review of Lutz 2014,
+and references therein).
+
+The goal of this paper is to investigate the evolution of the
+SFRD at z < 0.5 focusing on the low FIR luminosity galaxies,
+the main contributors to the SFRD at low redshift. To achieve
+this goal we consider one of the largest and deepest Herschel
+survey, the Herschel Virgo Cluster Survey (Davies et al. 2010,
+2012, HeViCS). Its main advantage is the sensitivity and the uni-
+formity of data: the 84 square degrees of the survey have been
+observed with eight orthogonal cross scans, reaching at 250 µm
+a depth close to the confusion noise limit (see Pappalardo et al.
+2015). HeViCS has several advantages over other large Herschel
+surveys: HerMES (Oliver et al. 2012) observed 380 square de-
+grees of sky decomposed in diﬀerent ﬁelds of diﬀerent sizes and
+with diﬀerent numbers of cross scans. The data set is then not
+homogeneous, and if we want to use the full coverage of the sur-
+vey we cannot rely on a FIR selection, because diﬀerent ﬁelds
+will have diﬀerent number of sources, above all at low ﬂuxes.
+A common method to overcome this problem is to use Spitzer
+24 µm counterpart to match the Herschel sources. However, 24
+µm emission is more sensitive to hot dust, biasing the sample
+towards galaxies with higher SFRs. The other large survey is
+H-ATLAS (Eales et al. 2010), which observed uniformly 510
+square degrees of sky, but the ﬁeld has been covered with only
+two cross scans.
+
+With HeViCS we have been able to tackle the galaxy pop-
+ulation with low dust content that is still feeding the cosmic
+
+2
+
+Fig. 1. Normalized redshift distribution of the main (black solid
+line) and the extended (red dashed line) sample. Sources in both
+samples are selected to have a counterpart in SDSS, UKIDSS,
+and WISE with a reliability above 80%. For the extended sample
+we removed the constraints on NIR and UV data.
+
+SFRD. The Herschel IR/sub-mm dataset has been enriched with
+complementary data at other wavelengths to perform a multi-
+wavelengths analysis of its spectral energy distribution (SED).
+Reproducing the observed emission in such a wide wavelength
+range by means of theoretical models, allows us to derive the
+physical quantities that are most critical for our analysis (dust
+mass, star formation rate, stellar mass). The multi–wavelength
+nature of this study, and the fact that the galaxies under analysis
+have a very good coverage in terms of datapoints at the vari-
+ous frequencies, makes our sample an ideal one to construct an
+average SED, which can be described as representative of low
+FIR luminosity objects. Such a SED can be used as a benchmark
+to investigate galaxies at higher z, because lower dust tempera-
+tures at higher z could be found more frequently than previously
+thought. Diﬀerent studies indicate a colder dust temperature in
+high z sub-mm galaxies with respect to local galaxies with simi-
+lar FIR luminosities (Hwang et al. 2010; Magnelli et al. 2012).
+The paper is organized as follows: Sections 2 and 3 describe
+the sample and the method to extract relevant physical parame-
+ters. The results are shown in Section 4 together with the prop-
+erties of the average SEDs. Conclusions are given in Section 5.
+
+2. The Sample
+In this section we will explain how we build the sample used for
+the analysis:
+
+2.1. Herschel data
+The catalog that we have used as a starting point to construct our
+sample is the point source catalog of Pappalardo et al. (2015) se-
+lected at 250 µm from HeViCS. This survey observed about 84
+
+0.00.51.00.000.050.10NzPappalardo et al.: SED analysis of HeViCS background sources
+
+Fig. 2. Median SED of the galaxies in the main sample (black
+solid line) with 16th and 84th percentile (red dashed lines).
+Hexagon, diamond, circle, and triangle show the completeness
+limits in FUV, r, J, and W1 band, as given in Sec. 2.2.
+
+square degrees of sky centered on the Virgo cluster, using both
+SPIRE (Griﬃn et al. 2010) and PACS (Poglitsch et al. 2010), in
+the spectral domain between 100-500 µm. Details about SPIRE
+and PACS data reduction are given in Auld et al. (2013) and
+Davies et al. (2012). The main diﬀerence in the data reduction,
+with respect to the standard Herschel pipelines, is for the SPIRE
+instrument, for which we used an alternative technique for cor-
+recting temperature drifts, the BRIght Galaxy ADaptive Element
+(BriGAdE, M. Smith PhD Thesis1).
+
+PACS data were reduced up to level 1 using HIPE version
+10.0.0 Ott (2010). At this point only the signal drift, the 1/ f
+noise and the detection of glitches are still to be corrected.
+These tasks are performed by the IDL algorithm Scanamorphos
+(Roussel 2013), which also takes care of the map making. The
+full width at half-maximum (FWHM) of the two instruments
+was 9(cid:48)(cid:48), 13(cid:48)(cid:48), 17 .(cid:48)(cid:48)5, 23.(cid:48)(cid:48)9, and 35.(cid:48)(cid:48)1 at 100, 160, 250, 350, and
+500 µm, respectively2 and the maps had a pixel size of 1.(cid:48)(cid:48)7, 2.(cid:48)(cid:48)85,
+6(cid:48)(cid:48), 8(cid:48)(cid:48), and 12(cid:48)(cid:48) at 100, 160, 250, 350, and 500 µm.
+
+The procedure followed to extract the source ﬂux densi-
+ties from the SPIRE instrument is explained in Pappalardo et
+al. (2015). The position of the sources was found using the
+sourceExtractorSussextractor (Savage & Oliver 2007)
+task in HIPE 10.0.0, considering only sources with ﬂux densities
+above 20 mJy. This threshold corresponds to a bit more than 3σ
+above the confusion noise, estimated at 250 µm in 5.8±0.3 mJy
+beam−1 (Nguyen et al. 2010).
+
+Each SPIRE-detected source was ﬁtted with a Gaussian
+function using sourceExtractorTimeline, a timeline-based
+point source ﬁtter implemented in HIPE 10.0.0 (Bendo et
+al. 2013). This method ﬁts timeline data from all bolometers
+within an individual array with a two-dimensional Gaussian
+function. PACS photometry has been estimated using the
+pacsAnnularSkyAperturePhotometry task in HIPE 10.0.0.
+This procedure performs an aperture photometry on the tar-
+get, at a given radius. The sky is estimated inside a concentric
+annular radius around the source using an algorithm adapted
+from daophot (Stetson 1987). We chose circular apertures with
+8.(cid:48)(cid:48)7 and 13.(cid:48)(cid:48)1 of radii at 100 and 160 µm (Rigby et al. 2011),
+and the annular radius between 25(cid:48)(cid:48)-35(cid:48)(cid:48)at both wavelengths.
+According to the HIPE instruction manual 3 the error given in
+pacsAnnularSkyAperturePhotometry task is not correct for
+ﬂux-calibrated Herschel images. To estimate the photometric er-
+
+1 http://orca.cf.ac.uk/42751/
+2 http://herschel.esac.esa.int/twiki/pub/Public/SpireCalibrationWeb
+
+/beam release note v11.pdf
+
+3 http://herschel.esac.esa.int/hcss-doc-
+
+13.0/load/dag/html/Dag.ImageAnalysis.HowTo.AperturePhotometry.html
+
+Fig. 3. Top panel: r-band AB magnitude as a function of z for the
+extended sample. Red circles represents the galaxies with mr >
+22.2, excluded from the sample because of the incompleteness.
+Bottom panel: Normalized histograms of the mr − m250 index for
+the main (black solid line) and extended (red dashed line) sam-
+ple. The vertical blue dotted line show the color limit considering
+both r-band and 250 µm detection limits.
+
+rors we calculate the ﬂuxes in eight diﬀerent apertures at the
+same distance of the annulus chosen for the sky estimation, and
+with the same aperture ﬁxed for the sources. The apertures were
+evenly spaced around the source, and the standard deviation of
+the ﬂuxes found at these positions gave the error on the measured
+photometry (see also Balog et al. 2014).
+
+The methods described above gave a photometric accuracy
+for PACS and SPIRE data of 15%, 15%, 6%, 11%, and 21% at
+100, 160, 250, 350, and 500 µm, respectively (see Pappalardo et
+al. 2015, for SPIRE bands).
+
+2.2. Ancillary data
+Beside Herschel, we collected a set of ancillary data at other
+wavelengths described in the following:
+
+– Far Ultraviolet (FUV) and Near Ultraviolet (NUV): The
+GALEX Ultraviolet Virgo Cluster Survey (GUViCS, Boselli
+
+3
+
+0.11.010.0100.0 10 15 20 25λ/µmApp. Magnitude (AB)0.20.40.60.81.0 15 20 25zmAB(r) 5 100.000.050.100.15Nmr − m250Nmr − m250Pappalardo et al.: SED analysis of HeViCS background sources
+
+et al. 2011) is a survey which explored a region of ∼ 120
+deg2 in NUV (λe f f = 2316 Å, FWHM = 5.(cid:48)(cid:48)6) and 40 deg2
+in FUV (λe f f = 1539 Å, FWHM = 4(cid:48)(cid:48)) centered on M87, the
+big early type galaxy in the center of the Virgo cluster. The
+GUViCS catalog (Voyer et al. 2014), contains about 1.2 mil-
+lions of point-like sources with a 1σ error of ∼ 0.2 mag down
+to AB magnitudes of mFUV ∼ 23. Photometry has been esti-
+mated using the MAG AUTO Kron magnitudes (Kron 1980)
+developed in SExtractor (Bertin & Arnouts 1996).
+
+– Optical data: Photometry in u, g, r, i, and z bands come from
+the SDSS DR10 survey (Ahn et al. 2014). This survey ob-
+served in the same area of HeViCS about two millions of
+sources with a completeness limit of 95% at mr ≈ 22.2 AB
+mag and an average FWHM ∼ 1.(cid:48)(cid:48)3.
+– Near Infrared (NIR): The UK Infrared Deep Sky Survey
+Large Area Survey (UKIDSS-LAS, Lawrence et al. 2007)
+has uniformly scanned all the sky in Y (λe f f = 1.03 µm), J
+(λe f f = 1.24 µm), H (λe f f = 1.63 µm), and Ks (λe f f = 2.2
+µm) with an average FWHM ∼ 1.(cid:48)(cid:48)2. In this work we used
+the Data Release 10, with ∼ 2 million of objects inside the
+HeViCS area with magnitude limit (99% complete) of 18.2
+in Ks band and a typical error of 0.02 mag. In order to im-
+prove the quality of the ﬁts we removed arbitrarily Y, and
+H band and did not consider them in the rest of the analy-
+sis. The variation in the estimated physical parameters, when
+considering or not these two bands is, in general, very small,
+the most relevant one being in the stellar mass determination.
+This quantity is best constrained in the NIR, and we found
+variations of less than 13%. On the other side, this choice
+would allow us to increase the number of reliable ﬁts by ∼
+30%.
+– Mid Infrared (MIR): The Wide Field Infrared Survey (WISE,
+Wright et al. 2010) is a survey that observed all the sky at
+four diﬀerent wavelengths: 3.4 µm, 4.6 µm, 12 µm, and 22
+µm, reaching a 5σ sensitivity of 0.08, 0.11,1, and 6 mJy at
+3.4, 4.6, 12, and 22 µm, respectively. We found about 1.7
+millions of WISE sources in the Virgo Cluster ﬁeld observed
+by HeViCS with Herschel. Photometry was estimated via
+PSF-ﬁtting (keyword wmpro in the reference catalog 4).
+
+2.3. Final Sample
+We considered all the sources selected at 250 µm in the catalog
+of Pappalardo et al. (2015), with ﬂux densities F250 > 20 mJy,
+and SNR250 > 3. Since the number of sources in the HeViCS
+area for SDSS, UKIDSS, and WISE data is so high that the
+probability to ﬁnd a spurious source close to a FIR object is
+not negligible, the simple nearest object criterion to ﬁnd a coun-
+terpart to a FIR source is no longer valid (Richter 1975). We
+used a likelihood technique developed in Sutherland & Saunders
+(1992), applied successfully to identify the optical counterparts
+of Herschel selected sources (Smith et al. 2011; Pappalardo et
+al. 2015), and also to cross-correlate H-ATLAS sources with
+VIKING NIR data (Fleuren et al. 2012), WISE (Bond et al.
+2012), and IRAC (Kim et al. 2012). This method associates a
+parameter, the reliability R, to each candidate, quantifying the
+probability that the source considered is the true counterpart of
+the FIR reference object. R accounts for the possibility that the
+counterpart is below the magnitude limit of the reference band
+or the probability to ﬁnd serendipitously a spurious source at
+
+4 http://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-
+
+scan?mission=irsa&submit=Select&projshort=WISE
+
+4
+
+Fig. 4. Probability density function of the main sample obtained
+using MAGPHYS (black solid line) and CIGALE (red dashed
+line). Black dotted and Red dot-dashed line show the best ﬁt
+obtained from Eq. 1 for MAGPHYS and CIGALE, respectively.
+
+some position. As a reference magnitudes we chose the r, J,
+and W1 bands for SDSS, UKIDSS, and WISE respectively. For
+each HeViCS source the identiﬁcation with Rsdss, RUKIDS S , and
+Rwise > 80% was considered suﬃcient to remove the spurious
+objects. We did not apply a further cut in SNR in these bands be-
+cause sources with high reliability have SNRs abundantly above
+3.
+The GuViCS sources were cross-correlated with the SDSS
+selecting the nearest object inside a radius of 5(cid:48)(cid:48) in Voyer et al.
+(2014). With this approach 75% of sources had multiple SDSS
+or UV counterparts, but Voyer et al. (2014) considered in their
+catalog only objects with a 1-1 match. At UV wavelengths we
+then simply matched the objects with the same SDSS identiﬁca-
+tion.
+
+Since we are interested in low luminosity galaxies with mod-
+erate star formation we removed stars and/or quasars according
+to the SDSS phot Obj Type keyword in the SDSS catalogue
+and ∼ 20 sources classiﬁed as active galactic nuclei based on
+WISE data, a criterion deﬁned in Bond et al. (2012). We also
+removed all the sources with mr > 22.2 to stay 95% complete in
+r-band. We ended up with 790 sources (from now on the “main
+sample”) with a spectral coverage in 18 diﬀerent photometric
+bands. We considered the photometric redshift given in SDSS
+and, where available, the redshift obtained with spectra (∼ 50%
+of the sample). The median redshift is 0.1±0.22
+0.07 (16th-84th per-
+centile), shown in Fig. 1.
+
+Since we are cross-correlating diﬀerent data sets, we must
+check the possibility that a source be detected at 250 µm and
+not at other wavelengths because of the low ﬂux at that band.
+This case would bias all the analysis and for this reason needs
+to be investigated. Fig. 2 shows the median SED of the galaxies
+in the main sample normalized to the ﬂux limit imposed at 250
+µm, i.e. 20 mJy (13.1 AB magnitudes), compared to the ﬂux
+limit of FUV, r, J, and W1 bands, respectively. The magnitude
+
+ 0 5 10 150.00.10.20.30.4Prob. Densityχ2Pappalardo et al.: SED analysis of HeViCS background sources
+
+limit in each band is well below the typical SED of our galaxies
+population, implying no variation to the completeness level of
+our catalog due to the cross correlation at other wavelengths.
+
+UV-selected objects undergo a selection eﬀect due to their in-
+clination. Statistically galaxies face-on are less than the inclined
+ones. For the latter, dust correction is higher, and it can results
+in the extreme cases in a complete absorption of the UV emis-
+sion. These galaxies will be undetected at UV, still harboring star
+formation. To take into account this possibility we deﬁned a fur-
+ther “extended sample”, in which we remove the constraints on
+the UV and NIR selections. This selection ends up with ∼ 5000
+sources with median z = 0.22±0.48
+0.08 (16th-84th percentile), shown
+in Fig. 1. The higher median redshift rises caution in consider-
+ing selection eﬀects, more relevant at higher z (see e.g. Fig. 2 in
+Dunne et al. 2011). To quantify this eﬀect in top panel of Fig. 3
+we compared the r-band AB magnitude as a function of z. The
+objects with mr > 22.2 are less than 10% of the extended sam-
+ple. Up to z = 0.6 the faint sources represents only the 5% of the
+total sample, rising to 43% for z > 0.6.
+
+Another possibility to consider is that due to our optical limit
+we could still lose highly dust obscured galaxies. To investigate
+this we consider an index color given by the diﬀerence in AB
+magnitudes mr − m250. In bottom panel of Fig. 3 we show the
+histograms of the mr − m250 for the main and extended sample.
+The vertical dotted line shows the color index obtained consid-
+ering the sensitivity limits in r-band and 250 µm. For the main
+sample all the galaxies considered are well below this threshold,
+while for the extended sample we have a 9% of objects outside
+the color limit. However most of these sources are at z > 0.6,
+where we already shown that selection eﬀects become relevant.
+In other terms our selection allow us to obtain a representative
+sample of the dusty galaxies for all the main sample and at least
+up to z < 0.6 for the extended sample.
+
+3. Method
+The broad-band panchromatic dataset has been ﬁtted using two
+diﬀerent SED ﬁtting techniques: MAGPHYS5 (da Cunha et al.
+2008) and CIGALE6 (Noll et al. 2009). Both methods interpret
+a galaxy SED as a combination of diﬀerent simple stellar popu-
+lation libraries and dust emission spectra.
+
+The ﬁrst step of MAGPHYS is to build two diﬀerent set of
+libraries that reproduce the stellar and dust emission of a galaxy:
+libraries containing attenuated emission from stellar popula-
+tions, from 91Å to 160 µm, are built using the models of Bruzual
+(2007) with the Charlot & Fall (2000) prescription for dust atten-
+uation and a Chabrier (2003) Initial Mass Function (IMF).
+
+The total dust emission from MIR to sub-mm bands is as-
+sumed to be the sum of a component due to the dust heated in
+the stellar birth clouds, and a component originating from the
+diﬀuse interstellar medium (ISM). Dust emission due to the ra-
+diation produced in stellar birth cloud is the sum of polycyclic
+aromatic hydrocarbons (PAH), hot MIR continuum and a warm
+component in thermal equilibrium with temperatures between
+30-70 K. Emission originating from dust in the diﬀuse ISM, is
+modelled as the sum of the three components mentioned above,
+with the addition of a cold component in thermal equilibrium
+with temperature between 10-30 K. This range of temperatures
+is slightly larger than the MAGPHYS version in da Cunha et
+al. (2008): an extended library has been recalculated by E. da
+Cunha and tested in Viaene et al. (2014) and Agius et al. (2015).
+
+5 http://www.iap.fr/magphys/magphys/MAGPHYS.html
+6 http://cigale.lam.fr/
+
+Fig. 5. SFR (top panel), M∗ (middle panel), and Ldust (bottom
+panel) obtained with MAGPHYS (ordinate) and CIGALE (ab-
+scissa). Red circles show the median estimated inside bins of
+∆log10(x) = 1 with the associated variance. Solid line shows a
+linear relation between the two quantities. Bottom right corner
+shows average errors.
+
+5
+
+−2−1 0 1 2−2−1 0 1 2log10(SFR/(Msolyr−1)) [MAG]log10(SFR/(Msolyr−1)) [CIG] 8 9 10 11 12 8 9 10 11 12log10(M*/Msol) [MAG]log10(M*/Msol) [CIG] 9 10 11 12 9 10 11 12log10(Ldust/Lsol) [MAG]log10(Ldust/Lsol) [CIG]Pappalardo et al.: SED analysis of HeViCS background sources
+
+Table 1. Parameters used in CIGALE ﬁtting procedure.
+
+Parameter
+
+τ [Gyr]
+Umin
+qPAH
+γ
+
+Values
+
+0.25, 0.5, 1, 2, 3, 4, 5, 7, 9, 14
+
+0.1, 0.15, 0.2, 0.25, 0.35, 0.5, 0.6, 0.7, 0.8, 1.0, 1.2, 1.5
+
+0.47, 1.12, 1.77, 2.5, 3.19, 3.9, 4.58, 5.95
+
+0.001, 0.01, 0.1, 0.9
+
+tion of amorphous silicate and carbonaceous grains with the size
+distribution of Milky Way (Weingartner & Draine 2001). Dust
+can be heated by hot O-B stars in photo dissociation regions or
+by the large number of stars that produce diﬀuse radiation. The
+former in Draine & Li (2007) models is parameterized with Umin,
+i.e. the intensity of the interstellar radiation ﬁeld, and the frac-
+tion of the total dust heated by these two components is given by
+γ, with values between 0 and 1. Another parameter introduced is
+the abundance of PAH, qPAH, which quantiﬁes the contribution
+of the PAH to the total dust emission. Deﬁning a set of starting
+parameters, listed in Table 1, CIGALE builds a library of SEDs
+from which is estimated the χ2.
+
+To determine for both methods the range of acceptable χ2
+values, we considered the χ2 distribution in the main samples
+and we built the probability density function, shown as a black
+solid and red dashed line in Fig. 4 for MAGPHYS and CIGALE,
+respectively. The theoretical probability density function of the
+χ2 distribution is:
+
+P ∝
+
+1
+
+2Ndo f /2 · Γ(Ndo f /2)
+
+(χ2)(Ndo f /2)−1 exp−χ2/2,
+
+(1)
+
+where Γ(x) represents the Gamma function, and Ndo f is the num-
+ber of degrees of freedom of the problem. The degrees of free-
+dom of our system are not simply the number of photometric
+points (Nbnd) minus one, because neighboring photometric bands
+are not independent. For this reason we ﬁt the PDF in Fig. 4 us-
+ing in Eq. 1 the relation between Ndo f and Nbnd determined in
+Smith et al. (2012):
+Ndo f ≈ −2.82 + 0.66 · Nbnd + 7.91 · 10−3 · N2
+bnd.
+
+(2)
+
+The best ﬁts shown as a black dotted and red dot-dashed line
+in Fig. 4 allowed to determine the 99% conﬁdence interval of
+the χ2 distribution, indicating the threshold above which there
+is only 1% probability for our SED ﬁtting to be reliable. We
+found a median value χ2 of 2.6+6.3−1.2 and 1.9+3.9−0.9 (16th and 84th
+percentiles) for MAGPHYS and CIGALE, with less than 1%
+of the sources outside the range deﬁned by Eq. 1. MAGPHYS
+recovers in average higher χ2 values with respect to CIGALE,
+and this could indicate an higher accuracy in the ﬁt process for
+the latter. However, the best ﬁt obtained using Eq. 1 tell us that
+most of the ﬁts are equally acceptable once they are in the 99%
+percentile deﬁned by Eq. 1. The issue here is that, because of the
+number of degrees of freedom of the problem is not well deﬁned
+and can only be approximated by Eq. 2, a normalized χ2 close
+to 1 does not necessarily indicates a good ﬁt. For this reason we
+still keep both methods for the analysis, quantifying diﬀerences
+and analogies in Sec. 4.
+
+Fig. 6. SFR (top left panel), M∗ (top right), Mdust (bottom left),
+and Ldust (bottom right panel) obtained from the main sam-
+ple (abscissa) and the extended sample (ordinate). Dashed line
+shows a linear relation between the two quantities. Red circles
+show the median calculated inside bin evenly spaced with asso-
+ciated variance. Bottom right corner shows average errors.
+
+Dust in thermal equilibrium is optically thin and emits as a mod-
+iﬁed black body, ∝ κλBλ(T), with the dust absorption coeﬃ-
+cient modeled as κλ ∝ λ−β and β equals 1.5 and 2.0 for warm
+and cold components, respectively. As for the stellar emission
+component, MAGPHYS includes 25000 spectra using diﬀerent
+stochastic SFHs7, metallicities and dust attenuation, while dust
+emission is represented by 50000 spectra using diﬀerent combi-
+nations of warm and cold dust, PAH, and MIR continuum (see
+da Cunha et al. 2008, for further details). The method requires
+that an energy balance exists between the energy absorbed by
+dust in the UV-optical, and that re-emitted, in the form of IR
+radiation, by dust itself, so that it allows to consistently con-
+strain the stellar and dust emission simultaneously. The fraction
+of stellar radiation absorbed by dust in the stellar birth clouds
+and in the ambient ISM is redistributed at FIR wavelengths, as-
+suming that the starlight is the only source of heating. With these
+assumptions we can then compare our multi wavelengths data
+with diﬀerent combination of theoretical SEDs and calculate the
+χ2 parameter, the usual goodness of ﬁt estimator. These values
+allow to build for each physical parameter a probability density
+function (PDF), whose median corresponds to the best estimate
+of the true value (see also da Cunha et al. 2010).
+
+CIGALE estimates the stellar component of a galaxy ex-
+ploiting emission models which assume diﬀerent IMF and stel-
+lar libraries. In our case we chose a Chabrier (2003) IMF and
+the SEDs of Bruzual & Charlot (2003) convolved with diﬀer-
+ent exponentially decreasing SFHs whose e-folding τ are listed
+in Table 1. Dust emission is represented by Draine & Li (2007)
+model, which reproduces the dust emission assuming a composi-
+
+7 Exponentially decreasing SFR with bursts randomly superposed
+
+6
+
+−2−1 0 1 2−2−1 0 1 2log10(SFR/(Mo/yr)) [NO UV−NIR]log10(SFR/(Mo/yr)) [ALL] 8 10 12 8 10 12log10(M*/Mo) [NO UV−NIR]log10(M*/Mo) [ALL] 6 7 8 9 10 6 7 8 9 10log10(Mdust/Mo) [NO UV−NIR]log10(Mdust/Mo) [ALL] 8 9 10 11 12 8 9 10 11 12log10(Ldust/Lo) [NO UV−NIR]log10(Ldust/Lo) [ALL]Pappalardo et al.: SED analysis of HeViCS background sources
+
+4. Results
+Before proceeding with the analysis, we compare the results ob-
+tained with MAGPHYS and CIGALE, restricting the analysis
+to the parameters investigated in this paper and leaving a more
+extended study for a future paper (Pappalardo et al. in prep.).
+
+4.1. Comparison of MAGPHYS and CIGALE results
+Fig. 5 shows the relation between SFR, M∗, and dust luminos-
+ity (Ldust) estimated in MAGPHYS (ordinate) and CIGALE (ab-
+scissa). SFR, M∗, and Ldust are consistent in both methods, with
+variations below 20%. We divided each parameter in diﬀerent
+bins and we estimated the median, shown as a red circle in Fig. 5
+with the associated variance. Both methods produce results con-
+sistent with a linear relation (solid line), implying a substantial
+equivalence for the parameters considered. From now on, unless
+expressly written, we will refer to the results of MAGPHYS.
+
+We also quantiﬁed how the results vary when removing the
+constraints at UV and NIR wavelengths, as done for the extended
+sample in Sec. 2. Fig. 6 compares SFR, M∗, Ldust, and the dust
+mass (Mdust) obtained with MAGPHYS considering only galax-
+ies in common. The four quantities are consistently calculated
+in both the main and the extended sample. The main diﬀerences
+are found in the SFR, with an increasing scatter at low values.
+However, they are mostly limited to galaxies with moderate star
+formation, SFR < 1 M(cid:12) yr−1, a range where its determination is
+in any case uncertain. We note also that stellar masses are consis-
+tent in both samples. This is a strong indication that the combi-
+nation of WISE and optical SDSS data is suﬃcient to constrain
+the ﬁt in this spectral region, and hence the stellar mass value
+derived. In conclusion removing the UV and the NIR from the
+analysis still results in reliable ﬁts, once provided an extended
+photometric coverage all over the SED. We can then reasonably
+assumes that the results obtained in the extended samples are
+reliable and robust with respect to the quantities analyzed.
+
+4.2. Properties of low FIR luminosity sample
+Figure 7 shows the normalized distribution of Mdust, Ldust, M∗,
+and SFR for the main and the extended sample. Removing the
+constraints that the SED should have UV data-points, we include
+galaxies with higher dust extinction and, hence, a larger dust
+content. This explains why, in Fig. 7, the normalized distribu-
+tion peaks at higher values of the dust mass and luminosity. The
+fact that the SFR peaks at slightly higher values as well, is most
+likely an indirect eﬀect, coming from the correlation between
+dust content and star formation rate. The small diﬀerence in the
+peak of the stellar mass distribution, is due to the fact that in the
+extended sample there are more distant galaxies (see Fig. 1), and
+we are selecting slightly more massive ones. This is conﬁrmed
+in Fig. 8, where we show the stellar mass as a function of red-
+shift for the main and the extended sample. Despite a diﬀerent
+number of objects at z > 0.2 we see that most of the galaxy
+populations explored in both samples span uniformly a range of
+stellar masses between 109 < M∗ < 1011 M(cid:12) at redshift z ∼ 0.1.
+Table 2 shows the median values of the main physical parame-
+ters in our samples compared to the H-ATLAS works of Smith
+et al. (2012) and the Spitzer 24 µm selected sample of da Cunha
+et al. (2010). Both studies investigated low redshift galaxies and
+used MAGPHYS. Our main sample has a median Ldust about
+three times lower than the two aforementioned samples, and a
+median stellar masses two times lower than H-ATLAS. These
+values justify the choice of the HeViCS survey in order to tackle
+
+Fig. 7. Normalized distribution of dust luminosity (top left), dust
+mass (top right), stellar mass (bottom left), and SFR (bottom
+right) for the main (black solid line) and extended (red dashed
+line) sample, estimated with MAGPHYS.
+
+Fig. 8. Stellar mass as a function of redshift for the main (black
+stars) and the extended (red dots) sample.
+
+the galaxy population with low mass and low dust luminosity at
+z < 0.5.
+
+Other large surveys, e.g. those cite in Sect. 1, which included
+observations with Herschel, showed some limitations from this
+point of view: for example Lee et al. (2013) cross correlating
+
+7
+
+ 8 9 10 11 120.000.050.100.150.20log10(Ldust/Lsol)Nlog10(Ldust/Lsol)N 6 8 100.000.050.100.15log10(Mdust/Msol)Nlog10(Mdust/Msol)N 8 9 10 11 120.00.10.20.3log10(M*/Msol)Nlog10(M*/Msol)N−4−2 0 2 40.00.10.2log10(SFR/(Msol yr−1))Nlog10(SFR/(Msol yr−1))N0.00.20.4 8 9 10 11log10(M*/Msol)zPappalardo et al.: SED analysis of HeViCS background sources
+
+Table 2. Median obtained for diﬀerent physical parameters (column 1) estimated with MAGPHYS in the main sample (column 2)
+and the extended sample (column 3), with associated errors estimated as in Rowlands et al. (2014). Col. 4 and 5 show median values
+from Smith et al. (2012) and da Cunha et al. (2010), respectively.
+
+Parameter
+
+(1)
+
+Mdust [M(cid:12)]
+Ldust [L(cid:12)]
+SFR [M(cid:12) yr−1]
+
+M∗ [M(cid:12)]
+Mdust/M∗
+
+Main Sample
+
+(2)
+
+9.8±1.6 × 107
+2.3±0.3 × 1010
+1.9±0.1 × 1010
+0.018±0.002
+
+1.2±0.3
+
+Extended sample H-ATLAS
+
+(3)
+
+(4)
+
+2.6±1.4 × 108
+6.2±2 × 1010
+3.5±0.1 × 1010
+0.025±0.001
+
+2.8±4.7
+
+5.5 × 107
+6.4 × 1010
+3.25
+3 × 1010
+0.002
+
+SINGS
+
+(5)
+1 × 108
+6.4 × 1010
+2.5 × 1010
+0.004
+
+4.17
+
+Fig. 9. SFR-M∗ relation in the main sample (black crosses) with average error bars shown in the bottom right corner and best ﬁt
+estimate (black solid line). Green diamonds show the results for a sample of low redshift star forming galaxies (0.05 < z < 0.5,
+Bauermeister et al. 2013), red crosses are high redshift star forming galaxies (1 < z < 3 Tacconi et al. 2013), blue triangles local
+LIRGs at z ≈ 0.4 (Geach et al. 2011), magenta stars and cyan circles show local spirals (Leroy et al. 2008) and ULIRGs (Gao &
+Solomon 2004), respectively. The ﬁts are from: local galaxies of Ciesla et al. (2014), and Peng et al. (2010) (green dashed, and red
+dotted line), galaxies at z = 2 and z = 4 in Rodighiero et al. (2011) (blu dot-dashed line), and the compilation showed in Speagle et
+al. (2014) (magenta double dotted line).
+
+data from HerMES and COSMOS investigate the relation be-
+tween SFR and M∗ in a sample of ∼4000 sources. Surprisingly
+their population does not follow the nominal main sequence, but
+appear to have a much ﬂatter distribution. They explain this dif-
+ference saying that “Herschel observations of COSMOS gener-
+ally sample only the most luminous regime of the SFR/M∗ plane,
+so we cannot make any statements about galaxies at lower lumi-
+nosities”. On the other side, for H-ATLAS Smith et al. (2012)
+showed that with only two cross scans they select mainly galax-
+ies with dust luminosities typical of Luminous Infrared Galaxies
+(> 1010 M(cid:12), LIRGs).
+
+Figures 9 and 10 show the SFR-M∗ for the main and ex-
+tended sample, together with the results for other samples from
+the literature. It is well known that most of star forming galax-
+ies show a tight correlation in the SFR-M∗ plane called main
+sequence (Peng & Maiolino 2014; Maraston 2005; Madau &
+Dickinson 2014; S´anchez Almeida et al. 2014). In the local
+Universe this relation has a ﬁxed slope between 108 < M∗ <1011
+M(cid:12), while at higher redshift it oﬀsets towards higher SFR, be-
+cause of the larger gas supply. In Fig. 9 the galaxies of the
+main sample are compared with diﬀerent data set representa-
+tive of diﬀerent galaxy evolution stages (see caption for details).
+
+8
+
+ 8 9 10 11 12−2 0 2log10(M*/Msol)log10(SFR/(Msol yr−1))Pappalardo et al.: SED analysis of HeViCS background sources
+
+Fig. 10. SFR-M∗ relation in the extended sample (black crosses) with average error bars shown in the bottom right corner. Symbols
+and lines are detailed in Fig. 9
+
+The bulk of the main sample is formed by galaxies with mod-
+erate star formation comparable to local spirals (SFR ≈ 1 M(cid:12)
+yr−1), and M∗ ∼ 1010 M(cid:12). Beside this component we observe at
+log10(SFR/(M(cid:12) yr−1)) > 0.5 a population of galaxies with similar
+stellar masses, but higher star formation, in a region of the SFR-
+M∗ plane intermediate between the local spirals (magenta stars)
+and higher redshift star forming galaxies (red crosses). These
+galaxies represent the population that at z < 0.5 quenches its star
+formation activity and reduces its contribution to the total SFRD,
+as shown in Heavens et al. (2004).
+
+However, most of this population is still not detected, be-
+cause in galaxies with Mdust ∼ 108 M(cid:12) and SFR below 10 M(cid:12)
+yr−1 (Tab. 2), the weak UV radiation ﬁeld produced during early
+star formation stages can be completely absorbed by the dust.
+This is the reason why we have deﬁned an extended sample (see
+Sec. 2), where we include also dusty galaxies having lower UV
+luminosities. The main component of this population are galax-
+ies with 1010 < M∗ < 1011 M(cid:12) and SFR ≈ 10 M(cid:12) yr−1, shown in
+Fig. 10.
+
+Fig. 9 and 10 identify two diﬀerent aspects of galaxy evo-
+lution at z < 0.5: most of galaxies with M∗ > 3 × 1010 M(cid:12) are
+not in the main sequence, but slightly oﬀset, as a consequence of
+the decreased star formation. Low mass galaxies (M∗ < 1 × 1010
+M(cid:12)) are not undergoing the same process: they are mostly set-
+tled in the main sequence with SFR and stellar masses consistent
+with local spirals.
+
+The previous analysis conﬁrms that SFR estimates based on
+the FIR luminosity alone, should be used with caution. Diﬀerent
+authors have already dealt with this problem: in normal galax-
+
+ies8 dust can be heated not only by young stars forming clouds
+via UV radiation, but also by the diﬀuse interstellar radiation
+ﬁeld produced by old stars during their late evolutionary stages
+(Bendo et al. 2015, 2012, 2010; Boquien et al. 2011, 2014;
+Groves et al. 2012; Viaene et al. 2014; Ciesla et al. 2014; Boselli
+et al. 2010, 2012; De Looze et al. 2012, 2014; Smith et al.
+2012a,b). To investigate this aspect we consider two diﬀerent
+relations: the dust mass vs the SFR, to ﬁnd indications about the
+overall quantity of dust produced with respect to the current star
+formation, and the speciﬁc dust mass, i.e. Mdust/M∗ vs the spe-
+ciﬁc SFR (sSFR = SFR/M∗), a parameter giving similar infor-
+mation as Mdust-SFR, but weighted with the actual mass of the
+galaxies. This is not a trivial aspect, because high mass objects
+evolve more rapidly with respect to low mass ones (e.g. Ilbert et
+al. 2014; Gavazzi et al. 2015). In Fig. 11 we show the results for
+the main sample. Red crosses reproduce the results of Smith et
+al. (2012) for a sample of ∼ 1400 objects selected at 250 µm in
+the H-ATLAS survey (Eales et al. 2010) at redshift z < 0.5. In
+both samples the range of Mdust is comparable, but the SFRs of
+our sources are systematically lower than galaxies analyzed in
+Smith et al. (2012). The average redshift of the H-ATLAS sam-
+ple is z ∼ 0.35, with a diﬀerence ∆z ∼ 0.2 with respect to our
+sources. This means that we are investigating a sample of galax-
+ies at a slightly diﬀerent stage of their evolution with respect to
+Smith et al. (2012), a stage in which the star formation activ-
+ity is reduced. This is in agreement with many evidences which
+have shown that since z ∼ 1 the star formation density of the
+
+8 In this context ’normal galaxies’ means galaxies that are not under-
+
+going a strong starburst.
+
+9
+
+ 8 9 10 11 12−2 0 2log10(M*/Msol)log10(SFR/(Msol yr−1))Pappalardo et al.: SED analysis of HeViCS background sources
+
+Fig. 11. Dust mass (Mdust) vs SFR for the main sample. Red crosses show the results of Smith et al. (2012) for a sample of ∼ 1400
+objects selected at 250 µm from the H-ATLAS survey (Eales et al. 2010) at z < 0.5. The dashed line shows the best ﬁt obtained in
+da Cunha et al. (2010) from a sample of about ∼ 1700 galaxies low redshift galaxies. Blue triangles and the magenta circles show
+two subsamples of approximatively the same size with M∗ < 5 × 109 M(cid:12) and M∗ > 5 × 1010 M(cid:12), respectively. The cross in the
+bottom right corner shows the average error.
+
+Universe has drastically decreased (Madau et al. 1996; Hopkins
+2004; Behroozi et al. 2013).
+The dashed line in left panel of Fig. 11 shows the best ﬁt
+obtained in da Cunha et al. (2010) from a sample of about ∼ 1700
+galaxies with available GALEX, SDSS, 2MASS and IRAS data.
+Galaxies have been selected with IRAS, with a median dust mass
+of Mdust ∼ 5.5 × 107 M(cid:12), slightly smaller than our value, Mdust ∼
+9.8±1.6 × 107 M(cid:12). This diﬀerence in dust masses is due to a
+combination of two factors: the average redshift of the da Cunha
+et al. (2010) sample is z ∼ 0.05, a range smaller than ours. Since
+Dunne et al. (2011) have shown that galaxies at higher redshift
+have larger dust masses, the larger amount of dust in our sample
+is consistent with the trend observed for galaxies at z < 0.5.
+
+Another reason for the diﬀerent dust mass distribution ob-
+served is due to the selection criterion. Selecting galaxies at 250
+µm with robust detection at 3.6 < λ < 500 µm we can constraint
+both the warm and the cold component of the dust, while IRAS
+selection is mostly sensitive to the warmest component. Dust in
+some of the galaxies of our sample do not host warm enough
+dust to be detected at 60 µm being, nevertheless, dust rich.
+
+We also note, in the left panel of Fig. 11, that at ﬁxed SFR
+the dust mass estimated in our sample is systematically higher
+than both Smith et al. (2012) and da Cunha et al. (2010). The
+discrepancies between our sample and da Cunha et al. (2010) is
+again a consequence of their selection criterion. At ﬁxed SFR,
+IRAS selects galaxies with a lower dust content, being sensi-
+tive only to the warm component. The higher dust mass with
+respect to Smith et al. (2012) could seem counterintuitive, be-
+cause at higher redshift we should trace galaxies with larger dust
+content. In this case this result is due to the depth of our data.
+Moreover the timelineﬁtter methods used for the photometry ex-
+
+traction allowed a robust ﬂux density estimation down to 20 mJy
+(Pappalardo et al. 2015). In this way, we can investigate galaxies
+with lower dust luminosities: both in Smith et al. (2012) and da
+Cunha et al. (2010) the median dust luminosity is 6.4 × 1010 L(cid:12),
+almost 3 times larger than our median value of ∼ 2.3±0.3 × 1010
+L(cid:12).
+
+The right panel of Fig. 11 shows Mdust/M∗ vs sSFR for the
+main sample. The results are consistent with H-ATLAS 250, al-
+though in our case we observe a long tail in the bottom left part
+of the panel, representing a galaxy population with low SFR
+and dust content that were not visible in the H-ATLAS survey.
+However, the bulk of our galaxies strictly follows the relation ob-
+served both in Smith et al. (2012) and in da Cunha et al. (2010),
+with a small oﬀset towards the bottom right part of the panel,
+due to the diﬀerent selection criteria.
+
+We now include, in the previous analysis, the stellar mass.
+In both panels of Fig. 11 the blue triangles and the magenta cir-
+cles show two subsamples of approximatively the same size with
+M∗ < 5 × 109 M(cid:12) and M∗ > 5 × 1010 M(cid:12), respectively. We chose
+these values because in Heavens et al. (2004) M∗ ∼ 1 × 1010
+M(cid:12) corresponds to the threshold that discriminates two diﬀerent
+populations: galaxies with masses lower than this value have a
+constant SFR in the last Gyr and give a strong contribution to
+the total SFRD, while for higher masses we found galaxies that
+are quenching their SFRs and are poor contributors to the SFRD.
+From previous considerations we expect that higher mass galax-
+ies should show a diﬀerent trend in the Mdust-SFR plane with
+respect to the low mass sample, because the former occupy a
+diﬀerent region in the M∗-SFR plane with respect to local main
+sequence galaxies (Figs 9 and 10). However in Fig. 11 this dif-
+ference is not so clear: the two components are mixed and the
+
+10
+
+−2 0 2 6 8 10log10(Mdust/Msol)log10(SFR/Msol yr−1)−12−10−8−4−2 0log10(Mdust/M*)log10(sSFR/yr−1)log10(Mdust/M*)log10(sSFR/yr−1)Pappalardo et al.: SED analysis of HeViCS background sources
+
+Fig. 12. Dust luminosity (Ldust) vs SFR for the main (left) and extended sample (right) with average errors marked as a cross in the
+bottom right corner of each panel. Blue triangles and the magenta circles show two subsamples of approximatively the same size
+with M∗ < 5 × 109 M(cid:12) and M∗ > 5 × 1010 M(cid:12) in the main sample, and M∗ < 5 × 109 M(cid:12) and M∗ > 1.3 × 1011 M(cid:12) in the extended
+sample, respectively.
+
+only trend, as expected, is that galaxies with higher mass have
+on average higher dust content. Similar considerations are valid
+for the right panel of Fig. 11, where high mass galaxies tend to
+occupy the bottom left corner of the panel. This unclear evidence
+is due to the choice of the parameter to investigate the diﬀerent
+trends of low and high mass galaxies. Dust mass includes both
+the warm and cold dust components and is not tightly linked to
+the SFR as the dust luminosity, because in star forming regions
+dust is heated by young O-B stars that produce a more intense
+light. This means that dust luminosity is more sensitive to the
+emission of the warm dust component, and then more tightly re-
+lated to the star formation process than the dust mass.
+
+We then studied the same relation showed in left panel of Fig.
+11 using instead of Mdust the dust luminosity, Ldust, shown in Fig.
+12. The scatter in this relation, with respect to the one which uses
+the dust mass (such as in Fig. 11), is strongly reduced, and the
+low mass subsample shows a stronger relation with the SFR with
+respect to the high mass component. Galaxies with mass below
+M∗ < 5 × 109 M(cid:12) are still in an assembly phase up to z = 0, pop-
+ulating in the SFR-M∗ relation the same region of the local main
+sequence spirals (magenta stars in Fig. 9). For this reason, in the
+left panel of Fig. 12, the low mass objects (blue triangles) have
+a tight correlation between Ldust and SFR. Galaxies with higher
+mass, up to SFR ∼ 1 M(cid:12) yr−1, show a good correlation similarly
+to what is seen for low mass galaxies. However, at higher SFR
+high mass galaxies tend to deviate from this sequence and the
+correlation becomes more scattered, implying that for this popu-
+lation infrared luminosity is no more a reliable tracer of the star
+formation process. To improve the statistical signiﬁcance of the
+previous considerations we deﬁned two homogeneous subsam-
+ple with M∗ < 5 × 109 M(cid:12) and M∗ > 1.3 × 1011 M(cid:12) for the
+extended sample, recovering the same trend (right panel of Fig.
+12).
+
+Another interesting property of our sample is related to the
+dust-to-stellar mass ratio, which quantiﬁes how much a galaxy
+is dusty with respect to its stellar mass. Dunne et al. (2011) have
+clearly shown that galaxies at z < 1 tend to be more dust rich at
+higher redshift. On the other hand, at z < 1 most of galaxies are
+already settled in the main sequence, and both the gas infall and
+the star formation are decreasing (S´anchez Almeida et al. 2014).
+For this reason we expect, for galaxies at z < 1, a lower growth
+rate with respect to their higher–z counterparts. During their as-
+sembly phase, galaxies show an approximatively stable dust-to-
+stellar mass ratio, that reﬂects the higher star formation fuelled
+in turn by higher gas infall rate. Once the peak of star formation
+is reached, the dust–to–stellar mass ratio decreases slowly.
+
+This simple considerations have been conﬁrmed observa-
+tionally. Santini et al. (2010) compared a sample of high red-
+shift sub-millimeter galaxies (SMG) with the local galaxies of
+SINGS sample, ﬁnding in the former a decrease of the dust-to-
+stellar mass ratio of a factor 30. Rowlands et al. (2014) compared
+mass selected high redshift SMGs from Magnelli et al. (2012)
+with a 250 µm–selected sample of galaxies at low redshift, taken
+from H-ATLAS. In this case, they found that SMGs have 7 times
+higher dust-to-stellar mass ratio with respect to the low redshift
+sample. In both cases the high redshift galaxies have a dust-to-
+stellar mass ratio of 0.02. Surprisingly, in our low redshift sam-
+ple the average dust-to-stellar mass ratio is ∼ 0.018, comparable
+with high redshift SMGs.
+
+To better understand this point, in Fig. 13 we compared the
+dust-to-stellar mass ratio of the extended sample as a function
+of redshift highlighting low mass (blue triangles) and high mass
+(magenta circles) galaxies. Low mass galaxies have an average
+dust–to–stellar mass ratio of 0.07, indicating a relatively high
+abundance of dust with respect to their mass, similar to high
+redshift SMGs. This conﬁrms again that this subsample repre-
+
+11
+
+−2 0 2 8 10 12log10((Ldust/Lsol)log10(SFR/(Msol yr−1))log10((Ldust/Lsol)log10(SFR/(Msol yr−1))−2 0 2 8 10 12log10((Ldust/Lsol)log10(SFR/(Msol yr−1))log10((Ldust/Lsol)log10(SFR/(Msol yr−1))Pappalardo et al.: SED analysis of HeViCS background sources
+
+ponent at a diﬀerent temperature, a possibility investigated in
+other works (e.g. Clemens et al. 2013). Finally, as underlined
+in Hayward & Smith (2015), the phenomenological approach
+of da Cunha et al. (2008) reduce the eﬃcacy of the dust emis-
+sion model in MAGPHYS at observationally un-sampled wave-
+lengths. In their work Hayward & Smith (2015) encourage in us-
+ing “a more physically motivated model for dust emission, such
+as that of Draine & Li (2007) to alleviate this problem (Ciesla
+et al. 2014)”. For these reasons we adopted a conservative ap-
+proach, and decided to refer, for our analysis, to the SEDs ob-
+tained with CIGALE only, as it uses a single dust component
+ﬁtted by a Draine & Li (2007) model, without any assumption
+about features between 22 < λ < 100 µm.
+
+In top panel of Fig. 15 our stacked SED is compared to dif-
+ferent empirical templates based on low redshift galaxies. Chary
+& Elbaz (2001) built a template based on ∼ 100 galaxies se-
+lected from a variety of published survey. Objects were selected
+heterogeneously at diﬀerent wavelengths, from 0.44 µm to 850
+µm (Sub-millimeter Common-User Bolometer Array, SCUBA).
+In the wavelengths range where the emission is dominated by the
+stellar component, despite the diﬀerent oﬀset due to the normal-
+ization, the shape of the spectra are similar. Above 10 µm, where
+the infrared emission due to the dust is higher, the discrepancies
+increase, with dust thermal peak shifted at lower wavelengths,
+implying higher average temperatures.
+
+A second template spectrum is obtained from H-ATLAS in
+Smith et al. (2012), improved by an order of magnitude with re-
+spect to the initial 1400 sources reported in their paper (Smith,
+private communication). Our median spectrum is almost identi-
+cal to their template, if we except the region between 9 < λ <
+100 µm, despite the diﬀerences in star formations, stellar masses,
+and redshift range shown in Table 2.
+
+The shape of the median SEDs changes according to the se-
+lection criteria deﬁned to built them. However, in Smith et al.
+(2012), it is shown that the parameter that mainly aﬀects the
+shape of the median SEDs is dust luminosities selection. Their
+redshift distribution is higher, but despite this at ﬁxed luminosity
+the median spectra, in the available photometric bands, are con-
+sistent. The main diﬀerences are in the spectral bands covered
+by WISE, where Smith et al. (2012) do not have any constraints.
+This evidence conﬁrms the importance of MIR emission to build
+reliable SED templates for galaxies. The emission at MIR are
+in average lower than our sample when we have constraints in
+Herschel bands (Smith et al. 2012), and higher when there have
+no constraint in FIR (Chary & Elbaz 2001).
+
+A last template is taken from Ciesla et al. (2014), consider-
+ing about 150 local gas rich galaxies taken from the Herschel
+Reference Survey (Boselli et al. 2010). These galaxies are lo-
+cal star forming objects, and also in this case the peak of dust
+emission is at lower wavelengths, implying higher temperatures.
+With respect to the Smith et al. (2012) template, this SED is
+more similar to the one derived for our sample at WISE bands,
+with a slightly reduced emission. These comparisons indicate
+that the low FIR luminosity galaxies have higher emission in the
+MIR wavelengths than previously thought, and models without
+constraints in these spectral regions (Smith et al. 2012) tend to
+recover lower emission.
+
+A point to remark is that PAH emissions between 9-12 µm
+in local galaxies (Ciesla et al. 2014) are more pronounced with
+respect to our sample, because of their relatively higher SFR.
+However, even at our low SFR regimes, we observe emission in
+this range higher than the prediction of Smith et al. (2012).
+
+The diﬀerences in this crucial region of galaxy SEDs are re-
+lated to the galaxy stellar mass. In bottom panel of Fig. 15 we
+
+Fig. 13. Dust-to-stellar mass ratio as a function of redshift for the
+extended sample (black dots). Blue triangles and magenta circles
+show the low and high mass subsample, as deﬁned for Fig. 12.
+
+sents galaxies that are not quenching their star formation, they
+are instead evolving in a way similar to the local spirals and high
+redshift SMGs. The high mass subsample has an average dust-
+to-stellar mass ratio of 0.006, consistent with the results found
+by Rowlands et al. (2014) and Santini et al. (2010), indicating
+for this population a decreased dust mass.
+
+4.3. Towards a SED template
+
+The wavelengths coverage of our sample is quite homogeneous
+and can be used to build a SED template representative of low
+FIR luminosity galaxies. We considered the SEDs obtained from
+the best ﬁt of each galaxy of the main sample, and we built a me-
+dian stacked spectra normalized to the average of λFλ between
+0.2 and 500 µm. Fig. 14 compares the median spectra obtained
+with MAGPHYS and CIGALE. Overall there is a good agree-
+ment, conﬁrming the goodness of our results and the consistency
+of the two methods. We see diﬀerences in regions where there
+are no anchor points to constrain the ﬁt, between 25 < λ < 100
+µm. In this region MAGPHYS tends to predict higher IR emis-
+sion with respect to CIGALE, but this diﬀerence does not aﬀect
+the estimation of the dust luminosity, that is similar in both meth-
+ods, as shown in right panel of Fig. 5.
+
+Hot dust emission at 25 < λ < 100 µm is closely related
+to star formation, and it is due to a combination of warm dust
+and stochastically heated grains. The consistency of the dust lu-
+minosity distributions for both methods despite the mismatch
+seen at these wavelengths could be due to the diﬀerent meth-
+ods to handle the stochastically heated dust grains. However as
+in this wavelength range there are no observational constraints,
+it is hard to distinguish between the uncertainties in the ﬁt and/or
+possible variations in the physical properties of the dust grains in
+the sample. Moreover, the higher luminosity between 25 < λ <
+100 µm found in MAGPHYS could imply a further dust com-
+
+12
+
+0.00.51.0−4−2 0log10(Mdust/M*)zPappalardo et al.: SED analysis of HeViCS background sources
+
+Fig. 14. Total median spectra with 16th and 84th percentile of the main sample obtained with MAGPHYS (black solid and blue
+dotted lines) and CIGALE (red dashed and magenta dot-dashed lines).
+
+build the median SEDs of the main sample as estimated with
+CIGALE, considering the high mass (solid line) and low mass
+(dashed line) subsamples deﬁned in Sec. 4.2. Low mass ob-
+jects have higher emission in the UV and stronger PAH features
+with respect to the high mass subsample, implying higher SFRs.
+It is important to remember that we are dealing with normal-
+ized spectra, weighted for the light emitted mostly by dust and
+evolved stars (between 0.2 and 500 µm). Bottom panel of Fig. 15
+indicates that low mass galaxies produce more stars than high
+mass galaxies with respect to their dust luminosity, and not an
+overall higher star formation, which would be false. We recover
+then the same trend observed in Fig. 12, where at ﬁxed dust mass
+we observed a scatter in the Ldust-SFR relation for high mass
+galaxies. They have higher dust content, with higher tempera-
+tures, as witnessed by the peak of the dust emission shifted to-
+wards lower wavelengths, but their star formation is in a quench-
+ing phase, indicated by a lower UV emission.
+
+5. Conclusions
+We have investigated the evolution of the SFRD at z < 0.5 fo-
+cusing on low FIR luminosity galaxies, the main contributors
+to the SFRD at these redshifts. To achieve this goal, we have
+considered the 250 µm–selected point sources catalog presented
+in Pappalardo et al. (2015), extracted from HeViCS (Davies
+et al. 2010, 2012). We added complementary data to perform
+a multi-wavelengths analysis using diﬀerent SED ﬁtting tech-
+niques (MAGPHYS and CIGALE), and considered two diﬀerent
+sample: a main sample with the full spectral coverage, and an ex-
+tended sample in which we removed the constraints on the UV
+and the NIR data. We analyzed the correlation between SFR, M∗,
+and dust mass for a galaxy population with low dust content and
+low stellar masses, characterizing the bulk of the SFRD at low
+redshift. With the best ﬁt SEDs obtained from the ﬁt, we built a
+SED template representative of low FIR luminosity objects. The
+main results of our work are:
+
+– the main sample is formed by galaxies with moderate star
+formation and M∗ ∼ 1010 M(cid:12) occupying in a SFR-M∗ plane
+a region close to local spirals. Another component, with
+log10(SFR/(M(cid:12) yr−1)) > 0.5 and similar stellar masses has
+physical properties intermediates between the local spirals
+and higher redshift star forming galaxies. We introduced an
+extended sample with the UV and NIR constraints removed,
+
+to tackle the population of dusty galaxies with low UV lumi-
+nosities, that are also feeding the SFRD at z < 0.5. Most of
+galaxies with M∗ > 3 × 1010 M(cid:12) are dusty galaxies in which
+the star formation is decreasing, while low mass galaxies
+(M∗ < 1 × 1010 M(cid:12)) are mostly settled in the main sequence
+with M∗ and SFR consistent with local spirals.
+– Galaxies with M∗ < 5 × 109 M(cid:12) populating, in the SFR-M∗
+plane, the same region as local main sequence spirals, show
+a tight correlation between Ldust and SFR (Fig. 12). Galaxies
+with higher mass up to SFR ∼ 1 M(cid:12) yr−1 show a good corre-
+lation similarly to what seen for low mass galaxies. However,
+at lower SFR, high mass galaxies tend to deviate from this se-
+quence and the correlation becomes more scattered, imply-
+ing that for this population infrared luminosity is no more a
+reliable tracer of the star formation process.
+
+– investigating the dust-to-stellar mass ratio as a function of
+redshift we found that low mass galaxies have an average
+dust-to-stellar mass ratio similar to high redshift SMGs. This
+indicates that this subsample is representative of galaxies
+that are not quenching their star formation, and are evolving
+in a way similar to the local spirals and high redshift SMGs.
+– we have built a median stacked SED template representative
+of low FIR luminosities galaxies that we compared to dif-
+ferent previous studies. Low FIR luminosity galaxies have
+higher emission in the MIR wavelengths than predicted by
+previous models without constraints at these wavelengths.
+We investigated the diﬀerences in the SEDs of high and
+low mass subsample. Normalizing to the dust emission, low
+mass subsample has higher emission in the UV and higher
+PAH emission with respect to high mass galaxies, implying
+higher SFRs. High mass galaxies have higher dust content
+and lower UV emission, as a consequence of the reduced
+star formation.
+
+Low mass galaxies at low redshift are in an assembly phase
+and populate the main sequence diagram consistently with lo-
+cal spirals. This is in agreement with the recent claim of Peng &
+Maiolino (2014), which in their ‘gas regulator model’ emphasize
+the fact that ‘gas rich low-mass galaxies and dwarf galaxies are
+very unlikely to live around the equilibrium state at any epoch’.
+Low mass galaxies reach their equilibrium when settling into the
+main sequence: before this moment they show a tight correlation
+between dust luminosity and SFR as a consequence of the con-
+tinuous recycling of processed and pristine gas from the cosmic
+
+13
+
+0.11.010.0100.010+810+910+1010+11λ [µm]λLλ [Lsol]A: plg, (ymedian), xxB: plg, (y16), xxC: plg, (y84), xxD: plg, (ymedian), xxE: plg, (y16), xxF: plg, (y84), xxPappalardo et al.: SED analysis of HeViCS background sources
+
+Fig. 15. Top panel: Normalized main sample median spectrum (black solid line) compared with the templates of Chary & Elbaz 2001
+(red dashed line), Smith et al. 2012 (blue dotted line), and Ciesla et al. 2014 (magenta dot-dashed line). Bottom panel: Normalized
+main sample median spectrum obtained with CIGALE for high mass (black solid line) and low mass (black dashed line) subsamples,
+compared with the templates of Smith et al. 2012 (blue dotted line), and Ciesla et al. 2014 (magenta dot-dashed line).
+
+web. From this point of view the main sequence does not seem
+to be the ﬁnal stage of a virialization process of the halo in which
+the galaxy is forming, but an unstable stage of galaxy evolution
+that precedes the star formation quenching. The empirical rela-
+tion for main sequence galaxies is a statistical eﬀect due to the
+initial mass distribution of the dark matter halos where galaxies
+form. We are aware of the speculative nature of these considera-
+tions, because of the lack of informations. For example it would
+be necessary a proper characterization of the infall rate in low
+mass dark matter halos at higher redshift, a possibility that will
+be open only in the future with SKA. Another limits is due to
+the poor knowledge of the gas fraction in low mass galaxies.
+Previous works have mainly focused in IR detected galaxies, to
+pledge a detection in relatively small amount of time (Geach et
+al. 2011; Bauermeister et al. 2013). However we have shown that
+galaxies with low SFR and low FIR luminosities can occupy the
+same region of local spirals in the SFR-M∗ plane, indicating the
+presence of gas fueling the star formation process.
+
+Acknowledgements. We warmly thank the anonymous referee for the sugges-
+tions, and also D. Munro for freely distributing his Yorick programming lan-
+guage (available at http://www.maumae.net/yorick/doc/index.html). C.
+P. was also supported by PRIN-INAF 2009/11 grant (extended to 2012). C.P.
+acknowledges support from the Science and Technology Foundation (FCT,
+Portugal) through the Postdoctoral Fellowship SFRH/BPD/90559/2012, PEst-
+OE/FIS/UI2751/2014, PTDC/FIS-AST/2194/2012, and through the support to
+the IA activity via the UID/FIS/04434/2013 fund.
+
+Funding for SDSS-III has been provided by the Alfred P. Sloan Foundation,
+the National Science Foundation, and the
+
+the Participating Institutions,
+
+U.S. Department of Energy Oﬃce of Science. The SDSS-III web site is
+http://www.sdss3.org/.
+
+SDSS-III is managed by the Astrophysical Research Consortium for the
+Participating Institutions of the SDSS-III Collaboration including the University
+of Arizona, the Brazilian Participation Group, Brookhaven National Laboratory,
+Carnegie Mellon University, University of Florida, the French Participation
+Group, the German Participation Group, Harvard University, the Instituto de
+Astroﬁsica de Canarias, the Michigan State/Notre Dame/JINA Participation
+Group, Johns Hopkins University, Lawrence Berkeley National Laboratory,
+Max Planck Institute for Astrophysics, Max Planck Institute for Extraterrestrial
+Physics, New Mexico State University, New York University, Ohio State
+University, Pennsylvania State University, University of Portsmouth, Princeton
+University, the Spanish Participation Group, University of Tokyo, University of
+Utah, Vanderbilt University, University of Virginia, University of Washington,
+and Yale University.
+
+This publication makes use of data products from the Two Micron All
+Sky Survey, which is a joint project of the University of Massachusetts and
+the Infrared Processing and Analysis Center/California Institute of Technology,
+funded by the National Aeronautics and Space Administration and the National
+Science Foundation.
+
+We thank all the people involved in the construction and the launch of
+Herschel. SPIRE has been developed by a consortium of institutes led by Cardiﬀ
+University (UK) and including Univ. Lethbridge (Canada); NAOC (China);
+CEA, LAM (France); IFSI, Univ. Padua (Italy); IAC (Spain); Stockholm
+Observatory (Sweden); Imperial College London, RAL, UCL-MSSL, UKATC,
+Univ. Sussex (UK); and Caltech, JPL, NHSC, Univ. Colorado (USA). This de-
+velopment has been supported by national funding agencies: CSA (Canada);
+NAOC (China); CEA, CNES, CNRS (France); ASI (Italy); MCINN (Spain);
+SNSB (Sweden); STFC and UKSA (UK); and NASA (USA). HIPE is a joint
+development (are joint developments) by the Herschel Science Ground Segment
+Consortium, consisting of ESA, the NASA Herschel Science Center, and the
+HIFI, PACS and SPIRE consortia.
+
+14
+
+0.11.010.0100.01000.0.0010.010.11.010.0λ [µm]λLλ (norm)0.11.010.0100.01000.0.0010.010.11.010.0λ [µm]λLλ (norm)Pappalardo et al.: SED analysis of HeViCS background sources
+
+129
+
+References
+Agius, N. K., di Serego Alighieri, S., Viaene, S., et al. 2015, MNRAS, 451, 3815
+Ahn, C. P., Alexandroﬀ, R., Allende Prieto, C., et al. 2014, ApJS, 211, 17
+Auld, R., Bianchi, S., Smith, M. W. L., et al. 2013, MNRAS, 428, 1880
+Balog, Z., M¨uller, T., Nielbock, M., et al. 2014, Experimental Astronomy, 37,
+
+Bauermeister, A., Blitz, L., Bolatto, A., et al. 2013, ApJ, 768, 132
+Bertin, E., & Arnouts, S. 1996, A&AS, 117, 393
+Behroozi, P. S., Wechsler, R. H., & Conroy, C. 2013, ApJ, 770, 57
+Bendo, G. J., Wilson, C. D., Warren, B. E., et al. 2010, MNRAS, 402, 1409
+Bendo, G. J., Galliano, F., & Madden, S. C. 2012, MNRAS, 423, 197
+Bendo, G. J., Griﬃn, M. J., Bock, J. J., et al. 2013, MNRAS, 433, 3062
+Bendo, G. J., Baes, M., Bianchi, S., et al. 2015, MNRAS, 448, 135
+Bond, N. A., Benford, D. J., Gardner, J. P., et al. 2012, ApJ, 750, LL18
+Boquien, M., Calzetti, D., Combes, F., et al. 2011, AJ, 142, 111
+Boquien, M., Buat, V., & Perret, V. 2014, A&A, 571, A72
+Boselli, A., Gavazzi, G., Donas, J., & Scodeggio, M. 2001, AJ, 121, 753
+Boselli, A., Eales, S., Cortese, L., et al. 2010, PASP, 122, 261
+Boselli, A., Boissier, S., Heinis, S., et al. 2011, A&A, 528, AA107
+Boselli, A., Ciesla, L., Cortese, L., et al. 2012, A&A, 540, A54
+Brinchmann, J., Charlot, S., White, S. D. M., et al. 2004, MNRAS, 351, 1151
+Bruzual, G., & Charlot, S. 2003, MNRAS, 344, 1000
+Bruzual, A. G. 2007, IAU Symposium, 241, 125
+Carilli, C. L., & Walter, F. 2013, ARA&A, 51, 105
+Chabrier, G. 2003, PASP, 115, 763
+Charlot, S., & Fall, S. M. 2000, ApJ, 539, 718
+Chary, R., & Elbaz, D. 2001, ApJ, 556, 562
+Clemens, M. S., Negrello, M., De Zotti, G., et al. 2013, MNRAS, 433, 695
+Ciesla, L., Boquien, M., Boselli, A., et al. 2014, A&A, 565, A128
+Cowie, L. L., Songaila, A., Hu, E. M., & Cohen, J. G. 1996, AJ, 112, 839
+da Cunha, E., Eminian, C., Charlot, S., & Blaizot, J. 2010, MNRAS, 403, 1894
+da Cunha, E., Charlot, S., & Elbaz, D. 2008, MNRAS, 388, 1595
+Daddi, E., Dickinson, M., Morrison, G., et al. 2007, ApJ, 670, 156
+Davies, J. I., Baes, M., Bendo, G. J., et al. 2010, A&A, 518, L48
+Davies, J. I., Bianchi, S., Cortese, L., et al. 2012, MNRAS, 419, 3505
+De Looze, I., Fritz, J., Baes, M., et al. 2014, A&A, 571, A69
+De Looze, I., Baes, M., Bendo, G. J., et al. 2012, MNRAS, 427, 2797
+Draine, B. T., & Li, A. 2007, ApJ, 657, 810
+Dunne, L., Gomez, H. L., da Cunha, E., et al. 2011, MNRAS, 417, 1510
+Eales, S., Dunne, L., Clements, D., et al. 2010, PASP, 122, 499
+Elbaz, D., Dickinson, M., Hwang, H. S., et al. 2011, A&A, 533, A119
+Fleuren, S., Sutherland, W., Dunne, L., et al. 2012, MNRAS, 423, 2407
+Fontanot, F., De Lucia, G., Monaco, P., Somerville, R. S., & Santini, P. 2009,
+
+MNRAS, 397, 1776
+
+Gao, Y., & Solomon, P. M. 2004, ApJ, 606, 271
+Gavazzi, G., & Scodeggio, M. 1996, A&A, 312, L29
+Gavazzi, G., Consolandi, G., Dotti, M., et al. 2015, arXiv:1505.07836
+Geach, J. E., Smail, I., Moran, S. M., et al. 2011, ApJ, 730, L19
+Griﬃn, M. J., Abergel, A., Abreu, A., et al. 2010, A&A, 518, L3
+Groves, B., Krause, O., Sandstrom, K., et al. 2012, MNRAS, 426, 892
+Hayward, C. C., & Smith, D. J. B. 2015, MNRAS, 446, 1512
+Heavens, A., Panter, B., Jimenez, R., & Dunlop, J. 2004, Nature, 428, 625
+Heinis, S., Buat, V., B´ethermin, M., et al. 2014, MNRAS, 437, 1268
+Hopkins, A. M. 2004, ApJ, 615, 209
+Hwang, H. S., Elbaz, D., Magdis, G., et al. 2010, MNRAS, 409, 75
+Ilbert, O., Arnouts, S., Le Floc’h, E., et al. 2014, arXiv:1410.4875
+Karim, A., Schinnerer, E., Mart´ınez-Sansigre, A., et al. 2011, ApJ, 730, 61
+Kauﬀmann, G., Heckman, T. M., White, S. D. M., et al. 2003, MNRAS, 341, 33
+Kim, S., Wardlow, J. L., Cooray, A., et al. 2012, ApJ, 756, 28
+Kron, R. G. 1980, ApJS, 43, 305
+Lawrence, A., Warren, S. J., Almaini, O., et al. 2007, MNRAS, 379, 1599
+Lee, N., Sanders, D. B., Casey, C. M., et al. 2013, ApJ, 778, 131
+Leroy, A. K., Walter, F., Brinks, E., et al. 2008, AJ, 136, 2782
+Lilly, S. J., Le Fevre, O., Hammer, F., & Crampton, D. 1996, ApJ, 460, L1
+Lutz, D. 2014, ARA&A, 52, 373
+Maraston, C. 2005, MNRAS, 362, 799
+Madau, P., Ferguson, H. C., Dickinson, M. E., et al. 1996, MNRAS, 283, 1388
+Madau, P., & Dickinson, M. 2014, ARA&A, 52, 415
+Magnelli, B., Saintonge, A., Lutz, D., et al. 2012, A&A, 548, A22
+Nguyen, H. T., Schulz, B., Levenson, L., et al. 2010, A&A, 518, L5
+Noeske, K. G., Weiner, B. J., Faber, S. M., et al. 2007, ApJ, 660, L43
+Noll, S., Burgarella, D., Giovannoli, E., et al. 2009, A&A, 507, 1793
+Oliver, S., Frost, M., Farrah, D., et al. 2010, MNRAS, 405, 2279
+Oliver, S. J., Bock, J., Altieri, B., et al. 2012, MNRAS, 424, 1614
+Ott, S. 2010, Astronomical Data Analysis Software and Systems XIX, 434, 139
+Pappalardo, C., Bendo, G. J., Bianchi, S., et al. 2015, A&A, 573, A129
+Peng, Y.-j., Lilly, S. J., Kovaˇc, K., et al. 2010, ApJ, 721, 193
+
+Peng, Y.-j., & Maiolino, R. 2014, MNRAS, 443, 3643
+Pilbratt, G. L., Riedinger, J. R., Passvogel, T., et al. 2010, A&A, 518, L1
+Poglitsch, A., Waelkens, C., Geis, N., et al. 2010, A&A, 518, L2
+Reddy, N. A., Steidel, C. C., Pettini, M., et al. 2008, ApJS, 175, 48
+Richter, G. A. 1975, Astronomische Nachrichten, 296, 65
+Rigby, E. E., Maddox, S. J., Dunne, L., et al. 2011, MNRAS, 415, 2336
+Rodighiero, G., Daddi, E., Baronchelli, I., et al. 2011, ApJ, 739, L40
+Roussel, H. 2013, PASP, 125, 1126
+Rowlands, K., Dunne, L., Dye, S., et al. 2014, MNRAS, 441, 1017
+S´anchez Almeida, J., Elmegreen, B. G., Mu˜noz-Tu˜n´on, C., & Elmegreen, D. M.
+
+2014, A&A Rev., 22, 71
+
+Salim, S., Rich, R. M., Charlot, S., et al. 2007, ApJS, 173, 267
+Sandage, A. 1986, A&A, 161, 89
+Santini, P., Maiolino, R., Magnelli, B., et al. 2010, A&A, 518, L154
+Savage, R. S., & Oliver, S. 2007, ApJ, 661, 1339
+Smith, D. J. B., Dunne, L., da Cunha, E., et al. 2012, MNRAS, 427, 703
+Smith, D. J. B., Dunne, L., Maddox, S. J., et al. 2011, MNRAS, 416, 857
+Smith, M. W. L., Eales, S. A., Gomez, H. L., et al. 2012, ApJ, 756, 40
+Smith, M. W. L., Gomez, H. L., Eales, S. A., et al. 2012, ApJ, 748, 123
+Speagle, J. S., Steinhardt, C. L., Capak, P. L., & Silverman, J. D. 2014, ApJS,
+
+Stetson, P. B. 1987, PASP, 99, 191
+Stringer, M. J., Benson, A. J., Bundy, K., Ellis, R. S., & Quetin, E. L. 2009,
+
+214, 15
+
+MNRAS, 393, 1127
+
+Sutherland, W., & Saunders, W. 1992, MNRAS, 259, 413
+Tacconi, L. J., Neri, R., Genzel, R., et al. 2013, ApJ, 768, 74
+Viaene, S., Fritz, J., Baes, M., et al. 2014, A&A, 567, A71
+Voyer, E. N., Boselli, A., Boissier, S., et al. 2014, A&A, 569, AA124
+Walcher, C. J., Lamareille, F., Vergani, D., et al. 2008, A&A, 491, 713
+Weingartner, J. C., & Draine, B. T. 2001, ApJ, 548, 296
+Wright, E. L., Eisenhardt, P. R. M., Mainzer, A. K., et al. 2010, AJ, 140, 1868
+Wuyts, S., F¨orster Schreiber, N. M., van der Wel, A., et al. 2011, ApJ, 742, 96
+
+15
+
+

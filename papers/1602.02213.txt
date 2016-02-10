@@ -1,0 +1,993 @@
+SCIENCE CHINA
+
+Physics, Mechanics & Astronomy
+
+. Article .
+
+?? 2016 Vol. ?? No. ?: ??
+doi: ??
+
+Diagnosing ΛHDE model with stateﬁnder hierarchy and fractional
+
+growth parameter
+
+ZHOU Lanjun1 & WANG Shuang2
+
+1Institute of Theoretical Physics, Chinese Academy of Sciences, Beijing 100190, P. R. China;
+
+2School of Astronomy and Space Science, Sun Yat-Sen University, Guangzhou 510275, P. R. China
+
+Recently, a new dark energy model called ΛHDE was proposed. In this model, dark energy consists of two parts: cosmological
+constant Λ and holographic dark energy (HDE). Two key parameters of this model are the fractional density of cosmological
+constant ΩΛ0, and the dimensionless HDE parameter c. Since these two parameters determine the dynamical properties of DE and
+the destiny of universe, it is important to study the impacts of diﬀerent values of ΩΛ0 and c on the ΛHDE model. In this paper,
+we apply various DE diagnostic tools to diagnose ΛHDE models with diﬀerent values of ΩΛ0 and c; these tools include stateﬁnder
+hierarchy {S (1)
+4 }
+3 , S (1)
+and . We ﬁnd that: (1) adopting diﬀerent values of ΩΛ0 only has quantitative impacts on the evolution of the ΛHDE model, while
+adopting diﬀerent c has qualitative impacts; (2) compared with S (1)
+4 can give larger diﬀerences among the cosmic evolutions
+of the ΛHDE model associated with diﬀerent ΩΛ0 or diﬀerent c; (3) compared with the case of using a single diagnostic, adopting
+a CND pair has much stronger ability to diagnose the ΛHDE model.
+
+4 }, fractional growth parameter , and composite null diagnostic (CND), which is a combination of {S (1)
+
+3 , S (1)
+
+3 , S (1)
+
+Key words: Dark Energy, Cosmology, Cosmological Constant
+
+PACS number(s): 95.36.+x , 98.80.Ck, 98.80.Es.
+
+Citation:
+
+Zhou L J, & Wang, S Diagnosing ΛHDE model with stateﬁnder hierarchy and fractional growth parameter. Sci China-Phys Mech Astron, 2016, ??: ??,
+doi: ??
+
+1 Introduction
+
+Dark energy (DE) has become one of the most important
+problems in modern cosmology [1–4]. Although numerous
+DE models [5–12] have been proposed, the nature of DE is
+still in dark.
+
+In principle, the DE problem may be an issue of quan-
+tum gravity [13].
+It is commonly believed that the holo-
+graphic principle [14] is just a fundamental principle of quan-
+tum gravity. Based on holographic principle, Li [15] ﬁrstly
+proposed a promising DE model, which is called holographic
+dark energy (HDE) model. In this model, the density of HDE
+can be written as
+
+ρhde = 3c2M2
+
+(1)
+
+where c is a dimensionless parameter and Mp is the reduced
+Planck mass. L is the IR cutoﬀ length scale, which takes the
+form [16]:
+
+L =
+
+a√|k| sinn(
+
+dt(cid:48)
+a
+
+),
+
+(2)
+
+pL−2,
+(cid:90) +∞
+(cid:112)|k|
+ sin(x),
+
+x,
+sinh(x),
+
+t
+
+where a is the scale factor, k is a constant representing the
+space curvature, and the function sinn(x) is deﬁned as
+
+sinn(x) =
+
+if k > 0
+if k = 0
+if k < 0
+
+(3)
+
+ljzhou@itp.ac.cn
+wangshuang@mail.sysu.edu.cn (Corresponding author)
+
+The HDE model is the ﬁrst theoretical model inspired by
+holographic principle; in addition, it is in good agreement
+
+c(cid:13) Science China Press and Springer-Verlag Berlin Heidelberg 2016
+
+phys.scichina.com link.springer.com
+
+6
+1
+0
+2
+
+ 
+
+b
+e
+F
+6
+
+ 
+
+ 
+ 
+]
+
+.
+
+O
+C
+h
+p
+-
+o
+r
+t
+s
+a
+[
+ 
+ 
+
+1
+v
+3
+1
+2
+2
+0
+
+.
+
+2
+0
+6
+1
+:
+v
+i
+X
+r
+a
+
+Zhou L J, et al.
+
+Sci China-Phys Mech Astron
+
+?? (2016) Vol. ?? No. ?
+
+ΩΛ =
+
+ρΛ
+pH2
+3M2
+
+=
+
+ΩΛ0
+E2 .
+
+??-2
+
+(8)
+
+with the current cosmological observations. Therefore, in re-
+cent years, this model has drawn a lot of attention and has
+been widely studied in the literature [17–24].
+
+In a latest paper [25], inspired by the multiverse scenario,
+a new model called ΛHDE was proposed. In this model, dark
+energy consists of two parts: cosmological constant Λ and
+HDE. Now the density of total DE is
+
+ρde = ρΛ + ρhde,
+
+(4)
+
+Both the theoretical
+straints were simply discussed in [25].
+
+implications and observational con-
+
+It should be mentioned that the ΛHDE model has two key
+parameters: fractional density of cosmological constant ΩΛ0
+and dimensionless HDE parameter c. Since they determine
+the dynamical properties of DE and the destiny of universe,
+it is important to study the impacts of diﬀerent values of
+ΩΛ0 and c on the ΛHDE model. Two diagnostic tools are
+often used to analyze various DE models. The ﬁrst one is
+stateﬁnder hierarchy [26, 27], which is a model-independent
+geometrical diagnostic tool. The second one is the frac-
+tional growth parameter  [28, 29], which provides a scale-
+independent diagnostic of growth history of universe. In ad-
+dition, a combination of stateﬁnder hierarchy and fractional
+growth parameter, which is called composite null diagnostic
+(CND) [27], is often used to diagnose DE models. The main
+aim of this work is making use of these tools to distinguish
+the ΛHDE models with diﬀerent ΩΛ0 or diﬀerent c.
+
+This paper is organized as follows. In Sec. 2, we brieﬂy
+review the ΛHDE model.
+In Sec. 3, we introduce the di-
+agnostic tools used in this work. In Sec. 4, we present the
+obtained results. Conclusions and discussions are given in
+Sec. 5.
+
+2 Theoretical model
+
+In this section, we brieﬂy introduce how to calculate the evo-
+lution of reduced Hubble parameter E(z) ≡ H/H0 for the
+ΛHDE model, where H and H0 denote Hubble parameter and
+its present-day value. We will neglect the eﬀect of radiation
+component, because in this paper we focus on dark energy
+which has eﬀect only in low-redshift region. Thus, E(z) and
+fractional HDE energy density Ωhde for ΛHDE model are de-
+termined by the following equations [25]:
+
+(cid:114)
+
+ 3ΩΛ + Ωk − 3
+(cid:114)
+
+2Ωhde
+
+Ωhde
+c2
+
+1
+E(z)
+
+dE(z)
+
+= − Ωhde
+1 + z
+
+dz
+= − 2Ωhde(1 − Ωhde)
+
+1 + z
+
+dΩhde
+
+dz
+
++
+
+1
+2
+
++
+
+Ωhde
+c2
+
++ Ωk
+
++ Ωk +
+
+1
+2
+
+− 3ΩΛ + Ωk
+2(1 − Ωhde)
+
+ ,
+ ,
+
+(5)
+
+(6)
+
+where the fractional density of curvature and cosmological
+
+constant are:
+
+Here the subscript ’0’ denotes the present-day value. Using
+the initial condition E(z = 0) = 1 and Ωhde0 = Ωde0 − ΩΛ0
+where Ωhde0 and Ωde0 denote the present-day fractional den-
+sity of HDE and total DE, we can solve Eq.(5) and Eq.(6)
+numerically.
+
+The observational constraints of the ΛHDE model has
+been brieﬂy studied in [25]. In a work in preparation [30],
+several cosmological observations, including type Ia Super-
+nova, cosmic microwave background, baryon acoustic oscil-
+lation and growth factor, are used to constrain the ΛHDE
+model. The best-ﬁt results are Ωde0 = 0.716, ΩΛ0 = 0.564,
+c = 0.171 and Ωk0 = −0.0002. As mentioned above, the main
+aim of this work is to distinguish the ΛHDE models with dif-
+ferent ΩΛ0 or diﬀerent c. In the process of analysis, we use
+these best-ﬁt values to set the other model parameters.
+
+3 Diagnostic tools
+
+3.1 The stateﬁnder hierarchy
+
+Stateﬁnder hierarchy [26, 27] is a powerful geometry diag-
+nostic, which makes use of the information from high-order
+derivatives of scale factor a to distinguish diﬀerent DE mod-
+els from the ΛCDM model. It has been already used to study
+various DE models [31–33].
+
+To derive the expression of stateﬁnder hierarchy, ﬁrst we
+Taylor-expand the the scale factor a(t)/a0 around the present
+epoch t0:
+
+An(t0)
+
+n!
+
+[H0(t − t0)]n
+
+(9)
+
+∞(cid:88)
+
+n=1
+
+a(t)
+a0
+
+= 1 +
+
+where
+
+a(t)(n)
+
+a(t)Hn , n ∈ N
+
+An =
+(10)
+. Notice that A2 = −q represents the de-
+with a(t)(n) = dna(t)
+dtn
+celeration parameter. For ΛCDM model, the functions above
+can be expressed by the fractional matter density Ωm:
+
+A2 = 1 − 3
+2
+A3 = 1,
+A4 = 1 − 9
+2
+
+Ωm,
+
+Ωm, ...
+
+Thus, we deﬁne the stateﬁnder hierarchy S n as [27]
+
+S 2 = A2 +
+S 3 = A3,
+
+S 4 = A4 +
+
+3
+2
+
+9
+2
+
+Ωm,
+
+Ωm, ...
+
+(11)
+
+(12)
+
+Ωk =
+
+ρk
+3M2
+pH2
+
+=
+
+Ωk0(1 + z)2
+
+E2
+
+,
+
+(7)
+
+it is obvious that every parameter of S n remains unity for
+ΛCDM model during cosmic evolution. In [27], the authors
+
+Zhou L J, et al.
+
+Sci China-Phys Mech Astron
+
+?? (2016) Vol. ?? No. ?
+
+??-3
+
+further introduce two stateﬁnder hierarchy members: S (1)
+S (1)
+4 , which are given by
+S (1)
+3
+S (1)
+4
+
+= A3,
+= A4 + 3(1 + q).
+
+3 and
+
+(13)
+
+3 and S (1)
+4
+
+In this work, we just use S (1)
+to diagnose the ΛHDE
+model. From Eq.(5) and Eq.(6), we can derive them for the
+ΛHDE case, which can be expressed as
+= −q(cid:48) + q + 2q2,
+
+(14)
+
+S (1)
+3
+
+= −q(cid:48)(cid:48) + (3 + 7q)q(cid:48) + (3 + q − 7q2 − 6q3),
+
+(15)
+
+S (1)
+4
+
+where the deceleration parameter takes the form
+
+q =
+
+1
+2
+
+(1+3whdeΩhde−3ΩΛ−Ωk) =
+
+(1+3wdeΩde−Ωk). (16)
+
+1
+2
+
+Note that the prime denotes the derivative with respect to
+s = lna.
+
+3.2 The fractional growth parameter
+
+In linear pertubation theory, the perturbation of the matter
+density ρm is deﬁned as δm = δρm/ρm. It satisﬁes the equa-
+tion [34]
+
+¨δm + 2
+
+˙a
+a
+
+˙δm − 4π
+M2
+p
+
+ρmδm = 0.
+
+(17)
+
+Note that the dot above denotes the derivative with respect
+to time t. The growth rate of linear density pertubation is
+deﬁned as f = dlnδm/dlna. The one-order and two-order
+derivatives of δm with respect to time t can be written as:
+
+˙δm = f Hδm,
+
+(18)
+
+¨δm = ( ˙f H + f ˙H + f 2H2)δm.
+
+(19)
+Substituting Eqs. (18) and (19) into Eq.(17), we can derive
+
+the equation which determines f :
+f 2 + 2 f − f1(z)
+
+d f
+dz
+
+=
+
+1 + z
+
+− dH/dz
+
+H
+
+f,
+
+(20)
+
+where f1(z) = ρm/H2 = 3Ωm0(1+z)3
+, and the present-day frac-
+tional matter density Ωm0 = 1 − Ωde0 − Ωk0. Using the initial
+8πGE2
+condition f (z = 0) = 1, this equation can be numerically
+solved for the ΛCDM model and the ΛHDE model. Based
+on f (z), another null diagnostic, which is called fractional
+growth parameter , is deﬁned as [28, 29]
+
+(z) = f (z)/ fΛCDM(z).
+
+(21)
+
+In [27], the author also introduced a quantity called com-
+posite null diagnostic (CND), which is a combination of
+stateﬁnder hierarchy members and fractional growth parame-
+ter. In this paper, we use two CND pairs {S (1)
+4 , }
+to diagnose the ΛHDE model.
+
+3 , } and {S (1)
+
+4 Result
+
+In this section, we use the three diagnostic tools to explore
+the impacts of various model parameters of ΛHDE. To dis-
+cuss the aﬀects of key parameters ΩΛ0 and c, we vary ΩΛ0
+and c respectively, while ﬁxing other parameters according
+to the best-ﬁt values shown in Sec. 2.
+
+3 , S (1)
+
+3 (z), S (1)
+
+Firstly, we study the impacts of ΩΛ0. In Fig. 1, we plot
+the evolutionary trajectories of S (1)
+4 (z) and (z) for
+the ΛHDE model, while ﬁxing c = 0.171 and varying ΩΛ0
+among 0, 0.2, 0.4 and 0.6. In order to make a comparison, we
+also plot the result of the ΛCDM model as a solid line. For
+all the four cases associated with diﬀerent ΩΛ0, all the curves
+of S (1)
+4 and  have similar evolutionary trajectories. For
+example, all the curves of S (1)
+4 have signiﬁcant diﬀer-
+ences at low-redshift, and descend monotonically at higher-
+redshift. In addition, all the curves of  have convex vertice at
+z ∼ 0.4 and descend monotonically at higher-redshift. These
+results show that adopting diﬀerent values of ΩΛ0 only has
+quantitative impacts on the cosmic evolution of the ΛHDE
+model.
+
+3 and S (1)
+
+3 , S (1)
+
+3 (z), S (1)
+
+Then we study the impacts of c. In Fig. 2, we plot the evo-
+lutionary trajectories of S (1)
+4 (z) and (z) for the ΛHDE
+model, while ﬁxing ΩΛ0 = 0.564 and varying c among 0.1,
+0.3, 0.5 and 0.7. To make a comparison, we also plot the re-
+sult of the ΛCDM model as a solid line. Diﬀerent from the
+cases of ΩΛ0, the curves of S (1)
+4 and  associated with
+diﬀerent c have diﬀerent evolutionary trajectories. For exam-
+ple, all the curves of S (1)
+4 have diﬀerent evolutionary
+behavior at low-redshift, and have a trend of coincidence at
+high-redshift. In addition, among the curves of , the curve
+associated with c = 0.1 has a convex vertex above the ΛCDM
+line; the curves associated with c = 0.5 and c = 0.7 have con-
+cave vertice under the ΛCDM line; while the curve associated
+with c = 0.3 has both two kinds of vertice. These results show
+that adopting diﬀerent values of c has qualitative impacts on
+the cosmic evolution of the ΛHDE model.
+
+3 and S (1)
+
+Table 1 The present values of S (1)
+30 (max) − S (1)
+S (1)
+= S (1)
+adopted in the analysis.
+
+30 (min), ∆S (1)
+40
+
+30 and S (1)
+40 (max) − S (1)
+
+40 , and their diﬀerences ∆S (1)
+30
+
+=
+40 (min). A varying ΩΛ0 is
+
+0
+
+37.2915
+487.4201
+
+ΩΛ0
+c
+S (1)
+30
+S (1)
+40
+∆S (1)
+30
+∆S (1)
+40
+
+0.2
+
+0.171
+
+20.8119
+237.5444
+
+35.4155
+481.3720
+
+0.4
+
+0.6
+
+8.5451
+74.5956
+
+1.8763
+6.0481
+
+Zhou L J, et al.
+
+Sci China-Phys Mech Astron
+
+?? (2016) Vol. ?? No. ?
+
+??-4
+
+(colour online) The upper left, upper right and lower panels show the evolutionary trajectories of S (1)
+
+Figure 1
+4 (z) and (z) for the ΛHDE model
+respectively, with varying ΩΛ0 and other parameters ﬁxed. Diﬀerent linetypes correspond to diﬀerent values of ΩΛ0. To make a comparison, we also show the
+result of the ΛCDM model in this ﬁgure as the solid horizontal lines.
+
+3 (z), S (1)
+
+Table 2
+30 (max)−S (1)
+S (1)
+in the analysis.
+
+= S (1)
+
+The present values of S (1)
+30 (min), ∆S (1)
+40
+
+30 , S (1)
+40 (max)−S (1)
+
+40 , and their diﬀerences ∆S (1)
+30
+
+=
+40 (min). A varying c is adopted
+
+0.1
+
+6.5876
+72.3008
+
+ΩΛ0
+c
+S (1)
+30
+S (1)
+40
+∆S (1)
+30
+∆S (1)
+40
+
+0.564
+
+0.3
+
+1.3002
+1.9622
+
+5.7236
+71.3158
+
+0.5
+
+0.9447
+0.9734
+
+0.7
+
+0.8640
+0.9850
+
+and S (1)
+4
+
+To compare S (1)
+3
+
+and S (1)
+= S (1)
+
+for the cases associated with
+diﬀerent ΩΛ0 or diﬀerent c with more details, we list the
+present values of S (1)
+and S (1)
+and their diﬀerences in ta-
+4
+3
+bles 1 and 2. Notice that S (1)
+30 and S (1)
+40 are the present val-
+30 (max) − S (1)
+4 , while ∆S (1)
+ues of S (1)
+30 (min)
+30
+3
+40 (max) − S (1)
+and ∆S (1)
+40 (min) denotes the diﬀerences
+40
+30 and S (1)
+between the maximum and minimum values of S (1)
+40 .
+From these two tables, we can see that ∆S (1)
+40 is much larger
+than ∆S (1)
+30 . This means that compared with S (1)
+3 , S (1)
+4 can give
+larger diﬀerences among the cosmic evolutions of the ΛHDE
+model associated with diﬀerent ΩΛ0 or diﬀerent c.
+
+= S (1)
+
+3 , S (1)
+
+3 , } and {S (1)
+
+3 , } (left panels) and {S (1)
+
+As can be seen in Figs. 1 and 2, compared with S (1)
+3 and
+S (1)
+4 ,  has very diﬀerent evolutionary trajectories. So we can
+use a composite null diagnostic (CND), which is a combina-
+tion of {S (1)
+4 } and , to diagnose the ΛHDE model. The
+results are shown in Fig. 3, which gives the evolutionary tra-
+jectories of the CND pairs {S (1)
+4 , }
+(right panels) for diﬀerent ΩΛ0 (upper panels) and diﬀerent c
+(lower panels). The current values of {S (1)
+4 , } are
+marked by the round dots, and the arrows indicate the time
+directions of evolution, i.e. z → 0. To make a comparison,
+we also plot the result of ΛCDM as star-shape points. For
+the cases of varying ΩΛ0, the curves of CND pairs only have
+quantitative diﬀerences: at high-redshift region, each curve
+4 , } starts from the neighbourhood of the
+of {S (1)
+star symbol of the ΛCDM model, then evolves towards the
+direction of the increase of ; after passing a turning point, it
+continues evolving towards the direction of the decrease of 
+4 }. On the other side, for the cases
+and the increase of {S (1)
+of varying c, the curves of CND pairs have qualitative diﬀer-
+ences: the curve associated with c = 0.1 has a similar evolu-
+tionary trajectory with the case of varying ΩΛ0; in contrast,
+the curve associated with c = 0.5 or c = 0.7 evolves towards
+an opposite direction, and returns to the neighbourhood of the
+star symbol of the ΛCDM model. These results further ver-
+ify the conclusions of Figs. 1 and 2. Moreover, since using
+
+3 , } and {S (1)
+
+3 , S (1)
+
+Zhou L J, et al.
+
+Sci China-Phys Mech Astron
+
+?? (2016) Vol. ?? No. ?
+
+??-5
+
+(colour online) The upper left, upper right and lower panels show the evolutionary trajectories of S (1)
+
+Figure 2
+4 (z) and (z) for the ΛHDE model
+respectively, with varying c and other parameters ﬁxed. Diﬀerent linetypes correspond to diﬀerent values of c. To make a comparison, we also show the result
+of the ΛCDM model in this ﬁgure as the solid horizontal lines.
+
+3 (z), S (1)
+
+a single diagnostic tool can only give 1-dimensional evolu-
+tion information, adopting CND has much stronger ability to
+diagnose the ΛHDE model.
+
+5 Conclusion and Discussion
+
+In a latest paper [25], a new DE model called ΛHDE was pro-
+posed. In this model, DE consists of two parts: cosmological
+constant Λ and HDE. Two key parameters of this model are
+the fractional density of cosmological constant ΩΛ0, and the
+dimensionless HDE parameter c. Since these two parameters
+determine the dynamical properties of DE and the destiny of
+universe, it is important to study the impacts of diﬀerent val-
+ues of ΩΛ0 and c on the ΛHDE model.
+Two diagnostic tools are often used to analyze various DE
+4 }, another is
+models. One is stateﬁnder hierarchy {S (1)
+the fractional growth parameter . In addition, the CND pair,
+which is a combination of these two quantities, is also widely
+used to diagnose DE models. Therefore, the main aim of this
+work is making use of these diagnostic tools to distinguish
+the ΛHDE models with diﬀerent ΩΛ0 or diﬀerent c.
+
+3 , S (1)
+
+The conclusions of this work are as follows: Firstly, from
+Figs. 1 and 2, we ﬁnd that adopting diﬀerent values of ΩΛ0
+
+3 , S (1)
+4
+
+only has quantitative impacts on the evolution of the ΛHDE
+model, while adopting diﬀerent c has qualitative impacts;
+Secondly, by comparing tables 1 and 2, we ﬁnd that com-
+pared with S (1)
+can give larger diﬀerences among the
+cosmic evolutions of the ΛHDE model associated with dif-
+ferent ΩΛ0 or diﬀerent c; Thirdly, by analyzing Fig. 3 in de-
+tails, we ﬁnd that compared with the case of using a single
+diagnostic, adopting a CND pair has much stronger ability to
+diagnose the ΛHDE model.
+
+In this work, only two kinds of diagnostic tools, stateﬁnder
+hierarchy and fractional growth parameter, are used to di-
+agnose the ΛHDE model. There are some other diagnostic
+tools, such as w−w(cid:48) analysis [35,36]. It is interesting to make
+use of these diagnostic tools to analyze various DE models,
+and compare the advantages and disadvantages of various di-
+agnostic tools. In addition, it is also very interesting to study
+the impacts of supernova’s systematic uncertainties [37–42]
+on the ΛHDE model. These will be done in future works.
+
+We wish to thank Li Nan and Cheng Cheng for valuable suggestions and
+technological supports. SW is supported by the National Natural Science
+Foundation of China under Grant No. 11405024.
+
+Zhou L J, et al.
+
+Sci China-Phys Mech Astron
+
+?? (2016) Vol. ?? No. ?
+
+??-6
+
+(colour online) The evolutionary trajectories of the CND pairs {S (1)
+
+3 , } (left panels) and {S (1)
+
+Figure 3
+diﬀerent c (lower panels). The current values of {S (1)
+directions of cosmic evolution, i.e. z → 0. To make a comparison, we also show the result of the ΛCDM model in this ﬁgure as star-shape points.
+
+4 , } (right panels) for diﬀerent ΩΛ0 (upper panels) and
+4 , } for the ΛHDE models are marked by the round dots, and the arrows indicate the time
+
+3 , } and {S (1)
+
+1 Riess, A. G., Filippenko, A. V., & Challis, P., et al. 1998 [Supernova
+
+Search Team Collaboration], Astron. J. 116, 1009
+
+2 Perlmutter, S., Aldering, G., & Goldhaber, G., et al. 1999 [Supernova
+
+Cosmology Project Collaboration], Astrophys. J. 517, 565
+
+3 Frieman, J., Turner, M., & Huterer, D. 2008, Ann. Rev. Astron. Astro-
+
+phys. 46, 385
+
+4 Li, M., Li, X. D., & Wang, S., et al. 2011, Commun. Theor. Phys. 56,
+
+525
+
+5 Steinhardt, P. J., Wang, L. M., & Zlatev, I. 1999, Phys. Rev. D 59,
+
+123504
+
+6 Caldwell, R. R. 1999, Phys. Lett. B 545, 23
+7 Armendariz-Picon, C., Damour, T., & Mukhanov, V. 1999, Phys. Lett.
+
+B 458, 209
+
+8 Kamenshchik, A. Y., Moschella, U., & Pasquier, V. 2001, Phys. Lett.
+
+B 511, 265
+
+9 Wang, S., Zhang, Y., & Xia, T. Y. 2008, JCAP 10, 037
+10 Wang, S., & Zhang, Y. 2008, Phys. Lett. B 669, 201
+11 Huang, Q. G., Li, M., & Li, X. D., 2009, Phys. Rev. D 80, 083515
+12 Wang, S., Li, X. D., & Li, M., 2010, Phys. Rev. D 82, 103006
+13 Witten, E. 2000, [arXiv:hep-ph/0002297]
+14 ’t Hooft, G. 1993, [arXiv:gr-qc/9310026]
+15 Li, M. 2004, Phys. Lett. B 603, 1
+16 Huang, Q. G., & Li, M. 2004, JCAP 08, 013
+17 Huang, Q. G., & Gong, Y. G. 2004, JCAP 08, 006
+18 Wang, B., Gong, Y. G., & Abdalla, E. 2005, Phys. Lett. B 624, 141
+19 Zhang, X., & Wu, F. Q. 2007, Phys. Rev. D 71, 123518
+20 Ma, Y. Z., Gong, Y., & Chen, X. L. 2009, Eur. Phys. J. C 60, 303
+
+21 Li, M., Li, X. D., & Wang, S., et al. 2009, JCAP 06, 036
+22 Li, M., Li, X. D., & Wang, S., ei al. 2009, JCAP 12, 014
+23 Li, M., Miao, R. X., & Pang, Y. 2010, Phys. Lett. B 689, 55
+24 Li, M., & Wang, Y. 2010, Phys. Lett. B 687, 243
+25 Hu, Y. Z., Li, M., & Li, N., et al. 2015, JCAP 08, 012
+26 Sahni, V., Saini, T. D., & Starobinsky, A. A., et al. 2003, JETP Lett.
+
+77, 201
+
+27 Arabsalmani, M., & Sahni, V. 2011, Phys. Rev. D 83, 043501
+28 Acquaviva, V., Hajian, A., & Spergel, D. N., et al. 2008, Phys. Rev. D
+
+78, 043514
+
+29 Acquaviva, V., & Gawiser, E. 2010, Phys. Rev. D 82, 082001
+30 Hu, Y. Z., Li, M., & Li, N., et al. in preparation
+31 Zhang, J. F., Cui, J. L., & Zhang, X. 2014, Eur. Phys. J. C 74, 3100
+32 Hu, Y. Z., Li, M., & Li, N. 2015, [arXiv:1501.06962]
+33 Hu, Y. Z., Li, M., & Li, N. 2015, [arXiv:1506.08274]
+34 Pavlov, A., Farooq, O., & Ratra, B. 2013, [arXiv:1312.5285]
+35 Caldwell, R. R., & Linder, E. V. 2005, Phys. Rev. Lett. 95, 141301
+36 Linder, E. V. 2006, Phys. Rev. D 73, 3010
+37 Wang, S., & Wang, Y. 2013, Phys. Rev. D 88, 043511
+38 Wang, S., Li, Y. H., & Zhang, X. 2014, Phys. Rev. D 89, 063524
+39 Wang, S., Wang, Y. Z., & Geng, J. J, et al. 2014, Eur. Phys. J. C 74,
+
+3148
+
+40 Wang, S., Wang, Y. Z., & Zhang, X. 2014, Commun. Theor. Phys. 62,
+
+927
+
+41 Wang, S., Geng, J. J, & Hu, Y. L. et al. 2015, Sci. China Phys. Mech.
+
+Astron. 58, 019801
+
+42 Li, M., Li, N., & Wang, S. et al. 2016, [arXiv:1601.01451]
+
+
